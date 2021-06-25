@@ -942,33 +942,51 @@ span{
     margin-top: 64px;
 }
 .card{
+    border-radius: 20px;
+    background-color: green;
     margin:24px 10px;
+    box-shadow: grey 0 0 10px;
 }
+.card *{
+    color: white;
+}
+
 .callout-container{
 display: flex;
 align-items: center;
+margin-top: 16px;
 }
 .callout{
     font-size: 5em;
     font-family: 'neuzeit-grotesk';
     font-weight: 900;
 }
-
 .mini-persona{
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.mini-persona p{
-    margin: 0;
+    align-items: center;    
 }
 .mini-persona hr{
     width: 64px;
     height: 2px;
 }
+.mini-persona img{
+    margin-bottom: 16px;
+}
+.mini-persona p{
+    margin:0;
+    font-size: .9em;
+}
+.mini-persona li{
+    margin-bottom: 16px;
+    font-size: 1em;
+    font-family: "Brandon-Grotesque";
 
-.col-md-10{
-    background-color: #c4c4c4;
+}
+.research-stats{
+    border: solid green 2px;
+    border-radius: 20px;
+    background-color:#33333320;
     display: flex;
     justify-content: space-around;
 }
@@ -976,11 +994,43 @@ align-items: center;
     display: flex;
 }
 
-.col-md-9{background-color: #F97171
-}
+/* .col-md-9{background-color: #F97171
+} */
 .col-md-10 img{
     width: 100%;
 }
+.callout-container{
+    background-color: green;
+    border-radius: 20px;
+}
+.callout-container p{
+    color: white;
+    
+}
+
+.persona-area{
+    margin-top: 24px;
+    border: 2px solid green;
+    border-radius: 20px;
+    padding: 24px 0;
+
+}
+.journeyMap{
+    border-style: solid;
+}
+.carousel{
+    margin:48px 0;
+}
+.sketch-artifacts{
+    justify-content: center;
+}
+.sketch-artifacts img{
+    max-height: 450px;
+}
+.low-fi-assets{
+    background-color: #3891c9;
+}
+
 .usability-test-photo{
     background-color: #3891c9;
 }
