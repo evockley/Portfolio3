@@ -800,6 +800,9 @@ hr {
     row-gap: 24px;
     margin: 8px 0 56px 0;
 }
+span{
+    font-style: oblique;
+}
 
 .imported-graphic {
     display: flex;
@@ -903,10 +906,42 @@ hr {
     margin-top: 24px;
 }
 
-/* --------------------------------------About------------------------------------- */
+
+/* --------------------------------------Recycle Easy------------------------------------- */
+/* --------------------------------------Recycle Easy------------------------------------- */
+/* --------------------------------------Recycle Easy------------------------------------- */
+
+.container{
+    margin:0;
+    padding:0;
+}
+.col-md-4 img{
+    width:22vw;
+    border-radius: 2px;
+}
+.highlight{
+    display: flex;
+}
+
+.col-md-10{
+    background-color: #3891c9;
+    padding: 32px 5vw;
+    display: flex;
+    justify-content: space-around;
+}
+.col-md-3{background-color: #D68D1F;
+
+}
+.col-md-9{background-color: #F97171
+}
+.usability-test-photo{
+    background-color: #3891c9;
+}
+
+
 
 /* --------------------------------------About------------------------------------- */
-
+/* --------------------------------------About------------------------------------- */
 /* --------------------------------------About------------------------------------- */
 
 .about-hero {
