@@ -57,7 +57,7 @@
                     disposal choices. It’s now or never.</p>
 
 
-                    <!-- TO DO: FIND A BETTER SOLUTION FOR THIS HIGHLIGHT SECTION re: responsive-->
+                <!-- TO DO: FIND A BETTER SOLUTION FOR THIS HIGHLIGHT SECTION re: responsive-->
                 <div class="highlight">
                     <h5>My Role</h5>
                     <p>UX Researcher, Information Architect, UX/UI Designer</p>
@@ -73,9 +73,9 @@
                 <div class="highlight">
                     <h5>Tools</h5>
                     <div class="tools-logos">
-                    <img src="images/About/miro-logo.png" alt="Miro" width="28px">
-                    <img src="images/About/figma-logo.png" alt="Figma" width="28px">
-                </div>
+                        <img src="images/About/miro-logo.png" alt="Miro" width="28px">
+                        <img src="images/About/figma-logo.png" alt="Figma" width="28px">
+                    </div>
 
                 </div>
             </div>
@@ -105,15 +105,15 @@
             </div>
             <div class="row">
                 <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-md-10 research-stats">
+                    <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Research Stat 1</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the
                                 bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Research Stat 2</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the
@@ -121,7 +121,7 @@
                                 of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Research Stat 3</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the
@@ -129,7 +129,7 @@
                                 of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Research Stat 4</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the
@@ -146,14 +146,55 @@
     <section class="individual-section2">
         <h3>Define
         </h3>
-        <div class="row">
-            <div class="col-md-3">
-                Mini Version of Persona goes here
+        <div class="row callout-container">
+            <div class="col-md-4">
+                <p class="callout">One User</p>
             </div>
-            <div class="col-md-9">
-                Mini Version of Journey Map goes here
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <p>As an environmentally conscious Millenial, I want to know what is recyclable and how to recycle it so
+                    I can feel that I’m reducing my negative environmental impact.</p>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-3 mini-persona">
+                <img src="images/recycle-easy/persona.png" alt="User Persona: Samantha Powers" width="170px">
+                <h4>Samantha Powers</h4>
+                <p>Philadelphia, PA</p>
+                <p>32, She/Her</p>
+                <hr>
+                <ul>
+                    <li>Wants to reduce harmful environmental impact</li>
+                    <li>Learning the right way to dispose of certain items can be a hassle </li>
+                </ul>
+                <div class="full-document-link">
+                    <a href="#">View Full Persona</a>
+                    <img src="images/recycle-easy/new-window-icon.png" alt="" width="32px">
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>User Scenario</h4>
+                    </div>
+                    <div class="col-md-9">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim sem bibendum libero vitae sed
+                            id ornare nunc. Enim mollis convallis eget aliquam aliquet eu libero nibh. Quis.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <canvas id="lineChart">
+
+                    </canvas>
+
+
+                    <div class="full-document-link">
+                        <a href="#">View Full Journey Map</a>
+                        <img src="images/recycle-easy/new-window-icon.png" alt="" width="32px">
+                    </div>
+                </div>
     </section>
 
     <section class="individual-section2">
@@ -171,7 +212,7 @@
             </div>
             <div class="col-md-6">
                 <h4>Prioritize</h4>
-                <p>Based on our reserach, we knew we would have to make this as easy as possible while also keeping it
+                <p>Based on our research, we knew we would have to make this as easy as possible while also keeping it
                     informative. We created a 2x2 matrix of our best ideas and felt the photo feature would be the
                     easiest for users to learn what to do with their items.</p>
             </div>
@@ -218,7 +259,7 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-                USER FLOW GOES HERE
+                <img src="images/RecycleEasy-User-Flow.png" alt="User Flow">
             </div>
             <div class="col-md-1"></div>
         </div>
@@ -314,7 +355,7 @@
         </div>
     </section>
 
-    <section class="individual-section2" >
+    <section class="individual-section2">
         <h2>Next Steps</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim sem bibendum libero vitae sed id ornare nunc.
             Enim mollis convallis eget aliquam aliquet eu libero nibh. Quis.</p>
@@ -339,14 +380,15 @@
             <div><button class="primary-button">Say Hi!</button>
             </div>
             <div class="logo-grid">
-               <a href="https://www.linkedin.com/in/evan-vockley-815617b6/"><img class="logo-grid-item" src="images/LinkedIn.png" alt="LinkedIn Logo" width=32px></a>
+                <a href="https://www.linkedin.com/in/evan-vockley-815617b6/"><img class="logo-grid-item"
+                        src="images/LinkedIn.png" alt="LinkedIn Logo" width=32px></a>
                 <img class="logo-grid-item" src="images/Dribbble.png" alt="Dribbble Logo" width=32px>
                 <img class="logo-grid-item" src="images/Instagram.png" alt="Instagram Logo" width=32px>
             </div>
         </div>
-    
+
     </footer>
-    
+
 
 
 

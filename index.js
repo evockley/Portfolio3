@@ -9,3 +9,4 @@ $(".close").on("click", function(){
     $(".toggle").css("display", "flex");
     $(this).css("display", "none");
 });
+
