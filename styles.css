@@ -573,6 +573,10 @@ label {
     background: #FCF7F2;
     padding: 56px 100px
 }
+.individual-section2 {
+    background: #FCF7F2;
+    padding: 40px 100px
+}
 
 .case-study {
     padding-top: 0px;
@@ -921,7 +925,18 @@ span{
 }
 .highlight{
     display: flex;
+    align-items: baseline;
+    padding: 4px 0;
+
 }
+.highlight p{
+   position: absolute;
+   left: 240px
+}
+.tools-logos{
+    margin-left: 6.5vw;
+}
+
 
 .col-md-10{
     background-color: #3891c9;
