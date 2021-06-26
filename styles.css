@@ -265,13 +265,12 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
-    justify-content: space-between;
-    
+    justify-content: space-around;
 }
 
 .home-item {
     box-sizing: border-box;
-    max-width: 32em;
+    max-width: 30em;
     min-width: 250px;
     margin-bottom: 0px;
     padding:16px 16px 16px 16px;
@@ -281,12 +280,12 @@ p {
     border-radius: 10px;
     border-style: solid;
     border-width: .5px;
-    border-color: #192E1025;
+    border-color: #192E1045;
     transition: ease 200ms;
 }
 .home-item:hover {
     background-color: rgba(145, 137, 137, 0.05);
-    box-shadow: #09150335 0 0 10px;
+    box-shadow: #09150345 0 0 12px;
     cursor: pointer;
 }
 
@@ -297,12 +296,11 @@ p {
     border-radius: 8px;
     border-width: .5px;
 }
-.home-item p{
-   margin-top: 0;
-}
 .home-item a{
-   text-decoration: underline;
+   margin-top: 0;
+   text-decoration: none;
 }
+
 .home-item a{
     color:#091503;
     font-family: "neuzeit-grotesk", sans-serif;
@@ -316,7 +314,7 @@ p {
 .more-projects {
     display: flex;
     justify-content: flex-end;
-    padding-top: 8px;
+    padding-top: 16px;
     padding-bottom: 24px;
     padding-right: 24px;
 }
@@ -491,7 +489,7 @@ p {
     flex-direction: column;
     align-self: center;
     min-width: 120px;
-    margin-top: 40px;
+    margin: 32px 0;
 }
 
 #button-container {
