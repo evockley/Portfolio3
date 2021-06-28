@@ -914,6 +914,10 @@ span{
 /* --------------------------------------Recycle Easy------------------------------------- */
 /* --------------------------------------Recycle Easy------------------------------------- */
 
+.recycle-easy-hero img{
+    box-shadow: lightgray 0 0 10px;
+}
+
 .container{
     margin:0;
     padding:0;
@@ -935,11 +939,9 @@ span{
 .tools-logos{
     margin-left: 6.5vw;
 }
-
-.research-stats{
-    margin-top: 64px;
-}
 .card{
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 20px;
     background-color: green;
     margin:24px 10px;
@@ -982,6 +984,8 @@ margin-top: 16px;
 
 }
 .research-stats{
+    display: flex;
+    margin-top: 64px;
     border: solid green 2px;
     border-radius: 20px;
     background-color:#33333320;
@@ -1016,8 +1020,8 @@ margin-top: 16px;
 .journeyMap{
     border-style: solid;
 }
-.carousel{
-    margin:48px 0;
+.ideation-assets{
+    margin: 48px 0 24px 0;
 }
 .sketch-artifacts{
     justify-content: center;
@@ -1026,7 +1030,15 @@ margin-top: 16px;
     max-height: 450px;
 }
 .low-fi-assets{
-    background-color: #3891c9;
+    display: flex;
+    flex-wrap: wrap;
+   margin: auto auto;
+   padding: 24px 0;
+}
+
+.low-fi-assets img{
+    border-radius: 10px;
+   box-shadow: lightgrey 0 0 10px;
 }
 .wireframe{
     margin-top: 10vh;
