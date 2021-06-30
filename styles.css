@@ -1015,8 +1015,8 @@ span {
     padding: 24px 2%;
     border-radius: 20px 0 0 20px;
     justify-content: space-between;
-    background-color: white;
-    box-shadow: lightgray 1px 0 4px;
+    background-color: #FFFFFF40;
+    box-shadow: lightgray 1px 0 2px;
 
 }
 

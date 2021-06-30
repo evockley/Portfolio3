@@ -14,7 +14,7 @@ $(".close").on("click", function () {
 // RECYCLE EASY JOURNEY MAP / LINE GRAPH
 
 var xValues = [1, 2, 3, 4, 5, 6, 7, 8];
-var yValues = [8, 2, 6, 5, 7, 8, 9, 10]
+var yValues = [8, 2, 6, 5, 7, 6, 9, 10]
 var journeyMap = new Chart("journeyMap", {
     type: "line",
     data: {
