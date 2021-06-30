@@ -902,8 +902,13 @@ span {
     align-items: flex-start;
 }
 
-.more-work-grid h3 {
+.more-work-grid h4 {
+    font-size: 1.3em;
     margin-top: 24px;
+    font-weight: 500;
+}
+.more-work-grid a{
+   text-decoration: none;
 }
 
 /* --------------------------------------Recycle Easy------------------------------------- */
@@ -962,7 +967,8 @@ span {
     flex-wrap: wrap;
     border: solid green 1px;
     border-radius: 20px;
-    background-color: #33333320;
+    background-color: #33333310;
+  
 }
 
 .card {
@@ -1015,7 +1021,7 @@ span {
     padding: 24px 2%;
     border-radius: 20px 0 0 20px;
     justify-content: space-between;
-    background-color: #FFFFFF40;
+    background-color: #33333310;
     box-shadow: lightgray 1px 0 2px;
 
 }
