@@ -275,8 +275,7 @@ li {
 .item-flex-container {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 0;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .home-item {
@@ -374,7 +373,9 @@ li {
     grid-template-rows: 1fr 1fr;
     column-gap: 18%;
     row-gap: 104px;
-    grid-template-areas: "go-create recycle-easy" "una-mesa uscis";
+    grid-template-areas: 
+    "go-create recycle-easy" 
+    "una-mesa uscis";
 }
 
 .projects-image {
@@ -946,7 +947,7 @@ span {
 
 .card {
     border-radius: 20px;
-    background-color: green;
+    background-image: linear-gradient(#068806,#026c02);
     margin: 24px 10px;
     box-shadow: grey 0 0 10px;
     flex: 1 0 200px
@@ -959,9 +960,10 @@ span {
 .callout-container {
     display: flex;
     align-items: center;
-    background-color: green;
+    background-image: linear-gradient(#068806,#026c02);
     border-radius: 20px;
     margin-top: 16px;
+    padding: 20px 32px
 }
 
 .callout-container p {
@@ -1011,7 +1013,7 @@ span {
 
 .persona-area {
     margin-top: 24px;
-    border: 2px solid green;
+    border: 2px solid #068806;
     border-radius: 20px;
     padding: 24px 0;
 }
@@ -1021,6 +1023,7 @@ span {
     align-items: center;
     justify-content: flex-end;
     font-size: .9em;
+    margin-bottom: 8px;
 }
 
 .full-document-link img {
@@ -1345,7 +1348,7 @@ _________________________________***Nav Bar***____________________***Nav Bar***_
     /* ___________________________***Footer @<768px***_______________***Footer @<768px***_________________________
 _________________________________***Footer @<768px***____________________***Footer @<768px***_______________________ */
     .footer {
-        background-image: linear-gradient(180deg, #267405, #091503);
+        background-image: linear-gradient(180deg, #192E10, #091503, #192E10);
         background-repeat: no-repeat;
         width: vw;
         margin: 0;
@@ -1702,6 +1705,28 @@ _________________________________***GoCreate Redesign <768***___________________
         padding-left: 0;
         padding-right: 0;
     }
+
+
+/* ___________________________***Recycle Easy <768***_______________***Recycle Easy <768***_________________________
+_________________________________***Recycle Easy <768***____________________***Recycle Easy <768***_______________________ */
+
+.individual-section2{
+    padding: 40px 32px;        
+}
+
+.research-card-container{
+    margin:0;
+}
+
+.callout{
+    font-size: 48px
+}
+
+.low-fi-assets img{
+width: 60%;
+margin: 16px
+}
+
 }
 
 ;

@@ -25,7 +25,7 @@ var journeyMap = new Chart("journeyMap", {
                     data: yValues,
                     lineTension: 0.2,
                     pointRadius: 10,
-                    pointBackgroundColor: "#5cb075",
+                    pointBackgroundColor: "#068806",
                     pointBorderColor: "#333",
                     pointHoverBackgroundColor: "#333",
                     pointHoverRadius: 18,
