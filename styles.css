@@ -907,8 +907,9 @@ span {
     margin-top: 24px;
     font-weight: 500;
 }
-.more-work-grid a{
-   text-decoration: none;
+
+.more-work-grid a {
+    text-decoration: none;
 }
 
 /* --------------------------------------Recycle Easy------------------------------------- */
@@ -968,7 +969,6 @@ span {
     border: solid green 1px;
     border-radius: 20px;
     background-color: #33333310;
-  
 }
 
 .card {
@@ -1023,7 +1023,6 @@ span {
     justify-content: space-between;
     background-color: #33333310;
     box-shadow: lightgray 1px 0 2px;
-
 }
 
 .mini-persona hr {
@@ -1058,7 +1057,6 @@ span {
     margin-top: 24px;
     border: 1px solid #068806;
     border-radius: 20px;
-
 }
 
 .full-document-link {
@@ -1541,16 +1539,13 @@ _________________________________***PROJECTS <768***____________________***PROJE
         width: 85%;
     }
     .projects-item1, .projects-item2, .projects-item3, .projects-item4 {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding: 0 8px;
     }
     .project-container {
         align-items: center;
+        padding: 0 0 0 0;
     }
-    .standard-section {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+ 
     /* ___________________________***  ABOUT  <768***_______________***  ABOUT  <768***_________________________
 _________________________________***  ABOUT  <768***____________________***  ABOUT  <768***_______________________ */
     .about-hero {
@@ -1750,18 +1745,64 @@ _________________________________***GoCreate Redesign <768***___________________
     }
     /* ___________________________***Recycle Easy <768***_______________***Recycle Easy <768***_________________________
 _________________________________***Recycle Easy <768***____________________***Recycle Easy <768***_______________________ */
-    .individual-section2 {
-        padding: 40px 32px;
+.individual-section2 {
+    padding: 40px 16px;
+}    
+.individual-section2 {
+        padding: 40px 16px;
+    }
+    .tools-logos img {
+        max-height: 16px;
+    }
+    .recycle-easy-hero-highlight div {
+        display: block;
+    }
+    .recycle-easy-hero-image {
+        display: none;
     }
     .research-card-container {
         margin: 0;
     }
-    .callout {
-        font-size: 48px
+    .research-stats{
+        margin-top: 24px;
     }
+    .callout-container{
+        padding: 16px 8px;
+        margin: 0 4px;
+    }
+    .callout {
+        font-size: 48px;
+    }
+
+    .persona-area{
+        margin: 24px 4px 0 4px;
+    }
+    .mini-persona{
+        padding: 16px 8px;
+
+        border-radius: 20px 20px 0 0;
+    }
+.ideation-assets{
+    display: none;
+}
+
+.low-fi-asset-container{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.asset-image{
+    max-width: 70vw;
+    margin: 10px auto;
+}
+
+.low-fi-assets{
+    margin: 0
+}
     .low-fi-assets img {
-        width: 60%;
-        margin: 16px
+        margin: 0;
     }
 }
 
