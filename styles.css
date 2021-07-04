@@ -649,9 +649,7 @@ label {
 }
 
 /* --------------------------------------GoCreate------------------------------------- */
-
 /* --------------------------------------GoCreate------------------------------------- */
-
 /* --------------------------------------GoCreate------------------------------------- */
 
 .gocreate-grid1 {
@@ -682,14 +680,16 @@ label {
 .grid1-right-side {
     grid-area: "right";
 }
-
-
-
-
 .Brief .col-lg-6{
 padding: 16px 2vw
 }
-.Ideation .col-lg-6{
+.discovery .col-lg-6{
+      padding: 16px 2vw
+    }
+.definition .col-lg-6{
+    padding: 16px 2vw
+}
+.ideation .col-lg-6{
     padding: 16px 2vw
     }
 
@@ -697,6 +697,34 @@ padding: 16px 2vw
     display: flex;
     justify-content: space-between;
     margin-top: 48px;
+}
+
+.interview-background{
+   padding: 8px 16px;
+    margin: 16px 0 0 0;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: .5px;
+    border-color: #192E1025;
+    box-shadow: #98989830 0 0 20px;
+    background-color: #FCF7F2;
+}
+
+.user-interviews{
+    display:flex;
+    align-items: center;
+}
+.user-interviews div{
+margin:16px 0
+}
+.user-interviews img{
+max-width: 50%;
+min-width: 6vw;
+}
+.user-interviews .quotable{
+font-size: .9em;
+margin:0;
+font-style: italic;
 }
 
 .user-interview-headshots {
@@ -709,7 +737,6 @@ padding: 16px 2vw
 }
 
 .gocreate-mini-persona{
-   
     padding: 16px 0;
     margin-bottom: 32px;
     border-radius: 10px;
@@ -719,11 +746,20 @@ padding: 16px 2vw
     box-shadow: #98989830 0 0 20px;
     background-color: #FCF7F2;
 }
-
+.QuentinMorrison{
+    border-radius: 10px 0 10px 10px;
+    box-shadow: lightgrey 0 0 10px;
+}
+.gocreate-persona-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
 
 .gocreate-persona-text p{
     font-size: .9em;
-    margin: 8px 0
+    margin: 4px 0
 }
 
 .empathy-map-wrapper {
@@ -786,25 +822,21 @@ span {
     column-gap: 20px;
     row-gap: 16px;
 }
-
 .sketch-1 {
     grid-area: sketch-1;
     max-width: 750px;
     align-self: center;
 }
-
 .sketch-2 {
     grid-area: sketch-2;
     max-width: 425px;
     align-self: center;
 }
-
 .sketch-3 {
     grid-area: sketch-3;
     max-width: 425px;
     align-self: center;
 }
-
 .wireframe-images {
     width: 45%;
 }
@@ -1581,7 +1613,7 @@ _________________________________***  ABOUT  <768***____________________***  ABO
 _________________________________***GoCreate Redesign <768***____________________***GoCreate Redesign <768***_______________________ */
     .individual-section {
         background: #FCF7F2;
-        padding: 10px 32px
+        padding: 10px 3vw
     }
     .gocreate-grid1 {
         margin: 32px 0 0 0;
@@ -1611,22 +1643,6 @@ _________________________________***GoCreate Redesign <768***___________________
         margin-top: 72px;
         margin-bottom: 72px;
     }
-    .imported-graphic img {
-        width: 100%;
-    }
-    .GoCreate-Empathy-Map {
-        border: #192E10;
-        border-style: solid;
-        border-radius: 10px;
-        border-width: 1px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: .5fr .5fr .5fr .5fr;
-        padding: 8px 16px;
-        width: 100%;
-        row-gap: 16px;
-        margin: 8px 0 56px 0;
-    }
     .design-goal-grid {
         display: flex;
         flex-wrap: wrap;
@@ -1635,16 +1651,10 @@ _________________________________***GoCreate Redesign <768***___________________
         margin-bottom: 64px;
         gap: 32px
     }
-    .sketches-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "sketch-1" "sketch-2" "sketch-3";
-        column-gap: 20px;
-        row-gap: 16px;
-    }
-    .sketches-grid img {
-        width: 100%
+    .gocreate-sketches-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px
     }
     .final-mockups {
         display: flex;
@@ -1663,65 +1673,28 @@ _________________________________***GoCreate Redesign <768***___________________
         align-items: center;
         margin: 16px 0;
     }
-    .user-interview-headshots {
-        max-width: 100vw;
+
+    .user-interviews img{
+        max-width: 20vw;
     }
     .headshot {
         width: 120px;
         height: 120px;
     }
-    .process-overview-scroll {
-        display: grid;
-        grid-auto-flow: column;
-        align-items: stretch;
-        gap: 16px;
-        overflow-x: scroll;
-        scroll-snap-type: x proximity;
-        padding: 16px 0 0 32px;
-    }
-    .process-item {
-        width: 80vw;
-        padding: 8px;
-        border-radius: 10px;
-        background-color: #98989820;
-        padding: 16px 8px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: .25fr .5fr .5fr.25fr;
-        grid-template-areas: "process-heading" "list1" "list2" "list3" "link";
-        box-shadow: #98989820 0 0 10px;
-        border-radius: 10px;
-        border-style: solid;
-        border-color: #09150330;
-        border-width: .5px;
-        ;
-    }
-    .process-item ul {
-        font-size: .9em;
-    }
-    .process-item h3 {
-        margin: 10px 0;
-    }
-    .process-item h4 {
-        margin: 8px 0;
-    }
-    .process-item p {
-        margin: 8px 0;
-    }
-    .process-item a {
-        margin: 16px 0 0 0;
-    }
-    .scroll-group {
-        background-color: #FCF7F2;
-        padding-left: 0;
-        padding-right: 0;
-    }
+.gocreate-mini-persona .col-lg-4{
+    margin: 16px 0;
+
+}
+.full-document-link{
+    margin-top: 16px;
+}
+
+    
     /* ___________________________***Recycle Easy <768***_______________***Recycle Easy <768***_________________________
 _________________________________***Recycle Easy <768***____________________***Recycle Easy <768***_______________________ */
     .individual-section2 {
         padding: 40px 3vw;
     }
-
     .tools-logos img {
         max-height: 16px;
     }
