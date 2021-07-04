@@ -8,6 +8,7 @@ body {
     width: vw;
     margin: 0;
     padding: 0;
+    max-width: 1600px;
 }
 /* -----------------------------------------------------TYPOGRAPHY------------------------------------------------------
 --------------------------------------------------------TYPOGRAPHY------------------------------------------------------
@@ -682,156 +683,15 @@ label {
     grid-area: "right";
 }
 
-/* --------------------------Chat Simulation--------------------------
------------------------------Chat Simulation--------------------------
------------------------------Chat Simulation-------------------------- */
 
-hr {
-    width: 50px;
+
+
+.Brief .col-lg-6{
+padding: 16px 2vw
 }
-
-.chat-1 {
-    display: flex;
-    flex-direction: column;
-}
-
-.chat-2 {
-    display: flex;
-    flex-direction: column;
-}
-
-.chat-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.chat2-content {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-
-.time {
-    margin-left: 16px;
-    margin-right: 16px;
-    width: fit-content;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.chat-1 .p1 {
-    background-color: #4337C7;
-    color: #fcfcfc;
-    max-width: 500px;
-    padding: 8px 16px;
-    border-radius: 16px;
-}
-
-.chat-2 .p1 {
-    background-color: #4337C7;
-    color: #fcfcfc;
-    padding: 8px 16px;
-    border-radius: 16px;
-}
-
-.chat-1 .p2 {
-    background-color: #E2E2E2;
-    max-width: 500px;
-    padding: 8px 16px;
-    border-radius: 16px;
-}
-
-.chat-2 .p2 {
-    background-color: #E2E2E2;
-    max-width: 500px;
-    padding: 8px 16px;
-    border-radius: 16px;
-}
-
-.problem-grid {
-    display: grid;
-    grid-template-columns: .75fr 1.25fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "left right";
-    align-items: center;
-    column-gap: 5%;
-    margin-top: 72px;
-    margin-bottom: 72px;
-}
-
-.problem-grid-left {
-    grid-area: left;
-}
-
-.problem-grid-right {
-    grid-area: right;
-}
-
-/* ---------------------------Process Overview-----------------------------
--------------------------------Process Overview----------------------------
---------------------------------Process Overview------------------------ */
-
-.process-item {
-    background-color: #FCF7F2;
-    padding: 16px 32px;
-    display: grid;
-    grid-template-columns: .75fr 1.25fr;
-    grid-template-rows: .25fr .75fr .75fr;
-    grid-template-areas: "process-heading process-heading" "list1 list3" "list2 link";
-    box-shadow: #98989820 0 0 10px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #09150330;
-    border-width: .5px;
-}
-
-.process-heading {
-    grid-area: process-heading;
-}
-
-.process-list1 {
-    grid-area: list1;
-}
-
-.process-list2 {
-    grid-area: list2;
-}
-
-.process-list3 {
-    grid-area: list3;
-}
-
-.process-link {
-    grid-area: link;
-}
-
-.process-item li {
-    list-style: square;
-    font-family: "brandon-grotesque";
-}
-
-.process-item ul {
-    font-size: 1em;
-}
-
-.process-item a {
-    font-family: "brandon-grotesque";
-    justify-self: start;
-    align-self: center;
-}
-
-.scroll-group {
-    background-color: #FCF7F2;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.process-overview-scroll {
-    display: grid;
-    grid-template-rows: repeat(5);
-    gap: 40px;
-    padding: 16px 0;
-}
+.Ideation .col-lg-6{
+    padding: 16px 2vw
+    }
 
 .headshots-wrapper {
     display: flex;
@@ -954,6 +814,25 @@ span {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 72px;
+}
+.testing img{
+    margin-bottom: 24px;
+    border-radius: 20px;
+    box-shadow: lightgray 0 0 10px;
+
+}
+
+.testing .col-lg-4{
+    padding: 1.5vw
+}
+
+.testing p{
+    font-size: .9em;
+    margin: 2vh 0;
+}
+
+.testing .quotable{
+    margin-top: 24px;
 }
 
 .testing-highlights {
