@@ -9,7 +9,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* -----------------------------------------------------TYPOGRAPHY------------------------------------------------------
+--------------------------------------------------------TYPOGRAPHY------------------------------------------------------
+--------------------------------------------------------TYPOGRAPHY------------------------------------------------------ */
 h1 {
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 900;
@@ -47,6 +49,7 @@ h4 {
 h5 {
     font-family: "brandon-grotesque";
     font-weight: 600;
+    color: #192E10;
 }
 
 .subhead {
@@ -64,7 +67,7 @@ h6 {
     font-style: italic;
     font-size: small;
     color: #192E10;
-    margin: -12px 0;
+    margin:0;
 }
 
 p {
@@ -197,7 +200,7 @@ li {
     border: 2px;
     border-style: solid;
     box-sizing: border-box;
-  max-width: 325px;
+    max-width: 325px;
     font-family: "neuzeit-grotesk", sans-serif;
     font-weight: 900;
     font-size: 18px;
@@ -292,7 +295,6 @@ li {
     border-style: solid;
     border-width: .5px;
     transition: ease-in-out 300ms;
-
     box-shadow: #98989830 0 0 20px;
     /* padding: 32px;
     border-radius: 10px;
@@ -370,21 +372,21 @@ li {
     font-size: 16px;
     color: #f6f6f6;
     font-weight: 400;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     /* padding-right: 7.5em; */
 }
+
 .logo-grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 15vw;
 }
-.logo-grid img{
+
+.logo-grid img {
     width: 32px;
 }
-
-
 
 /* --------------------------------------------------Projects--------------------------------------------------
 -----------------------------------------------------Projects--------------------------------------------------
@@ -399,10 +401,12 @@ li {
     grid-template-areas: "go-create recycle-easy" "una-mesa uscis";
     margin-bottom: 40px;
 }
-.projects-image{
+
+.projects-image {
     max-width: 60%;
 }
-.projects-image1{
+
+.projects-image1 {
     max-width: 50%;
 }
 
@@ -416,17 +420,13 @@ li {
     border-radius: 20px;
     height: 420px;
     min-width: 300px;
-
     box-shadow: #98989830 0 0 20px;
-
     border-color: #192E1025;
     /* margin-bottom: 40px; */
 }
 
-
 .project-container p {
-   margin: 8px auto;
-
+    margin: 8px auto;
     max-width: 45ch;
 }
 
@@ -434,10 +434,9 @@ li {
     margin: 8px auto;
 }
 
-.project-container a{
+.project-container a {
     text-decoration: none;
     color: inherit;
-
 }
 
 .projects-item1 {
@@ -454,6 +453,40 @@ li {
 
 .projects-item4 {
     grid-area: uscis;
+}
+
+.carousel{
+    margin:16px 0;
+}
+.carousel-item img{
+    max-width: 16vw;
+}
+.carousel-indicators{
+    background-color: #026c02;
+    border-radius: 8px;
+    opacity: 75%;
+    margin: 0 40%
+}
+.carousel-item-flex{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding: 16px 0 56px 0
+}
+
+.carousel-control-next-icon {
+    background-color: #026c02;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 8px;
+  
+}
+
+.carousel-control-prev-icon {
+    background-color: #026c02;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 8px;
 }
 
 /* --------------------------------------------------Contact--------------------------------------------------
@@ -602,12 +635,12 @@ label {
 
 .individual-section {
     background: #FCF7F2;
-    padding: 56px 100px
+    padding: 56px 8vw
 }
 
 .individual-section2 {
     background: #FCF7F2;
-    padding: 40px 100px;
+    padding: 40px 8vw;
     margin: 24px 0;
 }
 
@@ -817,6 +850,24 @@ hr {
     max-width: 120px;
 }
 
+.gocreate-mini-persona{
+   
+    padding: 16px 0;
+    margin-bottom: 32px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: .5px;
+    border-color: #192E1025;
+    box-shadow: #98989830 0 0 20px;
+    background-color: #FCF7F2;
+}
+
+
+.gocreate-persona-text p{
+    font-size: .9em;
+    margin: 8px 0
+}
+
 .empathy-map-wrapper {
     display: flex;
     justify-content: center;
@@ -864,9 +915,9 @@ span {
     justify-content: space-evenly;
 }
 
-.sketches-container {
-    margin-top: 72px;
-    margin-bottom: 72px;
+.gocreate-sketches-container {
+    display: flex;
+    gap: 80px
 }
 
 .sketches-grid {
@@ -1047,7 +1098,7 @@ span {
 }
 
 .callout {
-    font-size:5vw;
+    font-size: 5vw;
     font-family: 'neuzeit-grotesk';
     font-weight: 900;
 }
@@ -1085,6 +1136,7 @@ span {
 
 .full-document-link {
     display: flex;
+    margin-left: auto;
 }
 
 .col-md-10 img {
@@ -1447,12 +1499,11 @@ _________________________________***Footer @<768px***____________________***Foot
         width: 100%;
         padding: 0;
     }
- 
     .logo-grid {
-    justify-content: space-evenly;
+        justify-content: space-evenly;
     }
-    .logo-grid img{
-        margin:16px
+    .logo-grid img {
+        margin: 16px
     }
     /* ___________________________***Home Screen <768***_______________***Home Screen <768***_________________________
 _________________________________***Home Screen <768***____________________***Home Screen <768***_______________________ */
@@ -1574,12 +1625,10 @@ _________________________________***PROJECTS <768***____________________***PROJE
     .projects-image {
         width: 85%;
     }
-
     .project-container {
         align-items: center;
         padding: 24px auto;
     }
- 
     /* ___________________________***  ABOUT  <768***_______________***  ABOUT  <768***_________________________
 _________________________________***  ABOUT  <768***____________________***  ABOUT  <768***_______________________ */
     .about-hero {
@@ -1779,10 +1828,10 @@ _________________________________***GoCreate Redesign <768***___________________
     }
     /* ___________________________***Recycle Easy <768***_______________***Recycle Easy <768***_________________________
 _________________________________***Recycle Easy <768***____________________***Recycle Easy <768***_______________________ */
-.individual-section2 {
-    padding: 40px 16px;
-}    
-.individual-section2 {
+    .individual-section2 {
+        padding: 40px 16px;
+    }
+    .individual-section2 {
         padding: 40px 16px;
     }
     .tools-logos img {
@@ -1797,49 +1846,45 @@ _________________________________***Recycle Easy <768***____________________***R
     .research-card-container {
         margin: 0;
     }
-    .research-stats{
+    .research-stats {
         margin-top: 24px;
     }
-    .callout-container{
+    .callout-container {
         padding: 16px 8px;
         margin: 0 4px;
     }
     .callout {
         font-size: 48px;
     }
-
-    .persona-area{
+    .persona-area {
         margin: 24px 4px 0 4px;
     }
-    .mini-persona{
+    .mini-persona {
         padding: 16px 8px;
-
         border-radius: 20px 20px 0 0;
     }
-.ideation-assets{
-    display: none;
-}
-
-.low-fi-asset-container{
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.asset-image{
-    max-width: 70vw;
-    margin: 10px auto;
-}
-
-.low-fi-assets{
-    margin: 0
-}
+    .ideation-assets {
+        display: none;
+    }
+    .low-fi-asset-container {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .asset-image {
+        max-width: 70vw;
+        margin: 10px auto;
+    }
+    .low-fi-assets {
+        margin: 0
+    }
     .low-fi-assets img {
         margin: 0;
     }
 }
-.wireframe{
+
+.wireframe {
     margin-top: 0;
 }
 
