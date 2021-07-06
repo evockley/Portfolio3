@@ -858,6 +858,13 @@ span {
     justify-content: space-between;
     margin-top: 72px;
 }
+
+.gif-area img{
+    margin: 24px 0;
+    box-shadow: lightgray 0 0 10px;
+    border-radius: 10px;
+
+}
 .testing img{
     margin-bottom: 24px;
     border-radius: 20px;
