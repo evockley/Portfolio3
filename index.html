@@ -9,6 +9,12 @@
 
     <link rel="stylesheet" href="https://use.typekit.net/nst2kjg.css">
     <link rel="stylesheet" href="https://use.typekit.net/nst2kjg.css">
+    <script>$(window).on("scrolldown", function () {
+        // $(".homeHeroButton").css("display", "none")
+        if($(document).scrollTop() > 200){
+            $('.homeHeroButton').css({'display': 'none'});
+          }
+        });</script>
 
     <title>Evan Vockley | UX Design </title>
 </head>
