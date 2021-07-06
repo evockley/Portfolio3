@@ -1061,8 +1061,6 @@ span {
     width: 100%;
 }
 
-
-
 .full-document-link {
     display: flex;
     align-items: center;
@@ -1153,6 +1151,98 @@ canvas {
     margin-top: 32px;
     box-shadow: lightgray 0 0 10px;
 }
+
+/* --------------------------------Una Mesa Redesign-------------------------------------
+-----------------------------------Una Mesa Redesign-------------------------------------
+-----------------------------------Una Mesa Redesign------------------------------------- */
+
+.unamesa-hero *{
+
+font-size: .9rem;
+}
+.unamesa-hero-flex{
+    margin-top: 56px;
+}
+.unamesa-hero-flex div{
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    width: 10vw;
+}
+.research-stat{
+    box-sizing: border-box;
+    padding: 3vw 2vw;
+    margin: 4vw 0;
+    font-size: 1.2em;
+}
+.research-stat p{
+    font-size: 1.2em;
+    margin:0;
+    padding:0;
+}
+.research-stat-1{
+    background: orange
+}
+.research-stat-2{
+    background: skyblue
+}
+
+.research-stat-3{
+    background: violet
+}
+.unamesa-quotes-and-affinity-map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.unamesa-quotes-and-affinity-map .quotable{
+    padding:0 40px;
+}
+
+.unamesa-research-artifacts img{
+    border-radius: 10px;
+    box-shadow: lightgray 0 0 10px;
+}
+.unamesa-navigation-grid{
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 2fr;
+    grid-template-areas: 
+    "projects-tab projects1-tab"
+    "projects-page projects1-page";
+ gap: 5%
+}
+.unamesa-navigation-grid *{margin:0
+}
+
+.projects-navbar{
+    grid-area: projects-tab;
+}
+.projects1-navbar{
+    grid-area: projects1-tab;
+}
+.projects-page{
+    grid-area: projects-page;
+}
+.projects1-page{
+    grid-area: projects1-page;
+}
+.unamesa-mockup-presentation .col-lg-6{
+    margin: 5vw 0;
+}
+
+.unamesa-hifi-nav-bar{
+    background: white;
+    box-shadow: lightgray 0 0 10px;
+    margin: 5vw 0;
+    border-radius: 10px;
+}
+.unamesa-hifi-nav-bar img{
+    margin: 1vw 0
+}
+
 
 /* --------------------------------------About------------------------------------- */
 
