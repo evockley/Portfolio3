@@ -1,3 +1,17 @@
+// DISAPPEARING HOME PAGE BUTTON ON SCROLL
+
+$(window).on("scrolldown", function () {
+    // $(".homeHeroButton").css("display", "none")
+    if($(document).scrollTop() > 100){
+        $('.homeHeroButton').css({'display': 'none'});
+      }
+    });
+    
+    
+
+
+// MENU HAMBURGER IN MOBILE VIEW
+
 $(".toggle").on("click", function () {
     $(".nav-item").css("display", "flex");
     $(".close").css("display", "flex");
@@ -9,6 +23,7 @@ $(".close").on("click", function () {
     $(".toggle").css("display", "flex");
     $(this).css("display", "none");
 });
+
 
 
 // RECYCLE EASY JOURNEY MAP / LINE GRAPH
@@ -30,7 +45,6 @@ var journeyMap = new Chart("journeyMap", {
             pointBorderColor: "#333",
             pointHoverBackgroundColor: "#333",
             pointHoverRadius: 18,
-
         }]
     },
     options: {
@@ -54,10 +68,5 @@ var journeyMap = new Chart("journeyMap", {
 backgroundColor: "#ffffff",
             }
         }
-
     }
-
 });
-
-
-//   RECYCLE EASY CAROUSEL
