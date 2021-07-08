@@ -926,7 +926,7 @@ span {
     transition: ease-in 250ms;
 }
 .CTA-instruction:focus{
-    border:solid #192E10 1px 
+    border:solid #192E10  
 }
 .CTA-instruction:hover{
     background-color: #192E1030
@@ -1036,16 +1036,25 @@ span {
     background-color: #33333310;
 }
 
-.card {
+.recyle-easy-research-card {
     border-radius: 20px;
     background-image: linear-gradient(#068806, #026c02);
     margin: 24px 10px;
+    padding: 8px;
     box-shadow: grey 0 0 10px;
+    min-width: 25%;
     flex: 1 0 50px
 }
 
-.card * {
-    display: inline;
+
+
+
+.recyle-easy-research-card p{
+margin-top: 4px;
+}
+
+
+.recyle-easy-research-card * {
     color: white;
 }
 
@@ -1162,6 +1171,15 @@ canvas {
 
 .ideation-assets {
     margin: 48px 0 24px 0;
+}
+
+.ideation-assets img{
+    box-shadow: lightgray 0 0 10px;
+    border-radius: 8px;
+}
+.ideation-assets2 img{
+    box-shadow: lightgray 0 0 10px;
+    border-radius: 8px;
 }
 
 .sketch-artifacts {
