@@ -10,9 +10,11 @@ body {
     padding: 0;
     max-width: 1600px;
 }
+
 /* -----------------------------------------------------TYPOGRAPHY------------------------------------------------------
 --------------------------------------------------------TYPOGRAPHY------------------------------------------------------
 --------------------------------------------------------TYPOGRAPHY------------------------------------------------------ */
+
 h1 {
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 900;
@@ -68,7 +70,7 @@ h6 {
     font-style: italic;
     font-size: small;
     color: #192E10;
-    margin:0;
+    margin: 0;
 }
 
 p {
@@ -435,7 +437,7 @@ li {
     margin: 8px auto;
 }
 
-.project-container img{
+.project-container img {
     max-width: 300px;
 }
 
@@ -460,19 +462,22 @@ li {
     grid-area: uscis;
 }
 
-.carousel{
-    margin:16px 0;
+.carousel {
+    margin: 16px 0;
 }
-.carousel-item img{
+
+.carousel-item img {
     max-width: 16vw;
 }
-.carousel-indicators{
+
+.carousel-indicators {
     background-color: #026c02;
     border-radius: 8px;
     opacity: 75%;
     margin: 0 40%
 }
-.carousel-item-flex{
+
+.carousel-item-flex {
     display: flex;
     justify-content: center;
     gap: 5%;
@@ -484,7 +489,6 @@ li {
     border-radius: 8px;
     margin: 8px;
     padding: 8px;
-  
 }
 
 .carousel-control-prev-icon {
@@ -502,10 +506,6 @@ li {
     padding-top: 8vh 3vw 48px 3vw;
     padding-bottom: 48px;
     background-color: #FCF7F2;
-}
-
-.contact-page{
-    height: 59vh
 }
 
 .contact-container {
@@ -574,7 +574,8 @@ li {
     min-width: 120px;
     padding-top: 0px;
 }
-.contact-page-button{
+
+.contact-page-button {
     display: none;
 }
 
@@ -660,7 +661,9 @@ label {
 }
 
 /* --------------------------------------GoCreate------------------------------------- */
+
 /* --------------------------------------GoCreate------------------------------------- */
+
 /* --------------------------------------GoCreate------------------------------------- */
 
 .gocreate-grid1 {
@@ -691,18 +694,22 @@ label {
 .grid1-right-side {
     grid-area: "right";
 }
-.Brief .col-lg-6{
-padding: 16px 2vw
-}
-.discovery .col-lg-6{
-      padding: 16px 2vw
-    }
-.definition .col-lg-6{
+
+.Brief .col-lg-6 {
     padding: 16px 2vw
 }
-.ideation .col-lg-6{
+
+.discovery .col-lg-6 {
     padding: 16px 2vw
-    }
+}
+
+.definition .col-lg-6 {
+    padding: 16px 2vw
+}
+
+.ideation .col-lg-6 {
+    padding: 16px 2vw
+}
 
 .headshots-wrapper {
     display: flex;
@@ -710,8 +717,8 @@ padding: 16px 2vw
     margin-top: 48px;
 }
 
-.interview-background{
-   padding: 8px 16px;
+.interview-background {
+    padding: 8px 16px;
     margin: 16px 0 0 0;
     border-radius: 10px;
     border-style: solid;
@@ -721,21 +728,24 @@ padding: 16px 2vw
     background-color: #FCF7F2;
 }
 
-.user-interviews{
-    display:flex;
+.user-interviews {
+    display: flex;
     align-items: center;
 }
-.user-interviews div{
-margin:16px 0
+
+.user-interviews div {
+    margin: 16px 0
 }
-.user-interviews img{
-max-width: 50%;
-min-width: 6vw;
+
+.user-interviews img {
+    max-width: 50%;
+    min-width: 6vw;
 }
-.user-interviews .quotable{
-font-size: .9em;
-margin:0;
-font-style: italic;
+
+.user-interviews .quotable {
+    font-size: .9em;
+    margin: 0;
+    font-style: italic;
 }
 
 .user-interview-headshots {
@@ -747,7 +757,7 @@ font-style: italic;
     max-width: 120px;
 }
 
-.gocreate-mini-persona{
+.gocreate-mini-persona {
     padding: 16px 0;
     margin-bottom: 32px;
     border-radius: 10px;
@@ -757,18 +767,19 @@ font-style: italic;
     box-shadow: #98989830 0 0 20px;
     background-color: #FCF7F2;
 }
-.QuentinMorrison{
+
+.QuentinMorrison {
     border-radius: 10px 0 10px 10px;
     box-shadow: lightgrey 0 0 10px;
 }
-.gocreate-persona-text{
+
+.gocreate-persona-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
-.gocreate-persona-text p{
+.gocreate-persona-text p {
     font-size: .9em;
     margin: 4px 0
 }
@@ -833,21 +844,25 @@ span {
     column-gap: 20px;
     row-gap: 16px;
 }
+
 .sketch-1 {
     grid-area: sketch-1;
     max-width: 750px;
     align-self: center;
 }
+
 .sketch-2 {
     grid-area: sketch-2;
     max-width: 425px;
     align-self: center;
 }
+
 .sketch-3 {
     grid-area: sketch-3;
     max-width: 425px;
     align-self: center;
 }
+
 .wireframe-images {
     width: 45%;
 }
@@ -859,29 +874,28 @@ span {
     margin-top: 72px;
 }
 
-.gif-area img{
+.gif-area img {
     margin: 24px 0;
     box-shadow: lightgray 0 0 10px;
     border-radius: 10px;
-
 }
-.testing img{
+
+.testing img {
     margin-bottom: 24px;
     border-radius: 20px;
     box-shadow: lightgray 0 0 10px;
-
 }
 
-.testing .col-lg-4{
+.testing .col-lg-4 {
     padding: 1.5vw
 }
 
-.testing p{
+.testing p {
     font-size: .9em;
     margin: 2vh 0;
 }
 
-.testing .quotable{
+.testing .quotable {
     margin-top: 24px;
 }
 
@@ -905,6 +919,33 @@ span {
     margin-top: 32px;
     width: 350px;
 }
+.CTA-instruction {
+    margin-bottom: 8px;
+    background-color: #192E1010;
+    border-radius: 10px;
+    transition: ease-in 250ms;
+}
+.CTA-instruction:focus{
+    border:solid #192E10 1px 
+}
+.CTA-instruction:hover{
+    background-color: #192E1030
+}
+.CTA-instruction p{
+    margin:8px 16px 4px 16px;
+}
+.CTA-instruction img{
+    box-shadow: none;
+    max-height: 16px;
+}
+
+.CTA-instruction-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35% 0 0 ;
+}
+
 
 .more-work-grid {
     display: grid;
@@ -938,7 +979,8 @@ span {
     margin: 0;
     padding: 0;
 }
-.recycle-easy-hero-highlight{
+
+.recycle-easy-hero-highlight {
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -948,16 +990,18 @@ span {
     border-top: solid #06880660;
     border-width: .5px;
 }
-.recycle-easy-hero-highlight-items{
+
+.recycle-easy-hero-highlight-items {
     display: flex;
     flex-direction: column;
     margin: 8px 0 5px 0;
-   
 }
+
 .recycle-easy-hero-highlight h6 {
     margin: 0 0 2px 0;
     padding: 0;
 }
+
 .recycle-easy-hero-highlight p {
     font-size: .9em;
     margin: 0;
@@ -973,10 +1017,11 @@ span {
     margin-left: 10%;
 }
 
-.tools-logos{
+.tools-logos {
     display: flex;
     margin: 0
 }
+
 .tools-logos img {
     margin: 0 8px 0 0;
     max-height: 18px;
@@ -1010,7 +1055,7 @@ span {
     font-weight: 900;
     font-size: larger;
     border-radius: 8px;
-    margin:0;
+    margin: 0;
 }
 
 .callout-container {
@@ -1174,93 +1219,105 @@ canvas {
 -----------------------------------Una Mesa Redesign-------------------------------------
 -----------------------------------Una Mesa Redesign------------------------------------- */
 
-.unamesa-hero *{
-
-font-size: .9rem;
+.unamesa-hero * {
+    font-size: .9rem;
 }
-.unamesa-hero-flex{
+
+.unamesa-hero-flex {
     margin-top: 56px;
 }
-.unamesa-hero-flex div{
+
+.unamesa-hero-flex div {
     display: flex;
     justify-content: space-between;
     margin-right: auto;
     width: 10vw;
 }
-.research-stat{
+
+.research-stat {
     box-sizing: border-box;
     padding: 3vw 2vw;
     margin: 4vw 0;
     font-size: 1.2em;
 }
-.research-stat p{
+
+.research-stat p {
     font-size: 1.2em;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
-.research-stat-1{
+
+.research-stat-1 {
     background: orange
 }
-.research-stat-2{
+
+.research-stat-2 {
     background: skyblue
 }
 
-.research-stat-3{
+.research-stat-3 {
     background: violet
 }
-.unamesa-quotes-and-affinity-map{
+
+.unamesa-quotes-and-affinity-map {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.unamesa-quotes-and-affinity-map .quotable{
-    padding:0 40px;
+
+.unamesa-quotes-and-affinity-map .quotable {
+    padding: 0 40px;
 }
 
-.unamesa-research-artifacts img{
+.unamesa-research-artifacts img {
     border-radius: 10px;
     box-shadow: lightgray 0 0 10px;
 }
-.unamesa-navigation-grid{
+
+.unamesa-navigation-grid {
     margin: 40px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .5fr 2fr;
-    grid-template-areas: 
-    "projects-tab projects1-tab"
-    "projects-page projects1-page";
- gap: 5%
-}
-.unamesa-navigation-grid *{margin:0
+    grid-template-areas: "projects-tab projects1-tab" "projects-page projects1-page";
+    gap: 5%
 }
 
-.projects-navbar{
+.unamesa-navigation-grid * {
+    margin: 0
+}
+
+.projects-navbar {
     grid-area: projects-tab;
 }
-.projects1-navbar{
+
+.projects1-navbar {
     grid-area: projects1-tab;
 }
-.projects-page{
+
+.projects-page {
     grid-area: projects-page;
 }
-.projects1-page{
+
+.projects1-page {
     grid-area: projects1-page;
 }
-.unamesa-mockup-presentation .col-lg-6{
+
+.unamesa-mockup-presentation .col-lg-6 {
     margin: 5vw 0;
 }
 
-.unamesa-hifi-nav-bar{
+.unamesa-hifi-nav-bar {
     background: white;
     box-shadow: lightgray 0 0 10px;
     margin: 5vw 0;
     border-radius: 10px;
 }
-.unamesa-hifi-nav-bar img{
+
+.unamesa-hifi-nav-bar img {
     margin: 1vw 0
 }
-
 
 /* --------------------------------------About------------------------------------- */
 
@@ -1375,12 +1432,22 @@ font-size: .9rem;
 .tool-logos {
     grid-area: logos;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    max-height: fit-content;
+    margin: 0 25%;
+    padding: 16px 0;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: .5px;
+    box-shadow: #98989830 0 0 20px;
+    border-color: #192E1025;
 }
 
 .tool-logo-child {
     max-width: 40px;
+    padding: 3%
 }
 
 /* ______________________________Learning Now section_______________________________ */
@@ -1596,8 +1663,6 @@ _________________________________***CONTACT <768***____________________***CONTAC
         padding-left: 8px;
         padding-right: 8px;
     }
- 
-
     .contact-container {
         margin: 24px 0;
         max-width: 100vw;
@@ -1655,13 +1720,11 @@ _________________________________***PROJECTS <768***____________________***PROJE
     }
     /* ___________________________***  ABOUT  <768***_______________***  ABOUT  <768***_________________________
 _________________________________***  ABOUT  <768***____________________***  ABOUT  <768***_______________________ */
-    
-.about-section {
-    padding: 1vh 3vw 48px 3vw;
-    background-color: #FCF7F2;
-}
-
-.about-hero {
+    .about-section {
+        padding: 1vh 3vw 48px 3vw;
+        background-color: #FCF7F2;
+    }
+    .about-hero {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 60px 274px 1fr .7fr;
@@ -1700,8 +1763,6 @@ _________________________________***  ABOUT  <768***____________________***  ABO
         grid-template-rows: 60px .75fr .75fr .75fr;
         grid-template-areas: "tools-heading" "logos" "p1" "p2";
     }
-
-
     .learning-now-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -1783,23 +1844,19 @@ _________________________________***GoCreate Redesign <768***___________________
         align-items: center;
         margin: 16px 0;
     }
-
-    .user-interviews img{
+    .user-interviews img {
         max-width: 20vw;
     }
     .headshot {
         width: 120px;
         height: 120px;
     }
-.gocreate-mini-persona .col-lg-4{
-    margin: 16px 0;
-
-}
-.full-document-link{
-    margin-top: 16px;
-}
-
-    
+    .gocreate-mini-persona .col-lg-4 {
+        margin: 16px 0;
+    }
+    .full-document-link {
+        margin-top: 16px;
+    }
     /* ___________________________***Recycle Easy <768***_______________***Recycle Easy <768***_________________________
 _________________________________***Recycle Easy <768***____________________***Recycle Easy <768***_______________________ */
     .individual-section2 {
@@ -1822,8 +1879,8 @@ _________________________________***Recycle Easy <768***____________________***R
         display: flex;
         flex-direction: column;
     }
-    .card{
-        margin: 8px 0 
+    .card {
+        margin: 8px 0
     }
     .callout-container {
         padding: 16px 8px;
