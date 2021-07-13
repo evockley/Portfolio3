@@ -75,3 +75,51 @@ backgroundColor: "#ffffff",
         }
     }
 });
+
+
+
+// ____________________________Una Mesa____________________________
+
+
+var xValues = [1, 2, 3, 4, 5, 6, 7, 8];
+var yValues = [5, 4, 5, 3, 5, 6, 7, 8]
+var journeyMap = new Chart("SharonsjourneyMap", {
+    type: "line",
+    data: {
+        labels: ["Step 1", "Step 2", "Step 3", "Step 4", "Step 5", "Step 6", "Step 7", "Step 8"],
+        datasets: [{
+            label: "Sharon's Journey",
+            backgroundColor: "#33333310",
+            borderColor: "#333",
+            data: yValues,
+            lineTension: 0.2,
+            pointRadius: 8,
+            pointBackgroundColor: "#7CA3DF",
+            pointBorderColor: "#333",
+            pointHoverBackgroundColor: "#333",
+            pointHoverRadius: 18,
+        }]
+    },
+    options: {
+
+        scales: {
+            yAxes: [{
+                ticks: {
+                    fontColor: "#192E1080",
+                    beginAtZero: true,
+                }
+            }],
+            xAxes: [{
+                ticks: {
+
+                    fontColor: "#192E1080",
+                }
+            }]
+        },
+        plugins: {
+            tooltip: {
+backgroundColor: "#ffffff",
+            }
+        }
+    }
+});
