@@ -6,8 +6,8 @@
 //         $('.homeHeroButton').css({'display': 'none'});
 //       }
 //     });
-    
-    
+
+
 
 
 // MENU HAMBURGER IN MOBILE VIEW
@@ -27,6 +27,58 @@ $(".close").on("click", function () {
 //_________________________________GOCREATE_______________________________
 //_________________________________GOCREATE_______________________________
 //_________________________________GOCREATE_______________________________
+var xValues = [1, 2, 3, 4, 5, 6, 7, 8];
+var yValues = [8, 2, 6, 5, 7, 6, 9, 10]
+var journeyMap = new Chart("quentinsJourneyMap", {
+    type: "line",
+    data: {
+        labels: ["Step 1", "Step 2", "Step 3", "Step 4", "Step 5", "Step 6", "Step 7", "Step 8"],
+        datasets: [{
+            label: 'Submitting an Order',
+            backgroundColor: "#33333310",
+            borderColor: "#333",
+            data: yValues,
+            lineTension: 0.2,
+            pointRadius: 8,
+            pointBackgroundColor: "#423AC4",
+            pointBorderColor: "#333",
+            pointHoverBackgroundColor: "#333",
+            pointHoverRadius: 18,
+        }]
+    },
+    options: {
+        legend: {
+            labels: {
+                color: "#192E10",
+                boxWidth: 0,
+            },
+        },
+        scales: {
+            yAxes: [{
+                gridLines: {
+                    display: false,
+                },
+                ticks: {
+                    fontColor: "#192E1080",
+                    beginAtZero: true,
+                }
+            }],
+            xAxes: [{
+                gridLines: {
+                    display: false,
+                },
+                ticks: {
+                    fontColor: "#192E1080",
+                }
+            }]
+        },
+        plugins: {
+            tooltip: {
+                backgroundColor: "#ffffff",
+            }
+        }
+    }
+});
 
 
 
@@ -35,7 +87,7 @@ $(".close").on("click", function () {
 
 var xValues = [1, 2, 3, 4, 5, 6, 7, 8];
 var yValues = [8, 2, 6, 5, 7, 6, 9, 10]
-var journeyMap = new Chart("journeyMap", {
+var journeyMap = new Chart("samanthasJourneyMap", {
     type: "line",
     data: {
         labels: ["Step 1", "Step 2", "Step 3", "Step 4", "Step 5", "Step 6", "Step 7", "Step 8"],
@@ -53,24 +105,34 @@ var journeyMap = new Chart("journeyMap", {
         }]
     },
     options: {
-
+        legend: {
+            labels: {
+                color: "#192E10",
+                boxWidth: 0,
+            },
+        },
         scales: {
             yAxes: [{
+                gridLines: {
+                    display: false,
+                },
                 ticks: {
                     fontColor: "#192E1080",
                     beginAtZero: true,
                 }
             }],
             xAxes: [{
+                gridLines: {
+                    display: false,
+                },
                 ticks: {
-
                     fontColor: "#192E1080",
                 }
             }]
         },
         plugins: {
             tooltip: {
-backgroundColor: "#ffffff",
+                backgroundColor: "#ffffff",
             }
         }
     }
@@ -101,11 +163,13 @@ var journeyMap = new Chart("SharonsjourneyMap", {
         }]
     },
     options: {
-legend:{
-    labels:{fontColor: "#192E10",
-boxWidth: 0,}
+        legend: {
+            labels: {
+                fontColor: "#192E10",
+                boxWidth: 0,
+            }
 
-},
+        },
         scales: {
             yAxes: [{
                 gridLines: {
@@ -127,7 +191,7 @@ boxWidth: 0,}
         },
         plugins: {
             tooltip: {
-backgroundColor: "#ffffff",
+                backgroundColor: "#ffffff",
             }
         }
     }
