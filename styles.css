@@ -232,6 +232,27 @@ a:hover{
     border-color: #16b4ed;
 }
 
+.disabled{
+    background-color: #b0c4de20;
+    border-color: #b0c4de20;
+    color: #80808070;
+    border: 2px;
+    border-radius: 8px;
+    border-style: solid;
+    box-sizing: border-box;
+    max-width: 325px;
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: .08em;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transition: ease-in .2s;
+    cursor: pointer;
+}
+
 /* ---------------------------Home---------------------------
 ------------------------------Home---------------------------
 ------------------------------Home--------------------------- */
@@ -1165,7 +1186,11 @@ margin-top: 4px;
 }
 
 canvas {
-    margin-bottom: 24px;
+    margin-bottom: 3vh;
+}
+
+.una-mesa-uxscenario{
+    margin-bottom: 4vh;
 }
 
 .journey-map-area {
@@ -1397,6 +1422,13 @@ padding-bottom: 16px ;
 .UnaMesaIdeation{
     margin: 4vh 0
 }
+.abTesting{
+    display: flex;
+    align-items: center;
+}
+.abTestingHeader{
+    margin-top: 40px;
+}
 
 
 
@@ -1407,13 +1439,11 @@ padding-bottom: 16px ;
 .unamesa-hifi-nav-bar {
     background: white;
     box-shadow: lightgray 0 0 10px;
-    margin: 5vw 0;
+    margin: 0;
     border-radius: 10px;
 }
 
-.unamesa-hifi-nav-bar img {
-    margin: 1vw 0
-}
+
 
 /* --------------------------------------About------------------------------------- */
 

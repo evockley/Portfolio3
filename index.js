@@ -101,17 +101,26 @@ var journeyMap = new Chart("SharonsjourneyMap", {
         }]
     },
     options: {
+legend:{
+    labels:{fontColor: "#192E10",
+boxWidth: 0,}
 
+},
         scales: {
             yAxes: [{
+                gridLines: {
+                    display: false,
+                },
                 ticks: {
                     fontColor: "#192E1080",
                     beginAtZero: true,
                 }
             }],
             xAxes: [{
+                gridLines: {
+                    display: false,
+                },
                 ticks: {
-
                     fontColor: "#192E1080",
                 }
             }]
