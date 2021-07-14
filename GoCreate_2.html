@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <link rel="stylesheet" href="https://use.typekit.net/nst2kjg.css">
+    <link rel="icon" type="image/png" href="images/Portfolio_logo.png">
     <title>GoCreate Case Study</title>
 </head>
 
@@ -35,8 +36,8 @@
                     <a href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a
-                        href="https://drive.google.com/file/d/1MVokOCAGtlZCnvX1BTowjX9CYymOVWI0/view?usp=sharing">Resume</a>
+                    <a href="https://drive.google.com/file/d/1MVokOCAGtlZCnvX1BTowjX9CYymOVWI0/view?usp=sharing"
+                        target="_blank">Resume</a>
                 </li>
                 <li class="toggle">
                     <img src="images/menu-icon.png" alt="Menu" width="28px"></a>
@@ -155,7 +156,7 @@
                 <p>Interviews taught me that users felt demotivated and stressed by the application. The excessive time
                     it
                     took to submit orders and the unintuitive interface felt like a punishment for making sales.</p>
-                <p>Imagine how that affected sales.</p>
+                <p>Imagine how that affected performance.</p>
             </div>
             <!-- <div class="col-lg-1"></div> -->
             <div class="col-lg-6">
@@ -196,40 +197,52 @@
 
         <div class="row gocreate-mini-persona">
             <div class="col-lg-4">
-                <img class="QuentinMorrison" src="images/GoCreate/QuentinMorrison1.jpg"
-                    alt="User Persona Photo" width="100%">
+                <img class="QuentinMorrison" src="images/GoCreate/QuentinMorrison1.jpg" alt="User Persona Photo"
+                    width="100%">
             </div>
-            <!-- <div class="col-lg-1"></div> -->
-            <div class="col-lg-4 gocreate-persona-text">
+
+            <div class="col-lg-4 quentinColumn">
                 <div>
                     <h5>Quentin Morrison</h5>
                     <p>59, M</p>
                     <p>Occupation: Fashion Sales</p>
                     <p>Experience: 30 years</p>
                 </div>
-                <div>
+                <div class="quentinColumn">
                     <h5>Bio</h5>
-                    <p>Quentin’s got an unorthodox way of doing things, but it works. He has a habit of meeting
+                    <p>Quentin’s got an unorthodox way of doing things, but it's always worked. He has a habit of
+                        meeting
                         prospective clients around the city and making lifelong friends as well as loyal clients. His
-                        clients love him and are eager to
-                        see him. He’s worried that mistakes might strain those relationships, though.</p>
+                        clients love him and are eager to see him. He’s worried that mistakes might strain those
+                        relationships, though.</p>
+                        
+                    <p>He's feeling left behind with the new order system and is starting to feel like all his
+                        years of experience don't mean anything. The challenging interface creates problems that cause beginner level errors.</p>
                 </div>
             </div>
-            <div class="col-lg-4 gocreate-persona-text">
+            <div class="col-lg-4 quentinColumn">
                 <div>
                     <h5>Needs</h5>
-                    <p>• More confidence in order system</p>
-                    <p>• A system that reflects his experience</p>
+                    <ul>
+                        <li>More confidence in order system</li>
+                        <li>To submit orders quickly</li>
+                        <li>A system that reflects his experience</li>
+                    </ul>
                 </div>
                 <div>
                     <h5>Goals</h5>
-                    <p>• Delivering world class service</p>
+                    <ul>
+                        <li> To not have to work so hard on the back end of his job</li>
+                        <li> To focus on delivering world-class customer service</li>
+                    </ul>
                 </div>
                 <div>
                     <h5>Frustrations</h5>
-                    <p>• Information is not grouped logically</p>
-                    <p>• Can be difficult to get help</p>
-                    <p>• "Checking, double-checking, triple-checking take so much time."</p>
+                    <ul>
+                        <li>Information is not grouped logically</li>
+                        <li>Can be difficult to get help</li>
+                        <li>Checking, double-checking, and triple-checking take so much time.</li>
+                    </ul>
                 </div>
                 <div class="full-document-link">
                     <a href="https://drive.google.com/file/d/1XCJla4tJ1Qf0jdq3tlEoCx8rHJRTJSG6/view?usp=sharing"
@@ -249,8 +262,7 @@
                     weight.
                 </p>
                 <p>Quentin wanted to get this order right because he takes pride in his work, but also because there
-                    were
-                    multiple sales on the line.</p>
+                    were multiple sales on the line.</p>
             </div>
             <div class="col-lg-6 quentinsJourney">
                 <canvas id="quentinsJourneyMap"></canvas>
@@ -266,7 +278,7 @@
             <div class="col-lg-6">
                 <h4>Problem Statement</h4>
                 <p>Custom clothing salespeople who are busy and distracted need a way to communicate complex client
-                    orders quickly, accurately, and easily. </p>
+                    orders quickly, accurately, and easily.</p>
             </div>
             <div class="col-lg-6">
                 <h4>Hypothesis</h4>
@@ -281,9 +293,8 @@
         <h2>Ideation</h2>
         <div class="row">
             <div class="col-lg-6">
-                <p>The User Flow was iterated based on feedback from users. My initial attempt at a user flow included
-                    fewer
-                    screens as that was one of the main pain points from users. I created </p>
+                <p>I iterated the User Flow after helpful feedback from users. My initial attempt at a user flow included
+                    fewer screens as that was one of the original pain points. </p>
                 <p>I learned that the number of screens wasn’t really the issue. Users were happy to interact with more
                     screens if there was less to do on each and fewer opportunities for error. </p>
             </div>
@@ -336,7 +347,7 @@
                     employee. Now, rather than going to a back office and entering orders, users were expected to
                     enter orders on their mobile devices.</p>
                 <p>This presented a new set of problems. In addition to the challenging interface, users needed to
-                    interact with it on a device with a smaller screen (no, it wasn’t responsive design), and with
+                    interact with it on a device with a smaller screen (no, it wasn’t responsive), and with
                     added disctractions to their workflow.</p>
                 <p>I needed to come up with a new solution.</p>
             </div>
@@ -455,14 +466,16 @@
                 </p>
             </div>
             <div class="col-lg-1"></div>
-            <div class="col-lg-6 home-item order-CTA">
+            <div class="col-lg-6  order-CTA">
                 <h4> <span> Think you have what it takes?</span></h4>
                 <p>Walk in Quentin's shoes and try submitting an order for John Smith!</p>
                 <div class="CTA-instruction CTA-instruction1">
                     <p> <span> Step one:</span></p>
                     <div class="CTA-instruction-link">
                         <a href="https://xd.adobe.com/view/99dad962-93d1-4e9e-9aa0-eab9644598d2-cc89/?hints=off"
-                    target="_blank"> <p>Open Quentin's notes</p> </a>
+                            target="_blank">
+                            <p>Open Quentin's notes</p>
+                        </a>
                         <img src="images/Twirly Arrow.png" alt="">
                     </div>
                 </div>
@@ -470,7 +483,9 @@
                     <p><span> Step two:</span></p>
                     <div class="CTA-instruction-link">
                         <a href="https://xd.adobe.com/view/99dad962-93d1-4e9e-9aa0-eab9644598d2-cc89/?hints=off"
-                        target="_blank"> <p>Enter John Smith's Order</p> </a>
+                            target="_blank">
+                            <p>Enter John Smith's Order</p>
+                        </a>
                         <img src="images/Twirly Arrow.png" alt="">
                     </div>
                 </div>
@@ -497,10 +512,13 @@
 
             </div>
             <div>
-                <div class="more-work-grid-item"><img src="images/Una-Mesa-Mockup.png" alt="Una Mesa Mockup"
-                        width="70%"></div>
+                <div class="more-work-grid-item">
+                    <a href="una-mesa.html">
+                        <img src="images/Una-Mesa-Mockup.png" alt="Una Mesa Mockup" width="70%">
+                </div>
                 <div>
                     <h4>Una Mesa</h4>
+                    </a>
                 </div>
 
             </div>
@@ -508,7 +526,7 @@
             <div class="more-work-grid-item">
                 <div><img src="images/USCIS-mobile-home-mockup.png" alt="USCIS Mockup" width="80%"></div>
                 <div>
-                    <h4>USCIS</h4>
+                    <h4>USCIS <span style="opacity: 70%">Coming Soon!</span></h4>
                 </div>
 
             </div>
@@ -550,11 +568,12 @@
         </div>
     </footer>
 
-  
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
 <script src="index.js"></script>
+
 </html>

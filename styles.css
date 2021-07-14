@@ -10,7 +10,9 @@ body {
     padding: 0;
     max-width: 1600px;
 }
-
+.row{
+    max-width: 1200px;
+}
 /* -----------------------------------------------------TYPOGRAPHY------------------------------------------------------
 --------------------------------------------------------TYPOGRAPHY------------------------------------------------------
 --------------------------------------------------------TYPOGRAPHY------------------------------------------------------ */
@@ -797,23 +799,32 @@ label {
     border-color: #192E1025;
     box-shadow: #98989830 0 0 20px;
     background-color: #FCF7F2;
+    
 }
 
 .QuentinMorrison {
     border-radius: 10px 0 10px 10px;
     box-shadow: lightgrey 0 0 10px;
+
+  
 }
 
-.gocreate-persona-text {
+.quentinColumn {
     display: flex;
+    padding-top: 16px;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-around; */
 }
 
-.gocreate-persona-text p {
-    font-size: .9em;
+.quentinColumn p {
+    font-size: .95em;
     margin: 4px 0
 }
+.quentinColumn li {
+    font-size: .95em;
+    margin: 4px 0
+}
+
 
 
 
@@ -952,17 +963,17 @@ span {
     margin-top: 32px;
     width: 350px;
 }
+
+
 .CTA-instruction {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     background-color: #192E1010;
     border-radius: 10px;
     transition: ease-in 250ms;
 }
-.CTA-instruction:focus{
-    border:solid #192E10  
-}
+
 .CTA-instruction:hover{
-    background-color: #192E1030
+    background-color: #192E1025
 }
 .CTA-instruction p{
     margin:8px 16px 4px 16px;
@@ -1001,6 +1012,8 @@ span {
 .more-work-grid a {
     text-decoration: none;
 }
+
+
 
 /* --------------------------------------Recycle Easy------------------------------------- */
 
