@@ -13,16 +13,16 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <!-- Hotjar Tracking Code for www.evanvockley.xyz -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2504876,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2504876, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
 
     <link rel="stylesheet" href="https://use.typekit.net/nst2kjg.css">
     <link rel="icon" type="image/png" href="images/Portfolio_logo.png">
@@ -64,8 +64,8 @@
         <h1>GoCreate</h1>
         <h5>Enterprise App</h5>
         <div class="row">
-            <div class="col-lg-6">
-                <img src="images/GoCreate-Order-Basics.png" alt="GoCreate Hero Image">
+            <div class="col-lg-6 col-sm1">
+                <img class ="GoCreateHeroImage" src="images/GoCreate-Order-Basics.png" alt="GoCreate Hero Image" width="100%">
                 <div>
                     <h5>Team</h5>
                     <p>Solo</p>
@@ -84,6 +84,7 @@
                     </div>
                 </div>
             </div>
+            <!-- <div class="col-lg-1"></div> -->
             <div class="col-lg-6 gocreateHero">
                 <div>
                     <h3>What is This?</h3>
@@ -226,9 +227,10 @@
                         prospective clients around the city and making lifelong friends as well as loyal clients. His
                         clients love him and are eager to see him. He’s worried that mistakes might strain those
                         relationships, though.</p>
-                        
+
                     <p>He's feeling left behind with the new order system and is starting to feel like all his
-                        years of experience don't mean anything. The challenging interface creates problems that cause beginner level errors.</p>
+                        years of experience don't mean anything. The challenging interface creates problems that cause
+                        beginner level errors.</p>
                 </div>
             </div>
             <div class="col-lg-4 quentinColumn">
@@ -304,7 +306,8 @@
         <h2>Ideation</h2>
         <div class="row">
             <div class="col-lg-6">
-                <p>I iterated the User Flow after helpful feedback from users. My initial attempt at a user flow included
+                <p>I iterated the User Flow after helpful feedback from users. My initial attempt at a user flow
+                    included
                     fewer screens as that was one of the original pain points. </p>
                 <p>I learned that the number of screens wasn’t really the issue. Users were happy to interact with more
                     screens if there was less to do on each and fewer opportunities for error. </p>
@@ -512,34 +515,35 @@
         <div>
             <h3>More Work</h3>
         </div>
-        <div class="more-work-grid">
-            <div class="more-work-grid-item">
-                <div><a href="recycle-easy.html">
-                        <img src="images/RecycleEasy-User-Flow.png" alt="Recycle Easy User Flow" width="70%"></div>
-                <div>
-                    <h4>Recycle Easy</h4>
-                    </a>
-                </div>
+        <div class="more-work-flex">
 
-            </div>
-            <div>
-                <div class="more-work-grid-item">
-                    <a href="una-mesa.html">
-                        <img src="images/Una-Mesa-Mockup.png" alt="Una Mesa Mockup" width="70%">
-                </div>
-                <div>
-                    <h4>Una Mesa</h4>
-                    </a>
-                </div>
-
+            <div class="more-work-item more-work-1">
+                <a href="recycle-easy.html">
+                    <div><img src="images/RecycleEasy-User-Flow.png" alt="Recycle Easy User Flow" ></div>
+                    <div>
+                        <h4>Recycle Easy</h4>
+                    </div>
+                </a>
             </div>
 
-            <div class="more-work-grid-item">
-                <div><img src="images/USCIS-mobile-home-mockup.png" alt="USCIS Mockup" width="80%"></div>
+
+            <div class="more-work-item more-work-2">
+                <a href="una-mesa.html">
+                    <div><img src="images/Una-Mesa-Mockup.png" alt="Una Mesa Mockup" ></div>
+                    <div>
+                        <h4>Una Mesa</h4>
+                    </div>
+                </a>
+            </div>
+
+
+
+
+            <div class="more-work-item more-work-3">
+                <div><img src="images/USCIS-mobile-home-mockup.png" alt="USCIS Mockup" ></div>
                 <div>
                     <h4>USCIS <span style="opacity: 70%">Coming Soon!</span></h4>
                 </div>
-
             </div>
 
 

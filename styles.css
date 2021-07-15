@@ -701,6 +701,10 @@ label {
 /* --------------------------------------GoCreate------------------------------------- */
 
 /* --------------------------------------GoCreate------------------------------------- */
+.GoCreateHeroImage{
+    min-width: 50%;
+}
+
 
 .gocreate-grid1 {
     margin: 32px 0 0 0;
@@ -989,22 +993,39 @@ span {
     padding: 0 35% 0 0;
 }
 
-.more-work-grid {
+.more-work-flex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "more-work-1 more-work-2 more-work-3" ;
+    gap: 2vw
 }
 
-.more-work-grid-item {
+.more-work-item {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
+.more-work-item img{
 
-.more-work-grid h4 {
+     max-width: 200px;
+}
+.more-work-1{
+    grid-area:"more-work-1";
+}
+.more-work-2{ 
+    grid-area:"more-work-2";
+}
+.more-work-3{
+    grid-area:"more-work-3";
+}
+
+.more-work-flex h4 {
     font-size: 1.3em;
-    margin-top: 24px;
+    margin-top: 2vh;
     font-weight: 500;
+    text-align: left;
 }
 
 .more-work-grid a {
@@ -1711,7 +1732,7 @@ _________________________________MEDIA QUERIES____________________MEDIA QUERIES_
     }
     .primary-button {
         font-size: 1.15em;
-        width: 295px;
+        width: 250px;
         letter-spacing: .1em;
     }
     .secondary-button {
@@ -1849,6 +1870,34 @@ _________________________________***Featured Section <768***____________________
         padding-right: 0px;
         font-size: smaller;
     }
+
+/* _________________________________________________MORE WORK_____________________
+____________________________________________________MORE WORK_____________________
+____________________________________________________MORE WORK_____________________ */
+
+.more-work-flex{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "more-work-1" "more-work-2" "more-work-3";
+    justify-content: center;
+}
+.more-work-item{
+    display: flex;
+    flex-direction:column ;
+
+justify-content: center;
+margin: 0 25%
+}
+.more-work-item img{
+    width: 100%
+}
+.more-work-item h4{
+    text-align: center;
+}
+
+
     /* ___________________________***CONTACT <768***_______________***CONTACT <768***_________________________
 _________________________________***CONTACT <768***____________________***CONTACT <768***_______________________ */
     .standard-section {
@@ -1981,6 +2030,7 @@ _________________________________***GoCreate Redesign <768***___________________
         background: #FCF7F2;
         padding: 10px 3vw
     }
+    
     .gocreate-grid1 {
         margin: 32px 0 0 0;
         display: grid;
