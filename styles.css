@@ -8,7 +8,6 @@ body {
     width: vw;
     margin: 0;
     padding: 0;
-    max-width: 1600px;
 }
 
 .row {
@@ -395,7 +394,7 @@ a:hover {
 -------------------------Footer---------------------- */
 
 .footer {
-    background-image: linear-gradient(180deg, #192E10, #091503);
+    background: transparent;
     background-repeat: no-repeat;
     width: vw;
     display: flex;
@@ -1492,6 +1491,7 @@ canvas {
     column-gap: 72px;
     row-gap: 0px;
     margin-top: 32px;
+    max-width: 1600px;
 }
 
 #bio-heading {
@@ -1511,8 +1511,8 @@ canvas {
     width: 100%;
     justify-content: right;
     align-self: center;
+    max-width: 90%;
 }
-
 .skills-section {
     background-image: linear-gradient(180deg, #192E10, #091503);
     background-repeat: no-repeat;
