@@ -433,11 +433,11 @@ a:hover {
 #projects-page-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 3%;
-    row-gap: 3%;
-    grid-template-areas: "go-create recycle-easy" "una-mesa uscis";
-    margin-bottom: 40px;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 3vw;
+    row-gap: 3vw;
+    grid-template-areas: "go-create recycle-easy" "una-mesa uscis" "kinfolk kinfolk";
+    margin-bottom: 2vw;
 }
 
 .projects-image {
@@ -458,6 +458,7 @@ a:hover {
     border-radius: 20px;
     height: 430px;
     min-width: 300px;
+    max-width: 38vw;
     box-shadow: #98989830 0 0 20px;
     border-color: #192E1025;
     /* margin-bottom: 40px; */
@@ -495,6 +496,9 @@ a:hover {
 
 .projects-item4 {
     grid-area: uscis;
+}
+.projects-item5 {
+    grid-area: kinfolk;
 }
 
 .carousel {
