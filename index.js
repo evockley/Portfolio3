@@ -1,12 +1,20 @@
 // DISAPPEARING HOME PAGE BUTTON ON SCROLL
 
-// $(window).on("scrolldown", function () {
-//     // $(".homeHeroButton").css("display", "none")
-//     if($(document).scrollTop() > 100){
-//         $('.homeHeroButton').css({'display': 'none'});
-//       }
-//     });
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 150) {
+      $('.homeHeroButton').css ("visibility", "hidden");
+    } else {
+      $('.homeHeroButton').css ("visibility", "visible");
+    }
+  });
 
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 700) {
+      $('.myLogo').css ("visibility", "hidden");
+    } else {
+      $('.myLogo').css ("visibility", "visible");
+    }
+  });
 
 
 
