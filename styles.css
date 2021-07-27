@@ -1507,13 +1507,12 @@ canvas {
 
 /* --------------------------------------KINFOLK------------------------------------- */
 
-
-.kinfolk-hero-image{
-padding: 0 8vw
+.kinfolk-hero-image {
+    padding: 0 8vw
 }
 
-.kinfolk-hero p{
-font-size: .9em;
+.kinfolk-hero p {
+    font-size: .9em;
 }
 
 .kinfolk-hero-highlight-flex {
@@ -1526,12 +1525,12 @@ font-size: .9em;
     display: flex;
     flex-direction: column;
     max-width: fit-content;
-    text-align:left;
+    text-align: left;
     margin: 0;
     padding: 0
 }
 
-.kinfolk-timeline-items{
+.kinfolk-timeline-items {
     display: flex;
     gap: 3vw;
 }
@@ -1620,9 +1619,12 @@ font-size: .9em;
     grid-area: new-website-p;
     margin: auto auto
 }
-.kinfolk-research-highlight{
-    margin: 2vh auto;}
-.kinfolk-research-highlight-item{
+
+.kinfolk-research-highlight {
+    margin: 2vh auto;
+}
+
+.kinfolk-research-highlight-item {
     margin: 1vh auto;
     padding: 1vw 2vw;
     border-radius: 20px;
@@ -1630,6 +1632,51 @@ font-size: .9em;
     border-width: .5px;
     box-shadow: #98989830 0 0 20px;
     border-color: #192E1025;
+}
+
+.kinfolk-sketches {
+    align-items: flex-end;
+    margin: -100px 0 0 0
+}
+.kinfolk-usability-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.kinfolk-midfi {
+    margin: 0;
+    padding: 0
+}
+.kinfolk-midfi img {
+    margin: 0 0 2vh 0;
+    padding: 0;
+}
+
+.kinfolk-hifi-display {
+    margin: auto;
+}
+
+.kinfolk-hifi-display-item-even, .kinfolk-hifi-display-item-odd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 0
+}
+
+.kinfolk-hifi-display-item-even {
+    flex-direction: row;
+
+}
+
+.kinfolk-hifi-display-item-odd {
+    flex-direction: row-reverse;
+}
+.kinfolk-hifi-display-item-even p{
+   padding: 0 2vw
+}
+
+.kinfolk-hifi-display-item-odd p{
+    padding: 0 2vw
 }
 
 /* --------------------------------------About------------------------------------- */
