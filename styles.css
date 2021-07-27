@@ -517,14 +517,14 @@ a:hover {
     margin: auto;
 }
 
-
-.carousel-control-prev{
+.carousel-control-prev {
     background-color: #3d443d20;
     border-radius: 20px;
     height: 30%;
     margin: auto 0
 }
-.carousel-control-next{
+
+.carousel-control-next {
     background-color: #3d443d20;
     border-radius: 20px;
     height: 30%;
@@ -537,8 +537,6 @@ a:hover {
     gap: 5%;
     padding: 16px 0 56px 0
 }
-
-
 
 /* --------------------------------------------------Contact--------------------------------------------------
 -----------------------------------------------------Contact--------------------------------------------------
@@ -708,7 +706,6 @@ label {
 
 /* --------------------------------------GoCreate------------------------------------- */
 
-
 .gocreate-grid1 {
     margin: 32px 0 0 0;
     display: grid;
@@ -717,23 +714,22 @@ label {
     grid-template-areas: "left right" "left right";
     column-gap: 10%;
 }
-.gocreate-hero-highlight-items-wrapper{
+
+.gocreate-hero-highlight-items-wrapper {
     margin-top: 16px;
 }
-.gocreate-hero-highlight-items{
-display: flex;
-align-items: baseline;
-gap: 16px;
 
- 
+.gocreate-hero-highlight-items {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
 }
 
-.gocreate-hero-highlight-items img{
+.gocreate-hero-highlight-items img {
     max-width: 24px;
-
 }
 
-.gocreate-hero-highlight{
+.gocreate-hero-highlight {
     font-size: .9em;
 }
 
@@ -1505,6 +1501,137 @@ canvas {
     border-radius: 10px;
 }
 
+/* --------------------------------------KINFOLK------------------------------------- */
+
+/* --------------------------------------KINFOLK------------------------------------- */
+
+/* --------------------------------------KINFOLK------------------------------------- */
+
+
+.kinfolk-hero-image{
+padding: 0 8vw
+}
+
+.kinfolk-hero p{
+font-size: .9em;
+}
+
+.kinfolk-hero-highlight-flex {
+    margin: 3vh 0 1vh 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kinfolk-hero-highlight-flex-item {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    text-align:left;
+    margin: 0;
+    padding: 0
+}
+
+.kinfolk-timeline-items{
+    display: flex;
+    gap: 3vw;
+}
+
+.kinfolk-brief {
+    display: flex;
+    flex-flow: row;
+    gap: 5vw
+}
+
+.kinfolk-brief p {
+    width: 40ch;
+}
+
+.kinfolk-problem-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "kinfolk-problem kinfolk-problem-image" "kinfolk-challenge-image kinfolk-challenge " "kinfolk-solution kinfolk-solution-image ";
+    align-items: center;
+    gap: 1vh
+}
+
+.kinfolk-problem {
+    grid-area: kinfolk-problem;
+}
+
+.kinfolk-problem-image {
+    grid-area: kinfolk-problem-image;
+}
+
+.kinfolk-challenge {
+    grid-area: kinfolk-challenge;
+}
+
+.kinfolk-challenge-image {
+    grid-area: kinfolk-challenge-image;
+}
+
+.kinfolk-solution {
+    grid-area: kinfolk-solution;
+}
+
+.kinfolk-solution-image {
+    grid-area: kinfolk-solution-image;
+}
+
+.kinfolk-problem-grid-item {
+    padding: 0 2vw
+}
+
+.kinfolk-research-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "name-change name-change-p" "new-location-p new-location" "new-website new-website-p";
+    gap: 1vh;
+}
+
+.name-change {
+    grid-area: name-change;
+    margin: auto auto
+}
+
+.name-change-p {
+    grid-area: name-change-p;
+    margin: auto auto
+}
+
+.new-location {
+    grid-area: new-location;
+    margin: auto auto
+}
+
+.new-location-p {
+    grid-area: new-location-p;
+    margin: auto auto
+}
+
+.new-website {
+    grid-area: new-website;
+    margin: auto auto
+}
+
+.new-website-p {
+    grid-area: new-website-p;
+    margin: auto auto
+}
+.kinfolk-research-highlight{
+    margin: 2vh auto;}
+.kinfolk-research-highlight-item{
+    margin: 1vh auto;
+    padding: 1vw 2vw;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: .5px;
+    box-shadow: #98989830 0 0 20px;
+    border-color: #192E1025;
+}
+
 /* --------------------------------------About------------------------------------- */
 
 /* --------------------------------------About------------------------------------- */
@@ -2011,7 +2138,7 @@ _________________________________***  ABOUT  <768***____________________***  ABO
         width: vw;
         padding: 10px 3vw;
     }
-    .skills-section h2{
+    .skills-section h2 {
         padding: 10px
     }
     .skills-container {
@@ -2146,11 +2273,11 @@ _________________________________***Recycle Easy <768***____________________***R
         display: flex;
         flex-direction: column;
     }
-    .UnaMesaResearchStats{
-padding: 1vw;
-Margin: 0
+    .UnaMesaResearchStats {
+        padding: 1vw;
+        Margin: 0
     }
-    .unamesa-research-artifacts{
+    .unamesa-research-artifacts {
         margin: 2vh 0;
         gap: 2vh
     }
@@ -2171,7 +2298,7 @@ Margin: 0
         padding: 16px 8px;
         border-radius: 20px 20px 0 0;
     }
-    .SharonWattscol1 img{
+    .SharonWattscol1 img {
         max-width: 250px;
         margin-bottom: 2vw;
     }
@@ -2195,16 +2322,17 @@ Margin: 0
         margin: 0;
     }
 }
+
 .wireframe {
     margin-top: 0;
 }
-.abTesting{
+
+.abTesting {
     gap: 2vh;
 }
-.buttonflex img{
+
+.buttonflex img {
     max-width: 60vw;
-
-
 }
 
 ;
