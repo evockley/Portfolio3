@@ -204,3 +204,59 @@ var journeyMap = new Chart("SharonsjourneyMap", {
         }
     }
 });
+
+
+// KINFOLK JOURNEY MAP / LINE GRAPH
+
+var xValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var yValues = [2, 4, 3, 4, 6, 7, 8, 10]
+var journeyMap = new Chart("allisonsJourneyMap", {
+    type: "line",
+    data: {
+        labels: ["passes KINFOLK storefront", "Visits website", "Dark Mode and lots of text", "Finds Apply for a Card page", "Overwhelmed by text", "Watches interviews with owner", "Reads Reviews/Testimonials", "Goes in to Visit"],
+        datasets: [{
+            label: "Allison's Journey",
+            backgroundColor: "#33333310",
+            borderColor: "#00000090",
+            data: yValues,
+            lineTension: 0.2,
+            pointRadius: 8,
+            pointBackgroundColor: "#000000",
+            pointBorderColor: "#333",
+            pointHoverBackgroundColor: "#333",
+            pointHoverRadius: 18,
+        }]
+    },
+    options: {
+        legend: {
+            labels: {
+                fontColor: "#192E10",
+                boxWidth: 0,
+            }
+        },
+        scales: {
+            yAxes: [{
+                gridLines: {
+                    display: false,
+                },
+                ticks: {
+                    fontColor: "#192E1080",
+                    beginAtZero: true,
+                }
+            }],
+            xAxes: [{
+                gridLines: {
+                    display: false,
+                },
+                ticks: {
+                    fontColor: "#192E1080",
+                }
+            }]
+        },
+        plugins: {
+            tooltip: {
+                backgroundColor: "#ffffff",
+            }
+        }
+    }
+});

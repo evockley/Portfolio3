@@ -1541,14 +1541,33 @@ canvas {
     margin: 1vh 0
 }
 
+.kinfolk-brief-section{
+    background-image: url("images/kinfolk/brief-background.jpg");
+    background-size: cover;
+    background-position-y: center;
+    filter: grayscale(100%);
+    color: white;
+}
+.kinfolk-brief-section h2{
+color: white;
+text-shadow: #00000075 0 0 10px;
+font-size: 55px;
+}
+
 .kinfolk-brief {
     display: flex;
     flex-flow: row;
     gap: 5vw
 }
-
 .kinfolk-brief p {
     width: 40ch;
+    padding: 10vh 2vw;
+    color: white;
+    border-radius: 20px;
+    font-size: 28px;
+    background-color: #22222270;
+    box-shadow: black 0 0 10px;
+    text-shadow: black 0 0 10px;
 }
 
 .kinfolk-problem-wrapper {
@@ -1566,6 +1585,7 @@ canvas {
 
 .kinfolk-problem-image {
     grid-area: kinfolk-problem-image;
+    border-radius: 20px;
 }
 
 .kinfolk-challenge {
@@ -1574,6 +1594,7 @@ canvas {
 
 .kinfolk-challenge-image {
     grid-area: kinfolk-challenge-image;
+    border-radius: 20px;
 }
 
 .kinfolk-solution {
@@ -1582,6 +1603,7 @@ canvas {
 
 .kinfolk-solution-image {
     grid-area: kinfolk-solution-image;
+    border-radius: 20px;
 }
 
 .kinfolk-problem-grid-item {
@@ -1684,6 +1706,14 @@ canvas {
 .allisonDelaurens p {
     font-size: .95em
 }
+.allisonDelaurens-user-story {
+    display: flex;
+    flex-flow: row;
+    gap: 5vw
+}
+.allisonDelaurens-user-story p{
+width: 40ch;}
+
 
 .kinfolk-research-highlight-item {
     margin: 1vh auto;
