@@ -1,4 +1,4 @@
-// DISAPPEARING HOME PAGE BUTTON ON SCROLL
+// DISAPPEARING HOME PAGE ELEMENTS ON SCROLL
 
 $(window).scroll(function() {
     if ($(this).scrollTop() > 150) {
