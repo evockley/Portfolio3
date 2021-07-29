@@ -325,7 +325,7 @@ a:hover {
     min-width: 250px;
     flex: 1 1;
     margin: 16px 0;
-    padding: 16px 16px 16px 16px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1508,10 +1508,10 @@ canvas {
 /* --------------------------------------KINFOLK------------------------------------- */
 
 .kinfolk-hero-image {
-    padding: 0 8vw
+    padding: 0 10vw;
 }
 
-.kinfolk-hero p {
+.kinfolk-hero2 p {
     font-size: .9em;
 }
 
@@ -1530,9 +1530,15 @@ canvas {
     padding: 0
 }
 
+.timeline-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .kinfolk-timeline-items {
     display: flex;
     gap: 3vw;
+    margin: 1vh 0
 }
 
 .kinfolk-brief {
@@ -1584,10 +1590,11 @@ canvas {
 
 .kinfolk-research-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "name-change name-change-p" "new-location-p new-location" "new-website new-website-p";
-    gap: 1vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr;
+    grid-template-areas: "name-change new-location new-website" "name-change-p new-location-p new-website-p";
+    column-gap: 3vw;
+    margin: 0 0 5vh 0
 }
 
 .name-change {
@@ -1624,6 +1631,60 @@ canvas {
     margin: 2vh auto;
 }
 
+.allisonDelaurens {
+    display: grid;
+    grid-template-columns: 26% 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "pic basic lists" "pic bio lists" "pic bio lists";
+    gap: 3vw;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: .5px;
+    box-shadow: #98989830 0 0 20px;
+    border-color: #192E1025;
+    margin: 16px 0;
+    padding: 16px;
+}
+
+.allisonDelaurens-pic {
+    grid-area: pic;
+    background-image: url("images/kinfolk/allison-delaurens.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+
+    box-shadow: #98989830 0 0 20px;
+    border-color: #192E1025;
+}
+
+.allisonDelaurens-bio {
+    grid-area: bio;
+}
+
+.allisonDelaurens-basic-info {
+    grid-area: basic;
+}
+
+.allisonDelaurens-basic-info p {
+    margin: 4px 0;
+}
+
+.allisonDelaurens-lists {
+    grid-area: lists;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw
+}
+
+.allisonDelaurens-lists p {
+    margin: 4px 0
+}
+
+.allisonDelaurens p {
+    font-size: .95em
+}
+
 .kinfolk-research-highlight-item {
     margin: 1vh auto;
     padding: 1vw 2vw;
@@ -1638,15 +1699,18 @@ canvas {
     align-items: flex-end;
     margin: -100px 0 0 0
 }
-.kinfolk-usability-flex{
+
+.kinfolk-usability-flex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .kinfolk-midfi {
     margin: 0;
     padding: 0
 }
+
 .kinfolk-midfi img {
     margin: 0 0 2vh 0;
     padding: 0;
@@ -1656,7 +1720,7 @@ canvas {
     margin: auto;
 }
 
-.kinfolk-hifi-display-item-even, .kinfolk-hifi-display-item-odd{
+.kinfolk-hifi-display-item-even, .kinfolk-hifi-display-item-odd {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1665,17 +1729,17 @@ canvas {
 
 .kinfolk-hifi-display-item-even {
     flex-direction: row;
-
 }
 
 .kinfolk-hifi-display-item-odd {
     flex-direction: row-reverse;
 }
-.kinfolk-hifi-display-item-even p{
-   padding: 0 2vw
+
+.kinfolk-hifi-display-item-even p {
+    padding: 0 2vw
 }
 
-.kinfolk-hifi-display-item-odd p{
+.kinfolk-hifi-display-item-odd p {
     padding: 0 2vw
 }
 
