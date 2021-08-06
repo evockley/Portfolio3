@@ -405,7 +405,16 @@ a:hover {
     align-items: center;
 }
 
-.footertext {
+.footer-name-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "footerText1" "footerText2";
+    gap: 8px
+
+}
+
+.footerText1, .footerText2 {
     font-family: "brandon-grotesque";
     font-size: 16px;
     color: #f6f6f6;
