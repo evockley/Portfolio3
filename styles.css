@@ -123,7 +123,7 @@ a:hover {
     margin-left: 16px;
 }
 
-.bigSpan{
+.bigSpan {
     font-size: 1.5em;
     font-style: normal;
 }
@@ -262,7 +262,7 @@ a:hover {
     cursor: pointer;
 }
 
-.footer-button{
+.footer-button {
     visibility: hidden
 }
 
@@ -414,13 +414,12 @@ a:hover {
     align-items: center;
 }
 
-.footer-name-grid{
+.footer-name-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "footerText1" "footerText2";
     gap: 8px
-
 }
 
 .footerText1, .footerText2 {
@@ -1559,17 +1558,18 @@ canvas {
     margin: 1vh 0
 }
 
-.kinfolk-brief-section{
+.kinfolk-brief-section {
     background-image: url("images/kinfolk/brief-background.jpg");
     background-size: cover;
     background-position-y: center;
     filter: grayscale(100%);
     color: white;
 }
-.kinfolk-brief-section h2{
-color: white;
-text-shadow: #00000075 0 0 10px;
-font-size: 55px;
+
+.kinfolk-brief-section h2 {
+    color: white;
+    text-shadow: #00000075 0 0 10px;
+    font-size: 55px;
 }
 
 .kinfolk-brief {
@@ -1577,6 +1577,7 @@ font-size: 55px;
     flex-flow: row;
     gap: 5vw
 }
+
 .kinfolk-brief p {
     width: 40ch;
     padding: 10vh 2vw;
@@ -1673,10 +1674,9 @@ font-size: 55px;
 
 .allisonDelaurens {
     display: grid;
-    grid-template-columns: 26% 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "pic basic lists" "pic bio lists" "pic bio lists";
-    gap: 3vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .7fr 1fr .6fr;
+    grid-template-areas: "pic basic basic" "pic bio bio" "lists lists lists";
     border-radius: 10px;
     border-style: solid;
     border-width: .5px;
@@ -1689,17 +1689,25 @@ font-size: 55px;
 .allisonDelaurens-pic {
     grid-area: pic;
     background-image: url("images/kinfolk/allison-delaurens.png");
-    background-size: cover;
+    background-size: 500px;
+    background-repeat: no-repeat;
     background-position: center;
-    position: relative;
     border-radius: 10px;
+    width: 25vw;
+    height: 30vw
+}
 
+.allisonDelaurens-pic img {
+    border-radius: 10px;
+    border: transparent;
     box-shadow: #98989830 0 0 20px;
     border-color: #192E1025;
+    width: 20vw;
 }
 
 .allisonDelaurens-bio {
     grid-area: bio;
+    
 }
 
 .allisonDelaurens-basic-info {
@@ -1714,7 +1722,8 @@ font-size: 55px;
     grid-area: lists;
     display: flex;
     flex-direction: column;
-    gap: 2vw
+    gap: 2vw;
+    margin-top: 16px;
 }
 
 .allisonDelaurens-lists p {
@@ -1724,14 +1733,16 @@ font-size: 55px;
 .allisonDelaurens p {
     font-size: .95em
 }
+
 .allisonDelaurens-user-story {
     display: flex;
     flex-flow: row;
     gap: 5vw
 }
-.allisonDelaurens-user-story p{
-width: 40ch;}
 
+.allisonDelaurens-user-story p {
+    max-width: 40ch;
+}
 
 .kinfolk-research-highlight-item {
     margin: 1vh auto;
@@ -1743,9 +1754,14 @@ width: 40ch;}
     border-color: #192E1025;
 }
 
+.kinfolk-ideation-assets img {
+    box-shadow: lightgray 0 0 10px;
+    border-radius: 8px;
+    max-width: 50%;
+}
+
 .kinfolk-sketches {
-    align-items: flex-end;
-    margin: -100px 0 0 0
+    align-items: center;
 }
 
 .kinfolk-usability-flex {
@@ -2492,6 +2508,45 @@ _________________________________***Recycle Easy <768***____________________***R
 
 .buttonflex img {
     max-width: 60vw;
+}
+
+/* ___________________________***KINFOLK <768***_______________***KINFOLK <768***_________________________
+_________________________________***KINFOLK <768***____________________***KINFOLK <768***_______________________ */
+
+/* .allisonDelaurens {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "pic basic basic" "bio bio bio" "lists lists lists";
+} */
+
+.allisonDelaurens-pic {
+    grid-area: pic;
+    /* background-image: url("images/kinfolk/allison-delaurens.png");
+    background-size: 100%;
+    background-position: center; */
+}
+
+.allisonDelaurens-lists {
+    flex-direction: row;
+    gap: 2vw
+}
+
+.allisonDelaurens-user-story {
+    display: flex;
+    flex-flow: row;
+    gap: 1vw
+}
+
+.allisonDelaurens-user-story p {
+    max-width: 32ch;
+}
+
+#allisonsJourneyMap {
+    width: 40vw
+}
+
+.kinfolk-sketch-item {
+    margin: 0 25%
 }
 
 ;
