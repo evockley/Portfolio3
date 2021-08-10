@@ -888,6 +888,7 @@ label {
 
 span {
     font-style: oblique;
+    display: inline;
 }
 
 .imported-graphic {
@@ -963,7 +964,7 @@ span {
 
 .testing img {
     margin-bottom: 24px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: lightgray 0 0 10px;
 }
 
@@ -1002,18 +1003,26 @@ span {
 }
 
 .CTA-instruction {
-    margin-bottom: 16px;
-    background-color: #192E1010;
+    margin-bottom: 24px;
+    box-shadow: #98989830 0 0 20px;
+    padding: 16px 25%;
     border-radius: 10px;
-    transition: ease-in 250ms;
+    transition: ease-in 200ms;
 }
 
 .CTA-instruction:hover {
-    background-color: #192E1025
+    background-color: rgba(145, 137, 137, 0.05);
+    box-shadow: #09150345 0 0 12px;
+    border: #091503;
+    border-width: .5px;
+    border-radius: 10px;
+    cursor: pointer;
+
 }
 
-.CTA-instruction p {
-    margin: 8px 16px 4px 16px;
+.CTA-instruction p{
+    padding: 0;
+    margin: 0
 }
 
 .CTA-instruction img {
@@ -1025,7 +1034,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 35% 0 0;
+   
 }
 
 .more-work-flex {
@@ -1037,10 +1046,20 @@ span {
 
 .more-work-item {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    padding: 4px;
+    transition: ease-in 200ms;
+}
+
+.more-work-item:hover{
+    background-color: rgba(145, 137, 137, 0.05);
+    box-shadow: #09150345 0 0 12px;
+    border: #091503;
+    border-width: .5px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .more-work-item img {
@@ -1063,7 +1082,7 @@ span {
     font-size: 1.3em;
     margin-top: 2vh;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
 }
 
 .more-work-grid a {
@@ -1495,7 +1514,7 @@ canvas {
 }
 
 .UnaMesaIdeation {
-    margin: 4vh 0
+    margin: 3em 0 4em 0
 }
 
 .abTesting {
@@ -1562,6 +1581,7 @@ canvas {
 .kinfolk-brief-section {
     background-image: url("images/kinfolk/brief-background.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position-y: center;
     filter: grayscale(100%);
     color: white;
@@ -1580,8 +1600,9 @@ canvas {
 }
 
 .kinfolk-brief p {
-    width: 40ch;
+    max-width: 32ch;
     padding: 10vh 2vw;
+    margin: 0 auto;
     color: white;
     border-radius: 20px;
     font-size: 28px;
@@ -1635,7 +1656,6 @@ canvas {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto
-    
 }
 
 .kinfolk-stakeholder-interview-container {
@@ -1649,11 +1669,11 @@ canvas {
     border-color: #192E1025;
     box-shadow: #98989830 0 0 20px;
     background-color: #FCF7F2;
-    margin: 2em 0 3em 0;
+    margin: 2em auto;
 }
 
 .kinfolk-stakeholder-interview-container p {
-    width: 26ch;
+    width: 28ch;
     padding: 1em 10px;
 }
 
@@ -1689,18 +1709,16 @@ canvas {
     border-radius: 10px 10px 0 0;
 }
 
-.kinfolk-survey-container{
-
+.kinfolk-survey-container {
     margin: 3em 0;
 }
 
-
-.kinfolk-usability-flexbox{
+.kinfolk-usability-flexbox {
     display: flex;
     gap: 5vw;
 }
 
-.kinfolk-usability-flexbox *{
+.kinfolk-usability-flexbox * {
     max-width: 45ch;
 }
 
@@ -1708,14 +1726,14 @@ canvas {
     margin: 4em auto 3em auto;
 }
 
-.user-persona-container{
+.user-persona-container {
     margin: 0 0 3em 0
 }
 
 .allisonDelaurens {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .7fr 1fr .6fr;
+    grid-template-rows: .2fr 1fr .6fr;
     grid-template-areas: "pic basic basic" "pic bio bio" "lists lists lists";
     border-radius: 10px;
     gap: 2vw;
@@ -1730,12 +1748,13 @@ canvas {
 .allisonDelaurens-pic {
     grid-area: pic;
     background-image: url("images/kinfolk/allison-delaurens.png");
-    background-size: 100%;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
     width: 25vw;
     height: 100%;
+    box-shadow: #09150350 0 0 10px;
 }
 
 .allisonDelaurens-pic img {
@@ -1758,14 +1777,14 @@ canvas {
     margin: 4px 0;
 }
 
-.allisonDelaurens-lists-wrapper{
-display: flex;
+.allisonDelaurens-lists-wrapper {
+    display: flex;
 }
 
 .allisonDelaurens-lists {
     grid-area: lists;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 2vw;
     margin-top: 16px;
 }
@@ -1777,6 +1796,7 @@ display: flex;
 .allisonDelaurens p {
     font-size: .95em
 }
+
 .allisonDelaurens li {
     font-size: .95em
 }
@@ -1809,13 +1829,17 @@ display: flex;
 }
 
 .kinfolk-sketches {
-    margin: 3em 0
+    margin: -140px auto 3em auto;
+    display: flex;
+    gap: 2em;
+    align-items: flex-end;
 }
 
 .kinfolk-usability-flex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 13%;
 }
 
 .kinfolk-midfi {
@@ -1907,7 +1931,7 @@ display: flex;
 }
 
 .kinfolk-next-steps p {
-    width: 44ch;
+    width: 44vw;
     color: white;
     padding: 0 16px;
     font-size: 24px;
@@ -2315,17 +2339,23 @@ ____________________________________________________MORE WORK___________________
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
+        gap: 2em;
         grid-template-areas: "more-work-1" "more-work-2" "more-work-3";
         justify-content: center;
+        text-align: center;
     }
     .more-work-item {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0 25%
+        text-align: center;
+        margin: 0 auto;
     }
+  
+
+
     .more-work-item img {
-        width: 100%
+        width: 100%;
     }
     .more-work-item h4 {
         text-align: center;
@@ -2426,7 +2456,7 @@ _________________________________***  ABOUT  <768***____________________***  ABO
         padding: 10px 3vw;
     }
     .skills-section h2 {
-        padding: 10px
+        padding: 10px;
     }
     .skills-container {
         gap: 3vw;
@@ -2500,7 +2530,7 @@ _________________________________***GoCreate Redesign <768***___________________
         justify-content: space-evenly;
         margin-top: 48px;
         margin-bottom: 64px;
-        gap: 32px
+        gap: 32px;
     }
     .gocreate-sketches-container {
         display: flex;
@@ -2566,10 +2596,10 @@ _________________________________***Recycle Easy <768***____________________***R
     }
     .unamesa-research-artifacts {
         margin: 2vh 0;
-        gap: 2vh
+        gap: 2vh;
     }
     .card {
-        margin: 8px 0
+        margin: 8px 0;
     }
     .callout-container {
         padding: 16px 8px;
@@ -2603,12 +2633,12 @@ _________________________________***Recycle Easy <768***____________________***R
         margin: 10px auto;
     }
     .low-fi-assets {
-        margin: 0
+        margin: 0;
     }
     .low-fi-assets img {
         margin: 0;
     }
-}
+
 
 .wireframe {
     margin-top: 0;
@@ -2625,10 +2655,22 @@ _________________________________***Recycle Easy <768***____________________***R
 /* ___________________________***KINFOLK <768***_______________***KINFOLK <768***_________________________
 _________________________________***KINFOLK <768***____________________***KINFOLK <768***_______________________ */
 
+.kinfolk-brief {
+    display: flex;
+    flex-wrap: wrap;
+    background-position-x: left;
+}
 
+.kinfolk-brief p {
+    max-width: 45ch;
+    padding: 3vh 2vw;
+}
 
 .allisonDelaurens-pic {
     grid-area: pic;
+    background-size: 170%;
+    background-position: -110px -10px;
+    box-shadow: #09150350 0 0 10px;
 }
 
 .allisonDelaurens-lists {
@@ -2636,10 +2678,37 @@ _________________________________***KINFOLK <768***____________________***KINFOL
     gap: 2vw
 }
 
+.kinfolk-sketch-item{
+    margin: 10px 20%
+}
+
 .allisonDelaurens-user-story {
     display: flex;
     flex-flow: row;
-    gap: 1vw
+    gap: 4vw
 }
 
-;
+.kinfolk-sketches img {
+    max-width: 70vw;
+}
+
+
+.kinfolk-next-steps {
+    background-position: center
+}
+
+.kinfolk-next-steps p {
+    width: 84vw;
+}
+
+.kinfolk-next-steps-wrapper {
+    width: 90vw;
+    border-radius: 20px;
+    background-color: #22222270;
+    box-shadow: black 0 0 10px;
+    margin: 0 auto;
+}
+
+
+
+};
