@@ -1880,7 +1880,7 @@ canvas {
     padding: 0 2vw
 }
 
-.kinfolk-presentation-links {
+.presentation-links {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1890,12 +1890,11 @@ canvas {
     margin-top: 6vw;
 }
 
-.kinfolk-prototype-link {
+.prototype-link {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
-    flex: 1 1;
     margin: 16px 0;
     padding: 48px 24px;
     border-radius: 10px;
@@ -1904,14 +1903,15 @@ canvas {
     transition: ease-in-out 300ms;
     box-shadow: #98989830 0 0 20px;
     border-color: #192E1025;
+    gap: 100px;
 }
 
-.kinfolk-prototype-link p {
+.prototype-link p {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
-.kinfolk-prototype-link:hover {
+.prototype-link:hover {
     background-color: rgba(145, 137, 137, 0.05);
     box-shadow: #09150345 0 0 12px;
     cursor: pointer;
@@ -2721,7 +2721,8 @@ _________________________________***KINFOLK <768***____________________***KINFOL
         margin: 0;
     }
     .kinfolk-next-steps {
-        background-position: center
+        background-position: -50vw 0;
+        background-repeat: no-repeat;
     }
     .kinfolk-next-steps p {
         width: 84vw;
