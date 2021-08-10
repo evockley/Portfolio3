@@ -1017,10 +1017,9 @@ span {
     border-width: .5px;
     border-radius: 10px;
     cursor: pointer;
-
 }
 
-.CTA-instruction p{
+.CTA-instruction p {
     padding: 0;
     margin: 0
 }
@@ -1034,7 +1033,6 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
 }
 
 .more-work-flex {
@@ -1053,7 +1051,7 @@ span {
     transition: ease-in 200ms;
 }
 
-.more-work-item:hover{
+.more-work-item:hover {
     background-color: rgba(145, 137, 137, 0.05);
     box-shadow: #09150345 0 0 12px;
     border: #091503;
@@ -1596,12 +1594,13 @@ canvas {
 .kinfolk-brief {
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;
     gap: 5vw
 }
 
 .kinfolk-brief p {
-    max-width: 32ch;
-    padding: 10vh 2vw;
+    max-width: 30ch;
+    padding: 4vh 3%;
     margin: 0 auto;
     color: white;
     border-radius: 20px;
@@ -1748,9 +1747,9 @@ canvas {
 .allisonDelaurens-pic {
     grid-area: pic;
     background-image: url("images/kinfolk/allison-delaurens.png");
-    background-size: 120%;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0px 15%;
     border-radius: 10px;
     width: 25vw;
     height: 100%;
@@ -1816,7 +1815,7 @@ canvas {
 .kinfolk-research-highlight-item {
     margin: 1vh auto;
     padding: 1vw 2vw;
-    border-radius: 20px;
+    border-radius: 10px;
     border-style: solid;
     border-width: .5px;
     box-shadow: #98989830 0 0 20px;
@@ -1843,13 +1842,15 @@ canvas {
 }
 
 .kinfolk-midfi {
-    margin: 0;
-    padding: 0
+    padding: 0;
+    margin: 48px 0 24px 0
 }
 
 .kinfolk-midfi img {
     margin: 0 0 2vh 0;
     padding: 0;
+    box-shadow: lightgray 0 0 10px;
+    border-radius: 8px;
 }
 
 .kinfolk-hifi-display {
@@ -2351,9 +2352,6 @@ ____________________________________________________MORE WORK___________________
         text-align: center;
         margin: 0 auto;
     }
-  
-
-
     .more-work-item img {
         width: 100%;
     }
@@ -2638,77 +2636,103 @@ _________________________________***Recycle Easy <768***____________________***R
     .low-fi-assets img {
         margin: 0;
     }
-
-
-.wireframe {
-    margin-top: 0;
-}
-
-.abTesting {
-    gap: 2vh;
-}
-
-.buttonflex img {
-    max-width: 60vw;
-}
-
-/* ___________________________***KINFOLK <768***_______________***KINFOLK <768***_________________________
+    .wireframe {
+        margin-top: 0;
+    }
+    .abTesting {
+        gap: 2vh;
+    }
+    .buttonflex img {
+        max-width: 60vw;
+    }
+    /* ___________________________***KINFOLK <768***_______________***KINFOLK <768***_________________________
 _________________________________***KINFOLK <768***____________________***KINFOLK <768***_______________________ */
+    .kinfolk-hero-image {
+        padding: 0;
+    }
+    .kinfolk-hero-highlight-flex {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .kinfolk-hero-highlight-flex-item {
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+        text-align: center;
+        margin: 0;
+        padding: 0
+    }
+    .kinfolk-timeline {
+        text-align: center;
+    }
+    .timeline-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .kinfolk-brief {
+        display: flex;
+        flex-wrap: wrap;
+        background-position-x: left;
+    }
+    .kinfolk-brief p {
+        max-width: 45ch;
+        padding: 3vh 2vw;
+    }
+    .allisonDelaurens {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 25% 1fr 1.6fr;
+        grid-template-areas: "pic basic basic" "bio bio bio" "lists lists lists";
+        padding: 8px
+    }
+    .allisonDelaurens-pic {
+        grid-area: pic;
+        background-size: 100%;
+        background-position: 0 15%;
+        box-shadow: #09150350 0 0 10px;
+    }
+    .allisonDelaurens-lists {
+        flex-direction: column;
+        gap: 2vw;
+        margin-top: 0;
+    }
+    .kinfolk-sketch-item {
+        margin: 10px 20%
+    }
+    .allisonDelaurens-user-story {
+        flex-wrap: wrap;
+    }
+    .kinfolk-sketches {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 0
+    }
+    .kinfolk-sketches img {
+    width: 100%;
+    justify-content: center;
+    }
 
-.kinfolk-brief {
-    display: flex;
-    flex-wrap: wrap;
-    background-position-x: left;
+    .kinfolk-usability-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .kinfolk-next-steps {
+        background-position: center
+    }
+    .kinfolk-next-steps p {
+        width: 84vw;
+    }
+    .kinfolk-next-steps-wrapper {
+        width: 90vw;
+        border-radius: 20px;
+        background-color: #22222270;
+        box-shadow: black 0 0 10px;
+        margin: 0 auto;
+    }
 }
 
-.kinfolk-brief p {
-    max-width: 45ch;
-    padding: 3vh 2vw;
-}
-
-.allisonDelaurens-pic {
-    grid-area: pic;
-    background-size: 170%;
-    background-position: -110px -10px;
-    box-shadow: #09150350 0 0 10px;
-}
-
-.allisonDelaurens-lists {
-    flex-direction: row;
-    gap: 2vw
-}
-
-.kinfolk-sketch-item{
-    margin: 10px 20%
-}
-
-.allisonDelaurens-user-story {
-    display: flex;
-    flex-flow: row;
-    gap: 4vw
-}
-
-.kinfolk-sketches img {
-    max-width: 70vw;
-}
-
-
-.kinfolk-next-steps {
-    background-position: center
-}
-
-.kinfolk-next-steps p {
-    width: 84vw;
-}
-
-.kinfolk-next-steps-wrapper {
-    width: 90vw;
-    border-radius: 20px;
-    background-color: #22222270;
-    box-shadow: black 0 0 10px;
-    margin: 0 auto;
-}
-
-
-
-};
+;
