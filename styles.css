@@ -2,6 +2,11 @@
     font-size: 18px;
 }
 
+::selection{
+    background-color: #F97171;
+    color: white;
+}
+
 body {
     background-image: linear-gradient(180deg, #192E10, #091503, #192E10);
     background-repeat: no-repeat;
