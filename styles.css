@@ -318,6 +318,7 @@ a:hover {
 
 /* -----Featured Section------ */
 
+
 .featured {
     background: #FCF7F2;
     padding: 32px 100px;
@@ -327,9 +328,13 @@ a:hover {
     transform: scale3d(1, 1, 1);
 }
 
+
+
 .item-flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    max-width: 75vw;
+    margin: 0 auto;
     /* flex-wrap: wrap; */
 }
 
@@ -846,6 +851,10 @@ label {
     border-color: #192E1025;
     box-shadow: #98989830 0 0 20px;
     background-color: #FCF7F2;
+}
+
+.gocreate-mini-persona .full-document-link {
+    margin: 12% 0 0 0;
 }
 
 .QuentinMorrison {
@@ -1611,7 +1620,7 @@ canvas {
 
 .kinfolk-brief-section h2 {
     color: white;
-    text-shadow: #00000075 0 0 10px;
+    text-shadow: #00000075 0 0 5px;
     font-size: 55px;
 }
 
@@ -1628,10 +1637,10 @@ canvas {
     margin: 0 auto;
     color: white;
     border-radius: 20px;
-    font-size: 28px;
-    background-color: #22222270;
+    font-size: 1.6em;
+    background-color: #1b1b1bd2;
     box-shadow: black 0 0 10px;
-    text-shadow: black 0 0 10px;
+    text-shadow: black 0 0 5px;
 }
 
 .kinfolk-problem-wrapper {
@@ -1944,8 +1953,9 @@ canvas {
 .kinfolk-next-steps-wrapper {
     width: 46vw;
     border-radius: 20px;
-    background-color: #22222270;
+    background-color: #1b1b1bd2;
     box-shadow: black 0 0 10px;
+    padding: 3vh;
 }
 
 .kinfolk-next-steps {
@@ -1960,7 +1970,7 @@ canvas {
     color: white;
     padding: 0 16px;
     font-size: 24px;
-    text-shadow: black 0 0 10px;
+    text-shadow: black 0 0 5px;
 }
 
 .kinfolk-next-steps h2 {
@@ -2054,7 +2064,7 @@ canvas {
     padding-top: 0;
     margin: 0;
     color: #f4f4f4;
-    font-size: .95em;
+
 }
 
 /* _______________________________Tools Section_______________________________ */
@@ -2143,6 +2153,7 @@ canvas {
 
 .learning-now {
     padding-top: 0;
+  
 }
 
 .learning-now-grid {
@@ -2151,6 +2162,7 @@ canvas {
     grid-template-rows: 60px 1fr 1fr;
     column-gap: 12%;
     grid-template-areas: "learning-header learning-header" "p1 right-side" "p2 right-side";
+    display: none;
 }
 
 #learning-now-header {
@@ -2750,6 +2762,7 @@ _________________________________***KINFOLK <768***____________________***KINFOL
     }
     .kinfolk-next-steps p {
         width: 84vw;
+        font-size: 1.6em;
     }
     .kinfolk-next-steps-wrapper {
         width: 90vw;
