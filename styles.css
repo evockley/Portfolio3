@@ -109,7 +109,7 @@ a {
 }
 
 a:hover {
-    color: #D68D1F;
+    color: #fab348;
 }
 
 .caption {
@@ -137,12 +137,19 @@ a:hover {
 ----------------------------------------------Nav Bar------------------------------------------
 ---------------------------------Nav Bar------------------------------------------------------- */
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
 .navbar {
     background-color: #FCF7F2;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px 100px;
+    box-shadow: #c5c5c550 0 0 20px;
 }
 
 .nav-list {
@@ -163,11 +170,11 @@ a:hover {
     text-decoration: none;
     color: #192E10;
     padding-left: 2em;
-    transition: ease-in 250ms;
+    transition: 100ms;
 }
 
 .nav-item a:hover {
-    color: #D68D1F;
+    color: #fab348;
 }
 
 .toggle {
@@ -206,7 +213,7 @@ a:hover {
     padding-top: 12px;
     padding-bottom: 12px;
     cursor: pointer;
-    transition: ease-in .2s;
+    transition: 100ms
 }
 
 .primary-button:hover {
@@ -291,29 +298,29 @@ a:hover {
 .Hero_Grid h2 {
     color: #f7f7f7;
     font-size: 2.3em;
-    margin-bottom: 16px;
+    margin-bottom: 5vh;
+    max-width: 440px;
 }
 
 .moreinfo {
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 400;
     font-size: 24px;
-    line-height: 137%;
     letter-spacing: .02em;
-    margin-bottom: 5vh;
     color: #f7f7f7;
+    margin: 0 0 0 0
 }
 
 .grid_item_1 {
-    width: 55%;
+    max-width: 55%;
 }
 
 .grid_item_1 .primary-button {
-    margin-top: 24px;
+    margin-top: 5vh;
 }
 
 .grid_item_2 img {
-    width: 28vw;
+    max-width: 22vw;
 }
 
 /* -----Featured Section------ */
@@ -349,7 +356,7 @@ a:hover {
     border-radius: 10px;
     border-style: solid;
     border-width: .5px;
-    transition: ease-in-out 300ms;
+    /* transition: ease-in-out 300ms; */
     box-shadow: #98989830 0 0 20px;
     /* padding: 32px;
     border-radius: 10px;
@@ -517,14 +524,17 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 16px;
-    border: solid .5px #192E1045;
     border-radius: 20px;
     height: 430px;
     min-width: 300px;
     max-width: 38vw;
-    box-shadow: #98989830 0 0 20px;
-    border-color: #192E1025;
-    /* margin-bottom: 40px; */
+    box-shadow: #98989830 0 0 10px;
+    transition: 100ms;
+}
+
+.project-container:hover {
+    background-color: #fab348;
+    box-shadow: #989898 0 0 10px;
 }
 
 .project-container p {
@@ -1702,6 +1712,7 @@ canvas {
     filter: grayscale(100%);
     color: white;
     height: 75vh;
+    z-index: -10000;
 }
 
 .kinfolk-brief-section h2 {
