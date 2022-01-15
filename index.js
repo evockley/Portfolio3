@@ -1,20 +1,20 @@
 // DISAPPEARING HOME PAGE ELEMENTS ON SCROLL
 
-$(window).scroll(function() {
+$(window).scroll(function () {
     if ($(this).scrollTop() > 150) {
-      $('.homeHeroButton').css ("visibility", "hidden");
+        $('.homeHeroButton').css("visibility", "hidden");
     } else {
-      $('.homeHeroButton').css ("visibility", "visible");
+        $('.homeHeroButton').css("visibility", "visible");
     }
-  });
+});
 
-  $(window).scroll(function() {
+$(window).scroll(function () {
     if ($(this).scrollTop() > 700) {
-      $('.myLogo').css ("visibility", "hidden");
+        $('.myLogo').css("visibility", "hidden");
     } else {
-      $('.myLogo').css ("visibility", "visible");
+        $('.myLogo').css("visibility", "visible");
     }
-  });
+});
 
 
 
@@ -260,3 +260,10 @@ var journeyMap = new Chart("allisonsJourneyMap", {
         }
     }
 });
+
+
+
+// Beela
+// Beela
+// Beela
+

@@ -471,7 +471,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "footerText1" "footerText2";
+    grid-template-areas: "footerText1""footerText2";
     gap: 8px
 }
 
@@ -506,7 +506,7 @@ header {
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 3vw;
     row-gap: 3vw;
-    grid-template-areas: "go-create recycle-easy" "una-mesa uscis" "kinfolk kinfolk";
+    grid-template-areas: "go-create recycle-easy""una-mesa uscis""kinfolk kinfolk";
     margin-bottom: 2vw;
 }
 
@@ -784,7 +784,7 @@ label {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "left right" "left right";
+    grid-template-areas: "left right""left right";
     column-gap: 10%;
 }
 
@@ -863,7 +863,7 @@ label {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 3em;
-    grid-template-areas: "gocreateProblemLeft gocreateProblemRight" "gocreateSolutionLeft gocreateSolutionRight";
+    grid-template-areas: "gocreateProblemLeft gocreateProblemRight""gocreateSolutionLeft gocreateSolutionRight";
 }
 
 .gocreateProblemLeft {
@@ -1034,7 +1034,7 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "sketch-1 sketch-2" "sketch-1 sketch-3";
+    grid-template-areas: "sketch-1 sketch-2""sketch-1 sketch-3";
     column-gap: 20px;
     row-gap: 16px;
 }
@@ -1611,7 +1611,7 @@ canvas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .5fr 2fr;
-    grid-template-areas: "projects-tab projects1-tab" "projects-page projects1-page";
+    grid-template-areas: "projects-tab projects1-tab""projects-page projects1-page";
     gap: 5%
 }
 
@@ -1739,7 +1739,7 @@ canvas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "kinfolk-problem kinfolk-problem-image" "kinfolk-challenge-image kinfolk-challenge" "kinfolk-solution kinfolk-solution-image";
+    grid-template-areas: "kinfolk-problem kinfolk-problem-image""kinfolk-challenge-image kinfolk-challenge""kinfolk-solution kinfolk-solution-image";
     align-items: center;
     gap: 1vh
 }
@@ -1854,7 +1854,7 @@ canvas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: .2fr 1fr .6fr;
-    grid-template-areas: "pic basic basic" "pic bio bio" "lists lists lists";
+    grid-template-areas: "pic basic basic""pic bio bio""lists lists lists";
     border-radius: 10px;
     gap: 2vw;
     border-style: solid;
@@ -2076,7 +2076,7 @@ canvas {
     display: grid;
     grid-template-columns: 54vw 25vw;
     grid-template-rows: 60px .75fr .75fr;
-    grid-template-areas: "heading heading" "p1 photo" "p2 photo";
+    grid-template-areas: "heading heading""p1 photo""p2 photo";
     column-gap: 72px;
     row-gap: 0px;
     margin-top: 32px;
@@ -2160,7 +2160,7 @@ canvas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 60px 15vh 15vh;
-    grid-template-areas: "tools-heading tools-heading" "p1 logos" "p2 logos";
+    grid-template-areas: "tools-heading tools-heading""p1 logos""p2 logos";
     column-gap: 12%;
 }
 
@@ -2191,7 +2191,7 @@ canvas {
     align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "figma xd" "invision miro" "ps github";
+    grid-template-areas: "figma xd""invision miro""ps github";
     margin: 0 2vw;
     padding: 2vw 2vw;
     border-radius: 20px;
@@ -2247,7 +2247,7 @@ canvas {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 60px 1fr 1fr;
     column-gap: 12%;
-    grid-template-areas: "learning-header learning-header" "p1 right-side" "p2 right-side";
+    grid-template-areas: "learning-header learning-header""p1 right-side""p2 right-side";
     display: none;
 }
 
@@ -2294,6 +2294,107 @@ canvas {
     margin: 2px 0;
 }
 
+
+/* _____________________________________BEELA______________________________ */
+/* _____________________________________BEELA______________________________ */
+/* _____________________________________BEELA______________________________ */
+
+.projectCopy {
+    margin: 0 auto;
+    max-width: 60ch;
+}
+
+.beelaBackgroundDropdown {
+    display: none;
+}
+
+.open .beelaBackgroundDropdown {
+    display: block;
+}
+
+.beelaProcessOverview {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "beelaProcessOverviewItem1 beelaProcessOverviewItem2 beelaProcessOverviewItem3""beelaProcessOverviewItem4 beelaProcessOverviewItem1beelaProcessOverviewItem5 beelaProcessOverviewItem6";
+}
+
+
+.banner {
+    background-color: #16b4ed;
+    margin: 0;
+    padding: 0;
+}
+
+.bannerHeading {
+    margin: 0;
+    padding: 0;
+
+}
+
+.bannerSubhead {
+    margin: 0;
+    padding: 0;
+}
+
+.bannerHeadingWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem 0;
+    border: 1px solid salmon
+}
+
+.approachWrapper {
+    max-width: 120ch;
+    margin: 0 auto;
+
+}
+
+.beelaApproachGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "approachCopy1 approachImage1""approachImage2 approachCopy2""approachCopy3 approachImage3";
+    max-width: 120ch;
+    margin: 0 auto
+}
+
+.approachImage {
+    /* background-color: lightgray; */
+    color: white;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+}
+
+.approachImage1 img {
+    box-shadow: #00000025 0 0 20px;
+    border-radius: 10px;
+    transform: rotate(.75deg);
+
+}
+
+.approachImage2 img {
+    box-shadow: #00000025 0 0 20px;
+    border-radius: 10px;
+    transform: rotate(-.75deg);
+    max-width: 20ch;
+}
+
+
+.approachCopy {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
 /* ___________________________MEDIA QUERIES_______________MEDIA QUERIES_________________________
 _________________________________MEDIA QUERIES____________________MEDIA QUERIES_______________________ */
 
@@ -2307,6 +2408,7 @@ _________________________________MEDIA QUERIES____________________MEDIA QUERIES_
         color: #192E10;
         margin: 8px 0;
     }
+
     h2 {
         font-family: "neuzeit-grotesk", sans-serif;
         font-weight: 600;
@@ -2315,19 +2417,23 @@ _________________________________MEDIA QUERIES____________________MEDIA QUERIES_
         color: #192E10;
         margin: 8px 0 16px;
     }
+
     .primary-button {
         font-size: 1.15em;
         width: 250px;
         letter-spacing: .1em;
     }
+
     .secondary-button {
         font-size: .9em;
         width: 295px;
         letter-spacing: .15em;
     }
+
     p {
         font-size: 1em;
     }
+
     /* ___________________________***Nav Bar***_______________***Nav Bar***_________________________
 _________________________________***Nav Bar***____________________***Nav Bar***_______________________ */
     .navbar {
@@ -2335,11 +2441,13 @@ _________________________________***Nav Bar***____________________***Nav Bar***_
         flex-direction: column;
         align-items: flex-start;
     }
+
     .toggle {
         display: flex;
         padding-right: 0px;
         cursor: pointer;
     }
+
     .close {
         right: 32px;
         top: 1.6em;
@@ -2347,12 +2455,14 @@ _________________________________***Nav Bar***____________________***Nav Bar***_
         cursor: pointer;
         display: none;
     }
+
     .nav-item {
         width: 100%;
         padding: 8px 0;
         display: none;
         justify-content: center;
     }
+
     .nav-list {
         text-align: center;
         width: 100%;
@@ -2360,9 +2470,11 @@ _________________________________***Nav Bar***____________________***Nav Bar***_
         flex-direction: column;
         padding-top: 12px;
     }
+
     .nav-list a {
         padding: 0;
     }
+
     /* ___________________________***Footer @<768px***_______________***Footer @<768px***_________________________
 _________________________________***Footer @<768px***____________________***Footer @<768px***_______________________ */
     .footer {
@@ -2379,6 +2491,7 @@ _________________________________***Footer @<768px***____________________***Foot
         padding-bottom: 60px;
         height: fit-content;
     }
+
     .footertext {
         margin: 10px 8px;
         font-family: "brandon-grotesque";
@@ -2389,12 +2502,15 @@ _________________________________***Footer @<768px***____________________***Foot
         width: 100%;
         padding: 0;
     }
+
     .logo-grid {
         justify-content: space-evenly;
     }
+
     .logo-grid img {
         margin: 16px
     }
+
     /* ___________________________***Home Screen <768***_______________***Home Screen <768***_________________________
 _________________________________***Home Screen <768***____________________***Home Screen <768***_______________________ */
     .Hero_Grid {
@@ -2408,23 +2524,29 @@ _________________________________***Home Screen <768***____________________***Ho
         position: sticky;
         top: 10vh;
     }
+
     .Hero_Grid h2 {
         color: #f7f7f7;
         font-size: 2.3em;
         margin-bottom: 56px;
     }
+
     .grid_item_1 {
         width: 100%;
     }
+
     .moreinfo {
         display: none;
     }
+
     .grid_item_1 .primary-button {
         margin-top: 24px;
     }
+
     .grid_item_2 img {
         width: 10vw;
     }
+
     /* ___________________________***Featured Section <768***_______________***Featured Section <768***_________________________
 _________________________________***Featured Section <768***____________________***Featured Section<768***_______________________ */
     .featured {
@@ -2435,18 +2557,22 @@ _________________________________***Featured Section <768***____________________
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
+
     .item-flex-container {
         flex-direction: column;
     }
+
     .home-item {
         max-width: 100%;
         min-width: 250px;
         margin: 16px 0;
     }
+
     .home-item img {
         max-width: 100%;
         box-shadow: #09150325 0 4px 16px;
     }
+
     .more-projects {
         display: flex;
         justify-content: flex-end;
@@ -2455,6 +2581,7 @@ _________________________________***Featured Section <768***____________________
         padding-right: 0px;
         font-size: smaller;
     }
+
     /* _________________________________________________MORE WORK_____________________
 ____________________________________________________MORE WORK_____________________
 ____________________________________________________MORE WORK_____________________ */
@@ -2463,10 +2590,11 @@ ____________________________________________________MORE WORK___________________
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         gap: 2em;
-        grid-template-areas: "more-work-1" "more-work-2" "more-work-3";
+        grid-template-areas: "more-work-1""more-work-2""more-work-3";
         justify-content: center;
         text-align: center;
     }
+
     .more-work-item {
         display: flex;
         flex-direction: column;
@@ -2474,12 +2602,15 @@ ____________________________________________________MORE WORK___________________
         text-align: center;
         margin: 0 auto;
     }
+
     .more-work-item img {
         width: 100%;
     }
+
     .more-work-item h4 {
         text-align: center;
     }
+
     /* ___________________________***CONTACT <768***_______________***CONTACT <768***_________________________
 _________________________________***CONTACT <768***____________________***CONTACT <768***_______________________ */
     .standard-section {
@@ -2489,11 +2620,13 @@ _________________________________***CONTACT <768***____________________***CONTAC
         padding-left: 8px;
         padding-right: 8px;
     }
+
     .contact-container {
         margin: 24px 0;
         max-width: 100vw;
         margin: auto auto;
     }
+
     .contact-form {
         box-shadow: #98989830 0 0 20px;
         padding: 8px;
@@ -2503,31 +2636,37 @@ _________________________________***CONTACT <768***____________________***CONTAC
         border-color: #192E1025;
         margin-bottom: 40px;
     }
+
     .contact-subgrid {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+
     #name {
         max-width: 100%;
         margin-top: 8px;
         margin-bottom: 12px;
     }
+
     #email {
         max-width: 100%;
         margin-top: 8px;
         margin-bottom: 12px;
     }
+
     #subject {
         max-width: 100%;
         margin-top: 8px;
         margin-bottom: 12px;
     }
+
     #message {
         max-width: 100%;
         margin-top: 8px;
         margin-bottom: 8px;
     }
+
     /* ___________________________**PROJECTS <768***_______________***PROJECTS <768***_________________________
 _________________________________***PROJECTS <768***____________________***PROJECTS <768***_______________________ */
     #projects-page-grid {
@@ -2535,115 +2674,136 @@ _________________________________***PROJECTS <768***____________________***PROJE
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         row-gap: 24px;
-        grid-template-areas: "go-create" "recycle-easy" "una-mesa" "uscis" "kinfolk";
+        grid-template-areas: "go-create""recycle-easy""una-mesa""uscis""kinfolk";
         align-items: center;
     }
+
     .projects-image {
         width: 85%;
     }
+
     .project-container {
         align-items: center;
         padding: 24px auto;
         max-width: 100vw;
     }
+
     /* ___________________________***  ABOUT  <768***_______________***  ABOUT  <768***_________________________
 _________________________________***  ABOUT  <768***____________________***  ABOUT  <768***_______________________ */
     .about-section {
         padding: 1vh 3vw 48px 3vw;
         background-color: #FCF7F2;
     }
+
     .about-hero {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 60px 274px 1fr .7fr;
-        grid-template-areas: "heading" "photo" "p1" "p2";
+        grid-template-areas: "heading""photo""p1""p2";
         margin-top: 0;
         row-gap: 32px;
     }
+
     #bioPhoto {
         max-width: 250px;
         align-self: top;
         justify-self: center;
         margin-bottom: 16px;
     }
+
     .about-hero p {
         margin: 0;
     }
+
     .skills-section {
         background-image: linear-gradient(180deg, #192E10, #091503);
         background-repeat: no-repeat;
         width: vw;
         padding: 10px 3vw;
     }
+
     .skills-section h2 {
         padding: 10px;
     }
+
     .skills-container {
         gap: 3vw;
     }
+
     .individual-skill {
         display: flex;
         gap: 0px;
         padding: 8px;
         justify-content: top;
     }
+
     .tools {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 60px .75fr .75fr .75fr;
-        grid-template-areas: "tools-heading" "logos" "p1" "p2";
+        grid-template-areas: "tools-heading""logos""p1""p2";
     }
+
     .learning-now-grid {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 60px .5fr .5fr 1fr;
         column-gap: 15%;
-        grid-template-areas: "learning-header" "p1" "p2" "right-side";
+        grid-template-areas: "learning-header""p1""p2""right-side";
     }
+
     #learning-now-right div {
         display: flex;
         justify-content: space-between;
     }
+
     #learning-now-right p {
         margin: 6px 0 4px 0;
     }
+
     #learning-now-right h5 {
         margin: 6px 0 4px 0;
     }
+
     /* ___________________________***GoCreate Redesign <768***_______________***GoCreate Redesign <768***_________________________
 _________________________________***GoCreate Redesign <768***____________________***GoCreate Redesign <768***_______________________ */
     .individual-section {
         background: #FCF7F2;
         padding: 10px 3vw
     }
+
     .gocreate-grid1 {
         margin: 32px 0 0 0;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 200px 1fr;
-        grid-template-areas: "left" "right";
+        grid-template-areas: "left""right";
     }
+
     .grid1-left-side {
         background-color: #40AAE5;
         max-width: 100vw;
         max-height: 184px;
     }
+
     .overview-columns {
         display: grid;
         grid-auto-flow: row;
         padding-top: 24px;
         padding-bottom: 64px;
     }
+
     .problem-grid {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr .25fr;
-        grid-template-areas: "left" "right";
+        grid-template-areas: "left""right";
         align-items: center;
         row-gap: 6vh;
         margin-top: 72px;
         margin-bottom: 72px;
     }
+
     .design-goal-grid {
         display: flex;
         flex-wrap: wrap;
@@ -2652,132 +2812,166 @@ _________________________________***GoCreate Redesign <768***___________________
         margin-bottom: 64px;
         gap: 32px;
     }
+
     .gocreate-sketches-container {
         display: flex;
         flex-direction: column;
         gap: 24px
     }
+
     .final-mockups {
         display: flex;
         flex-direction: column;
         gap: 24px;
     }
+
     .final-mockups img {
         width: 100%;
     }
+
     .headshots-wrapper {
         display: flex;
         flex-direction: column;
     }
+
     .individual-headshot {
         display: flex;
         align-items: center;
         margin: 16px 0;
     }
+
     .user-interviews img {
         max-width: 20vw;
     }
+
     .headshot {
         width: 120px;
         height: 120px;
     }
+
     .gocreate-mini-persona .col-lg-4 {
         margin: 16px 0;
     }
+
     .full-document-link {
         margin-top: 16px;
     }
+
     /* ___________________________***Recycle Easy <768***_______________***Recycle Easy <768***_________________________
 _________________________________***Recycle Easy <768***____________________***Recycle Easy <768***_______________________ */
     .individual-section2 {
         padding: 40px 3vw;
     }
+
     .tools-logos img {
         max-height: 16px;
     }
+
     .recycle-easy-hero-highlight div {
         display: block;
     }
+
     .recycle-easy-hero-image {
         display: none;
     }
+
     .research-card-container {
         margin: 0;
     }
+
     .research-stats {
         margin: 24px 0;
         padding: 0;
         display: flex;
         flex-direction: column;
     }
+
     .UnaMesaResearchStats {
         padding: 1vw;
         Margin: 0
     }
+
     .unamesa-research-artifacts {
         margin: 2vh 0;
         gap: 2vh;
     }
+
     .card {
         margin: 8px 0;
     }
+
     .callout-container {
         padding: 16px 8px;
         margin: 0 4px;
     }
+
     .callout {
         font-size: 48px;
     }
+
     .persona-area {
         margin: 24px 4px 0 4px;
     }
+
     .mini-persona {
         padding: 16px 8px;
         border-radius: 20px 20px 0 0;
     }
+
     .SharonWattscol1 img {
         max-width: 250px;
         margin-bottom: 2vw;
     }
+
     .ideation-assets {
         display: none;
     }
+
     .low-fi-asset-container {
         width: 50vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
     .asset-image {
         max-width: 70vw;
         margin: 10px auto;
     }
+
     .low-fi-assets {
         margin: 0;
     }
+
     .low-fi-assets img {
         margin: 0;
     }
+
     .wireframe {
         margin-top: 0;
     }
+
     .abTesting {
         gap: 2vh;
     }
+
     .buttonflex img {
         max-width: 60vw;
     }
+
     /* ___________________________***KINFOLK <768***_______________***KINFOLK <768***_________________________
 _________________________________***KINFOLK <768***____________________***KINFOLK <768***_______________________ */
     .kinfolk-hero-image {
         padding: 0;
     }
+
     .kinfolk-hero-highlight-flex {
         margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .kinfolk-hero-highlight-flex-item {
         display: flex;
         flex-direction: column;
@@ -2786,90 +2980,109 @@ _________________________________***KINFOLK <768***____________________***KINFOL
         margin: 0;
         padding: 0
     }
+
     .kinfolk-timeline {
         text-align: center;
     }
+
     .timeline-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .kinfolk-brief {
         display: flex;
         flex-wrap: wrap;
         background-position-x: left;
     }
+
     .kinfolk-brief p {
         max-width: 45ch;
         padding: 3vh 2vw;
     }
+
     .kinfolk-problem-wrapper {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: .15fr 1fr .15fr 1fr .15fr 1fr;
-        grid-template-areas: "kinfolk-problem" "kinfolk-problem-image" "kinfolk-challenge" "kinfolk-challenge-image" "kinfolk-solution" "kinfolk-solution-image";
+        grid-template-areas: "kinfolk-problem""kinfolk-problem-image""kinfolk-challenge""kinfolk-challenge-image""kinfolk-solution""kinfolk-solution-image";
         align-items: center;
     }
+
     .kinfolk-problem-image {
         grid-area: kinfolk-problem-image;
         border-radius: 20px;
         margin-bottom: 32px;
     }
+
     .kinfolk-challenge-image {
         grid-area: kinfolk-challenge-image;
         border-radius: 20px;
         margin-bottom: 32px;
     }
+
     .kinfolk-solution-image {
         grid-area: kinfolk-solution-image;
         border-radius: 20px;
     }
+
     .allisonDelaurens {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 25% 1fr 1.6fr;
-        grid-template-areas: "pic basic basic" "bio bio bio" "lists lists lists";
+        grid-template-areas: "pic basic basic""bio bio bio""lists lists lists";
         padding: 8px
     }
+
     .allisonDelaurens-pic {
         grid-area: pic;
         background-size: 100%;
         background-position: 0 15%;
         box-shadow: #09150350 0 0 10px;
     }
+
     .allisonDelaurens-lists {
         flex-direction: column;
         gap: 2vw;
         margin-top: 0;
     }
+
     .kinfolk-sketch-item {
         margin: 10px 20%
     }
+
     .allisonDelaurens-user-story {
         flex-wrap: wrap;
     }
+
     .kinfolk-sketches {
         flex-wrap: wrap;
         margin: 0 auto;
         gap: 0
     }
+
     .kinfolk-sketches img {
         width: 100%;
         justify-content: center;
     }
+
     .kinfolk-usability-flex {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: 0;
     }
+
     .kinfolk-next-steps {
         background-position: -50vw 0;
         background-repeat: no-repeat;
     }
+
     .kinfolk-next-steps p {
         width: 84vw;
         font-size: 1.6em;
     }
+
     .kinfolk-next-steps-wrapper {
         width: 90vw;
         border-radius: 20px;
