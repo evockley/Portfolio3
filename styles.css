@@ -2377,7 +2377,7 @@ canvas {
 .beelaListFinger {
     list-style: none;
     text-indent: -2rem;
-    margin: 1.2rem 0
+    margin: 1.5rem 0
 }
 
 .beelaListFinger li {
@@ -2424,7 +2424,7 @@ canvas {
 
 .bannerWrapper {
     background-color: #16b4ed;
-    color: white;
+    color: #FCF7F2;
     margin: 0;
     padding: .5rem 0;
     position: sticky;
@@ -2438,44 +2438,31 @@ canvas {
 }
 
 .bannerWrapperSmall {
-    background-color: #16b4ed;
-    color: white;
+    background-color: #18b3ec;
+    color: #FCF7F2;
     margin: 0;
-    padding: .5rem 0;
+    padding: .1rem 0;
     position: sticky;
     position: -webkit-sticky;
     top: 10.9%;
     z-index: 1;
     display: flex;
-    justify-content: center;
-}
-
-
-.bannerContent {
-    margin: 0;
-    padding: 0;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.bannerContent * {
-    color: #FCF7F2;
+    font-size: smaller;
 }
 
 .bannerHeading {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    color: #FCF7F2;
 }
 
 .bannerSubhead {
     margin: 0;
     padding: 0;
+    color: #FCF7F2;
 }
 
 .bannerHeadingWrapper {
@@ -2485,14 +2472,6 @@ canvas {
     align-items: center;
     margin: 0;
     padding: .5rem 0;
-}
-
-
-
-.approachWrapper {
-    max-width: 120ch;
-    margin: 4rem auto;
-
 }
 
 .beelaBackgroundQuestions {
@@ -2507,21 +2486,54 @@ canvas {
 .beelaBackgroundQuestions h4 {
     background-color: #fab348;
     margin: 0;
-    padding: .7rem;
+    padding: .5rem 1rem;
     font-size: x-large;
     color: #FCF7F2;
     border-radius: 10px 10px 0 0;
 }
 
-.beelaBackgroundQuestions li {
+.beelaBackgroundQuestions p {
     padding: .1rem .75rem;
 }
+
 
 .beelaBackgroundQ1, .beelaBackgroundQ2, .beelaBackgroundQ3, .beelaBackgroundQ4 {
 
     box-shadow: #98989830 0 0 20px;
-    border-radius: 10px;
+    border-radius: 16px;
     border: solid .5px #192e102f;
+
+}
+
+.beelaBackgroundQ1 h4::before {
+    content: "👩🏽";
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+.beelaBackgroundQ2 h4::before {
+    content: "🇸🇪";
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+.beelaBackgroundQ3 h4::before {
+    content: "💻";
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+.beelaBackgroundQ4 h4::before {
+    content: "🐝";
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+
+.approachWrapper {
+    max-width: 120ch;
+    margin: 4rem auto;
+
 }
 
 .beelaApproachGrid {
@@ -2624,12 +2636,13 @@ canvas {
 
 .beelaOSTSummaryWrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex: 1 0 20px
 }
 
 .beelaOSTSummary {
-    margin: 2rem 0 0 0;
+    margin: 2rem;
+
 }
 
 .beelaOSTSummary h4 {
@@ -2643,6 +2656,35 @@ canvas {
 
 .beelaOSTSummary li {
     min-width: 350px;
+    list-style: none;
+    margin: 2rem;
+}
+
+.opportunityPrioritizationStickies {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.opportunityPrioritizationStickies * {
+    width: clamp(10rem, 12rem, 14rem)
+}
+
+
+.beelaOSTSummaryList {
+    margin-left: -2rem;
+}
+
+.howMightWe {
+    margin: 2rem 0
+}
+
+.howMightWe::before {
+    content: "📌";
+    font-size: 2.5em;
+    margin-right: 32px;
 }
 
 .test1 {

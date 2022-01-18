@@ -1,5 +1,6 @@
 // DISAPPEARING HOME PAGE ELEMENTS ON SCROLL
 
+
 $(window).scroll(function () {
     if ($(this).scrollTop() > 150) {
         $('.homeHeroButton').css("visibility", "hidden");
@@ -263,7 +264,19 @@ var journeyMap = new Chart("allisonsJourneyMap", {
 
 
 
-// Beela
-// Beela
-// Beela
+//________________________________ Beela________________________________
+//________________________________ Beela________________________________
+//________________________________ Beela________________________________
+//________________________________ Beela________________________________
+// https://www.youtube.com/watch?v=RxnV9Xcw914 ((((((7 minutes in))))))
+
+const banner1 = document.querySelector("banner1");
+const beelaBackground = document.querySelector(".beelaBackground");
+
+const beelaBackgroundObserverOptions = {}
+
+const beelaBackgroundObserver = new IntersectionObserver(function () { }, beelaBackgroundObserverOptions);
+
+
+
 
