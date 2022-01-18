@@ -2304,12 +2304,108 @@ canvas {
     max-width: 60ch;
 }
 
-.beelaBackgroundDropdown {
-    display: none;
+/* BEELA LISTS */
+
+
+
+.beelaHeroine {
+    background-image: url(images/Beela/christin-hume-Hcfwew744z4-unsplash.jpg);
+    max-width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
 }
 
-.open .beelaBackgroundDropdown {
-    display: block;
+.beelaHeronineContent {
+    display: flex;
+    height: 65vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.beelaTitle * {
+    color: #FCF7F2;
+    text-shadow: #00000050 0 0 10px;
+    margin: 0
+}
+
+.beelaQuickstats1, .beelaQuickstats2, .beelaQuickstats3 {
+    /* background-color: red; */
+    max-width: 50vw;
+}
+
+.beelaQuickstats1 {
+    margin: 8px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 1vw;
+}
+
+
+.beelaQuickstats2Content {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2vw
+}
+
+.beelaQuickstats2Content p {
+    min-width: fit-content
+}
+
+.beelaQuickstats1 * {
+    color: #FCF7F2;
+    margin: 0;
+    text-shadow: #00000050 0 0 10px;
+
+}
+
+
+
+.beelaQuickstats2 * {
+    color: #FCF7F2;
+    margin: 0;
+    text-shadow: #00000050 0 0 10px;
+}
+
+.beelaQuickstats3 * {
+    color: #FCF7F2;
+    margin: 0;
+    text-shadow: #00000050 0 0 10px;
+}
+
+
+.beelaListFinger {
+    list-style: none;
+    text-indent: -2rem;
+    margin: 1.2rem 0
+}
+
+.beelaListFinger li {
+    list-style: none;
+    margin: 6px 0
+}
+
+.beelaListFinger::before {
+    content: "👉";
+}
+
+.beelaListFinger li::before {
+    content: "📌";
+}
+
+.briefGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "briefLogistics briefConstraints";
+    gap: 4rem;
+    margin: 4rem 0;
+}
+
+.beelaProcessOverviewWrapper {
+    margin: 0 auto;
+
+    margin: 4rem 0 0 0;
 }
 
 .beelaProcessOverview {
@@ -2317,19 +2413,64 @@ canvas {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "beelaProcessOverviewItem1 beelaProcessOverviewItem2 beelaProcessOverviewItem3""beelaProcessOverviewItem4 beelaProcessOverviewItem1beelaProcessOverviewItem5 beelaProcessOverviewItem6";
+    gap: 2rem
+}
+
+.beelaProcessOverviewItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bannerWrapper {
+    background-color: #16b4ed;
+    color: white;
+    margin: 0;
+    padding: .5rem 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10.9%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerWrapperSmall {
+    background-color: #16b4ed;
+    color: white;
+    margin: 0;
+    padding: .5rem 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10.9%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
 }
 
 
-.banner {
-    background-color: #16b4ed;
+.bannerContent {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerContent * {
+    color: #FCF7F2;
 }
 
 .bannerHeading {
     margin: 0;
     padding: 0;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .bannerSubhead {
@@ -2343,19 +2484,49 @@ canvas {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 1rem 0;
-    border: 1px solid salmon
+    padding: .5rem 0;
 }
+
+
 
 .approachWrapper {
     max-width: 120ch;
-    margin: 0 auto;
+    margin: 4rem auto;
 
+}
+
+.beelaBackgroundQuestions {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "beelaBackgroundQ1 beelaBackgroundQ2""beelaBackgroundQ3 beelaBackgroundQ4";
+    gap: 1rem;
+    margin: 4rem 0 0 0;
+}
+
+.beelaBackgroundQuestions h4 {
+    background-color: #fab348;
+    margin: 0;
+    padding: .7rem;
+    font-size: x-large;
+    color: #FCF7F2;
+    border-radius: 10px 10px 0 0;
+}
+
+.beelaBackgroundQuestions li {
+    padding: .1rem .75rem;
+}
+
+.beelaBackgroundQ1, .beelaBackgroundQ2, .beelaBackgroundQ3, .beelaBackgroundQ4 {
+
+    box-shadow: #98989830 0 0 20px;
+    border-radius: 10px;
+    border: solid .5px #192e102f;
 }
 
 .beelaApproachGrid {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: .7fr .7fr .7fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "approachCopy1 approachImage1""approachImage2 approachCopy2""approachCopy3 approachImage3";
     max-width: 120ch;
@@ -2363,28 +2534,39 @@ canvas {
 }
 
 .approachImage {
-    /* background-color: lightgray; */
+    background-color: rgb(12, 88, 76);
     color: white;
     font-size: x-large;
     display: flex;
     justify-content: center;
-    max-width: fit-content;
+    align-self: center;
+    max-width: 35ch;
+    flex-grow: 0;
+    border-radius: 10px;
 }
 
 .approachImage1 img {
     box-shadow: #00000025 0 0 20px;
     border-radius: 10px;
-    transform: rotate(.75deg);
+    transform: rotate(.5deg);
+    /* max-width: fit-content; */
 
 }
 
 .approachImage2 img {
     box-shadow: #00000025 0 0 20px;
     border-radius: 10px;
-    transform: rotate(-.75deg);
-    max-width: 20ch;
+    transform: rotate(-.5deg);
+    /* max-width: fit-content; */
 }
 
+.approachImage3 img {
+    box-shadow: #00000025 0 0 20px;
+    border-radius: 10px;
+    transform: rotate(.5deg);
+    /* max-width: fit-content; */
+    max-height: 85%;
+}
 
 .approachCopy {
     padding: 1em;
@@ -2393,6 +2575,91 @@ canvas {
     align-items: center;
     justify-content: center;
 
+}
+
+.beelaAffinityMapWrapper {
+    max-width: 85ch;
+    margin: 0 auto;
+    background-color: rosybrown;
+    border-radius: 10px;
+    transform: rotate(.25deg)
+}
+
+.beelaAffinityMapWrapper img {
+    border-radius: 10px;
+    transform: rotate(-.25deg);
+    box-shadow: #00000035 0 0 10px;
+    margin: 2px 2px 0 2px;
+}
+
+.beelaOSTWrapper1 {
+    margin: 0 auto;
+    background-color: #504f83;
+    border-radius: 10px;
+    transform: rotate(.15deg);
+    margin: 4rem 0;
+}
+
+.beelaOSTWrapper1 img {
+    border-radius: 10px;
+    transform: rotate(-.15deg);
+    box-shadow: #00000035 0 0 10px;
+    margin: 0 0;
+}
+
+.beelaOSTWrapper2 {
+    margin: 0 auto;
+    background-color: #504f83;
+    border-radius: 10px;
+    transform: rotate(-.15deg);
+    margin: 4rem 0;
+}
+
+.beelaOSTWrapper2 img {
+    border-radius: 10px;
+    transform: rotate(.15deg);
+    box-shadow: #00000035 0 0 10px;
+    margin: 0 0;
+}
+
+.beelaOSTSummaryWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 20px
+}
+
+.beelaOSTSummary {
+    margin: 2rem 0 0 0;
+}
+
+.beelaOSTSummary h4 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.beelaOSTSummary ul {
+    min-width: 350px;
+}
+
+.beelaOSTSummary li {
+    min-width: 350px;
+}
+
+.test1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.test2, .test3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.test4, .test5 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* ___________________________MEDIA QUERIES_______________MEDIA QUERIES_________________________
@@ -2769,7 +3036,7 @@ _________________________________***  ABOUT  <768***____________________***  ABO
 _________________________________***GoCreate Redesign <768***____________________***GoCreate Redesign <768***_______________________ */
     .individual-section {
         background: #FCF7F2;
-        padding: 10px 3vw
+        padding: 10px 3vw;
     }
 
     .gocreate-grid1 {
