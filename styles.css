@@ -2377,12 +2377,13 @@ canvas {
 .beelaListFinger {
     list-style: none;
     text-indent: -2rem;
-    margin: 1.5rem 0
+    margin: 1.5rem 0;
+    line-height: 150%;
 }
 
 .beelaListFinger li {
     list-style: none;
-    margin: 6px 0
+    margin: 6px 0;
 }
 
 .beelaListFinger::before {
@@ -2399,7 +2400,8 @@ canvas {
     grid-template-rows: 1fr;
     grid-template-areas: "briefLogistics briefConstraints";
     gap: 4rem;
-    margin: 4rem 0;
+    max-width: 132ch;
+    margin: 4rem auto;
 }
 
 .beelaProcessOverviewWrapper {
@@ -2413,13 +2415,18 @@ canvas {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "beelaProcessOverviewItem1 beelaProcessOverviewItem2 beelaProcessOverviewItem3""beelaProcessOverviewItem4 beelaProcessOverviewItem1beelaProcessOverviewItem5 beelaProcessOverviewItem6";
-    gap: 2rem
+    gap: 1rem;
+    ;
 }
 
 .beelaProcessOverviewItem {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: #00000025 0 0 10px;
+    padding: 1rem;
+
 }
 
 .bannerWrapper {
@@ -2429,7 +2436,7 @@ canvas {
     padding: .5rem 0;
     position: sticky;
     position: -webkit-sticky;
-    top: 10.9%;
+    top: 109px;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -2480,7 +2487,8 @@ canvas {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "beelaBackgroundQ1 beelaBackgroundQ2""beelaBackgroundQ3 beelaBackgroundQ4";
     gap: 1rem;
-    margin: 4rem 0 0 0;
+    max-width: 132ch;
+    margin: 4rem auto 0 auto;
 }
 
 .beelaBackgroundQuestions h4 {
@@ -2541,7 +2549,7 @@ canvas {
     grid-template-rows: .7fr .7fr .7fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "approachCopy1 approachImage1""approachImage2 approachCopy2""approachCopy3 approachImage3";
-    max-width: 120ch;
+    max-width: 132ch;
     margin: 0 auto
 }
 
@@ -2590,8 +2598,7 @@ canvas {
 }
 
 .beelaAffinityMapWrapper {
-    max-width: 85ch;
-    margin: 0 auto;
+    margin: 4rem auto;
     background-color: rosybrown;
     border-radius: 10px;
     transform: rotate(.25deg)
@@ -2609,7 +2616,8 @@ canvas {
     background-color: #504f83;
     border-radius: 10px;
     transform: rotate(.15deg);
-    margin: 4rem 0;
+    max-width: 132ch;
+    margin: 4rem auto;
 }
 
 .beelaOSTWrapper1 img {
@@ -2624,7 +2632,8 @@ canvas {
     background-color: #504f83;
     border-radius: 10px;
     transform: rotate(-.15deg);
-    margin: 4rem 0;
+    max-width: 132ch;
+    margin: 4rem auto;
 }
 
 .beelaOSTWrapper2 img {
@@ -2637,7 +2646,9 @@ canvas {
 .beelaOSTSummaryWrapper {
     display: flex;
     justify-content: center;
-    flex: 1 0 20px
+    flex: 1 0 20px;
+    max-width: 132ch;
+    margin: 0 auto
 }
 
 .beelaOSTSummary {
@@ -2675,6 +2686,7 @@ canvas {
 
 .beelaOSTSummaryList {
     margin-left: -2rem;
+
 }
 
 .howMightWe {
@@ -2702,6 +2714,70 @@ canvas {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.roughJourneyMapWrapper {
+    max-width: 85ch;
+    margin: 4rem auto;
+    background-color: rosybrown;
+    border-radius: 10px;
+    transform: rotate(.5deg)
+}
+
+.roughJourneyMapWrapper img {
+    border-radius: 10px;
+    transform: rotate(-.5deg);
+    box-shadow: #00000035 0 0 10px;
+    margin: 2px 2px 0 2px;
+}
+
+.bigJourneyMap {
+    max-width: 85ch;
+    margin: 4rem auto;
+    background-color: rgb(128, 127, 167);
+    border-radius: 10px;
+    transform: rotate(.35deg)
+}
+
+.bigJourneyMap img {
+    border-radius: 10px;
+    transform: rotate(-.35deg);
+    box-shadow: #00000035 0 0 10px;
+    margin: 2px 2px 0 2px;
+}
+
+
+.beelaSketchImage {
+    border-radius: 10px;
+    background-color: #fab348;
+    margin: 4rem auto;
+    max-width: 32ch;
+    transform: rotate(2deg);
+}
+
+.beelaSketchImage img {
+    border-radius: 10px;
+    box-shadow: #00000035 0 0 10px;
+    max-width: inherit;
+    transform: rotate(-2deg);
+    padding: 0
+}
+
+
+.beelaSketchMap {
+    border-radius: 10px;
+    background-color: rgb(12, 88, 76);
+    margin: 4rem auto;
+    max-width: 100%;
+    transform: rotate(-1deg);
+}
+
+.beelaSketchMap img {
+    border-radius: 10px;
+    box-shadow: #00000035 0 0 10px;
+    max-width: inherit;
+    transform: rotate(1deg);
+    padding: 0
 }
 
 /* ___________________________MEDIA QUERIES_______________MEDIA QUERIES_________________________
