@@ -2779,6 +2779,95 @@ canvas {
     padding: 0
 }
 
+.twoTeams {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+
+
+}
+
+.team1 {
+    background-color: #e09315;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 20ch;
+}
+
+.team1 * {
+    color: #FCF7F2;
+    text-shadow: #00000035 0 0 8px;
+    line-height: 30px;
+}
+
+.team2 * {
+    color: #FCF7F2;
+    text-shadow: #00000035 0 0 8px;
+    line-height: 30px;
+}
+
+.team2 {
+    background-color: #5d5ba0;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 20ch;
+}
+
+.careerPathGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .15fr .7fr 1fr;
+    grid-template-areas: "careerPathGridImage1 careerPathGridCopy1""careerPathGridCopy2 careerPathGridImage2""careerPathGridImage3 careerPathGridCopy3";
+    max-width: 110ch;
+
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+    padding: 0
+}
+
+.careerPathGrid * {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.careerPathGridImage1, .careerPathGridImage2, .careerPathGridImage3 {
+    max-width: 40ch;
+}
+
+.careerPathGridImage1 {
+    background-color: #068806;
+    transform: rotate(1deg);
+    border-radius: 10px;
+}
+
+
+
+
+.careerPathGridImage1 img {
+    border-radius: 10px;
+    box-shadow: #00000025 0 0 10px;
+    transform: rotate(-1deg);
+}
+
+.careerPathGridImage2 img {
+    border-radius: 10px;
+    box-shadow: #00000025 0 0 10px;
+}
+
+.careerPathGridImage3 img {
+    border-radius: 10px;
+    box-shadow: #00000025 0 0 10px;
+}
+
+.careerPathGridCopy1, .careerPathGridCopy2, .careerPathGridCopy3 {
+    padding: 1em;
+    max-width: 40ch;
+
+}
+
 /* ___________________________MEDIA QUERIES_______________MEDIA QUERIES_________________________
 _________________________________MEDIA QUERIES____________________MEDIA QUERIES_______________________ */
 
