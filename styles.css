@@ -2689,7 +2689,7 @@ canvas {
 }
 
 .howMightWe {
-    margin: 2rem 0
+    margin: 3rem 0
 }
 
 .howMightWe::before {
@@ -2842,8 +2842,6 @@ canvas {
     transform: rotate(1deg);
     border-radius: 10px;
 }
-
-
 
 
 .careerPathGridImage1 img {
