@@ -20,9 +20,11 @@ body {
 }
 
 hr {
-    border-top: .5px solid #f9717150;
+    border-top: 1px solid #c9c9c9;
     border-radius: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: transparent;
+    margin-bottom: 4rem;
+
 }
 
 .inlineLink {
@@ -2623,8 +2625,11 @@ canvas {
     margin: 4rem auto;
     background-color: rosybrown;
     border-radius: 10px;
-    transform: rotate(.25deg)
+    transform: rotate(.25deg);
+
 }
+
+
 
 .beelaAffinityMapWrapper img {
     border-radius: 10px;
@@ -2653,14 +2658,14 @@ canvas {
     margin: 0 auto;
     background-color: #504f83;
     border-radius: 10px;
-    transform: rotate(-.15deg);
+    transform: rotate(.55deg);
     max-width: 132ch;
     margin: 4rem auto;
 }
 
 .beelaOSTWrapper2 img {
     border-radius: 10px;
-    transform: rotate(.15deg);
+    transform: rotate(-.55deg);
     box-shadow: #00000035 0 0 10px;
     margin: 0 0;
 }
@@ -2693,20 +2698,28 @@ canvas {
     margin: 2rem;
 }
 
+.opportunityPrioritizationStickiesWrapper {
+    margin: 3rem auto;
+    max-width: 70ch;
+
+}
+
 .opportunityPrioritizationStickies {
-    margin: 2rem 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
     max-width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+
 }
 
 .opportunityPrioritizationStickies * {
     width: clamp(10rem, 12rem, 14rem)
 }
 
-
-.beelaOSTSummaryList {
+.opportunityPrioritizationStickies .beelaOSTSummaryList {
     margin-left: -2rem;
 
 }
@@ -2945,7 +2958,7 @@ canvas {
 }
 
 .beelaInterviews1ContentB {
-    margin-top: 4rem;
+    margin: 4rem 0;
 }
 
 .beelaInterviews1Column1 {
@@ -2981,6 +2994,36 @@ canvas {
     border-radius: 10px;
     box-shadow: #00000025 0 0 10px;
     transform: rotate(1.3deg)
+}
+
+.beelaStoryboard1 {
+    background-color: #fab348;
+    transform: rotate(-1.3deg);
+    border-radius: 10px;
+    max-width: 100ch;
+    margin: 4rem auto
+}
+
+.beelaStoryboard1 img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: #00000025 0 0 10px;
+    transform: rotate(1.3deg)
+}
+
+.beelaStoryboard2 {
+    background-color: #5d5ba0;
+    transform: rotate(1.31deg);
+    border-radius: 10px;
+    max-width: 100ch;
+    margin: 4rem auto
+}
+
+.beelaStoryboard2 img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: #00000025 0 0 10px;
+    transform: rotate(-1.1deg)
 }
 
 /* ___________________________MEDIA QUERIES_______________MEDIA QUERIES_________________________
