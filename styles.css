@@ -3000,7 +3000,7 @@ canvas {
     background-color: #fab348;
     transform: rotate(-1.3deg);
     border-radius: 10px;
-    max-width: 100ch;
+    max-width: 80ch;
     margin: 4rem auto
 }
 
@@ -3015,7 +3015,7 @@ canvas {
     background-color: #5d5ba0;
     transform: rotate(1.31deg);
     border-radius: 10px;
-    max-width: 100ch;
+    max-width: 80ch;
     margin: 4rem auto
 }
 
