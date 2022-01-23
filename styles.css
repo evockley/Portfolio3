@@ -3,7 +3,7 @@
 }
 
 ::selection {
-    background-color: #F97171;
+    background-color: #f97171;
     color: white;
 }
 
@@ -17,6 +17,17 @@ body {
 
 .row {
     max-width: 1200px;
+}
+
+hr {
+    border-top: .5px solid #f9717150;
+    border-radius: 10px;
+    border-bottom: 1px solid white;
+}
+
+.inlineLink {
+    text-decoration: underline;
+    color: rgb(12, 49, 88)
 }
 
 /* -----------------------------------------------------TYPOGRAPHY------------------------------------------------------
@@ -2387,7 +2398,7 @@ canvas {
 }
 
 .beelaListFinger::before {
-    content: "👉";
+    content: "👉 ";
 }
 
 .beelaListFinger li::before {
@@ -2507,7 +2518,11 @@ canvas {
 }
 
 .beelaBackgroundQuestions p {
-    padding: .1rem .75rem;
+    padding: 0 1rem;
+}
+
+.beelaBackgroundQuestions p::before {
+    content: "👉 "
 }
 
 
@@ -2516,6 +2531,7 @@ canvas {
     box-shadow: #98989830 0 0 20px;
     border-radius: 16px;
     border: solid .5px #192e102f;
+
 
 }
 
@@ -2566,7 +2582,7 @@ canvas {
     display: flex;
     justify-content: center;
     align-self: center;
-    max-width: 35ch;
+    max-width: 45vh;
     flex-grow: 0;
     border-radius: 10px;
 }
@@ -2875,8 +2891,12 @@ canvas {
 .beelaInterviews1 {
 
     max-width: 100ch;
-    margin: 4rem auto;
-    border: 1px solid red
+    margin: 6rem auto 0 auto;
+
+}
+
+.beelaInterviews1 h3 {
+    margin-bottom: 0;
 }
 
 .beelaInterviews1Header * {
@@ -2885,14 +2905,47 @@ canvas {
 
 .beelaInterviews1Header h4 {
     font-weight: normal;
+
+}
+
+.beelaInterviews1ContentWrapper {
+
+    margin-top: 3rem
 }
 
 .beelaInterviews1Content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 0 4rem 0;
+    margin: 0;
+    box-shadow: #00000015 0 0 10px;
+    padding: 0 1rem;
+    border-radius: 0 0 10px 10px;
+}
 
+.beelaInterviews1ContentA {
+    margin-top: 0;
+
+}
+
+.beelaInterviews1ContentA h3 {
+    color: #FCF7F2;
+    background-color: #e09315;
+    padding: 16px;
+    border-radius: 10px 10px 0 0;
+    margin: 0
+}
+
+.beelaInterviews1ContentB h3 {
+    color: #FCF7F2;
+    background-color: #5d5ba0;
+    padding: 16px;
+    border-radius: 10px 10px 0 0;
+    margin: 0
+}
+
+.beelaInterviews1ContentB {
+    margin-top: 4rem;
 }
 
 .beelaInterviews1Column1 {
@@ -2910,11 +2963,24 @@ canvas {
     border-radius: 10px;
 }
 
+.beelaInterviews1Column2Image {
+    background-color: #5d5ba0;
+    transform: rotate(-1.3deg);
+    border-radius: 10px;
+}
+
 .beelaInterviews1Column1Image img {
     max-width: 100%;
     border-radius: 10px;
     box-shadow: #00000025 0 0 10px;
     transform: rotate(-1.3deg)
+}
+
+.beelaInterviews1Column2Image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: #00000025 0 0 10px;
+    transform: rotate(1.3deg)
 }
 
 /* ___________________________MEDIA QUERIES_______________MEDIA QUERIES_________________________
