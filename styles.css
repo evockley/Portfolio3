@@ -2322,9 +2322,6 @@ canvas {
     max-width: 60ch;
 }
 
-/* BEELA LISTS */
-
-
 
 .beelaHeroine {
     background-image: url(images/Beela/christin-hume-Hcfwew744z4-unsplash.jpg);
@@ -2346,11 +2343,6 @@ canvas {
     text-shadow: #00000050 0 0 10px;
     margin: 0
 }
-
-/* .beelaQuickstats1, .beelaQuickstats2, .beelaQuickstats3 {
- 
-    max-width: 100%;
-} */
 
 .beelaQuickstats1 {
     margin: 8px 0;
@@ -2394,7 +2386,7 @@ canvas {
 
 .beelaListFinger {
     list-style: none;
-    text-indent: -2rem;
+    text-indent: 0;
     margin: 1.5rem 0;
     line-height: 150%;
 }
@@ -2420,6 +2412,12 @@ canvas {
     gap: 4rem;
     max-width: 132ch;
     margin: 4rem auto;
+}
+
+
+.beelaAlignSection, .beelaSynthesizeSection, .beelaIdentifySection, .beelaMapSection, .beelaDivideSection, .beelaIterateSection {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
 }
 
 .beelaProcessOverviewWrapper {
@@ -2524,9 +2522,7 @@ canvas {
     border-radius: 10px 10px 0 0;
 }
 
-.beelaBackgroundSection {
-    background-color: #f1f9fc;
-}
+
 
 .beelaBackgroundQuestions p {
     padding: 2rem 1.5rem;
@@ -2716,10 +2712,7 @@ canvas {
     width: clamp(10rem, 12rem, 14rem)
 }
 
-.opportunityPrioritizationStickies .beelaOSTSummaryList {
-    margin-left: -2rem;
 
-}
 
 .howMightWe {
     margin: 3rem 0
@@ -2749,7 +2742,7 @@ canvas {
 }
 
 .roughJourneyMapWrapper {
-    max-width: 85ch;
+    max-width: 100ch;
     margin: 4rem auto;
     background-color: rosybrown;
     border-radius: 10px;
@@ -2819,7 +2812,7 @@ canvas {
     justify-content: center;
     align-items: top;
     gap: 3.2rem;
-    margin: 2rem 0
+    margin: 2rem 0 4rem 0
 }
 
 .team1 {
@@ -2854,12 +2847,13 @@ canvas {
     grid-template-rows: .15fr .7fr 1fr;
     grid-template-areas: "careerPathGridImage1 careerPathGridCopy1""careerPathGridCopy2 careerPathGridImage2""careerPathGridImage3 careerPathGridCopy3";
     max-width: 110ch;
-
     justify-content: center;
     align-items: center;
     margin: 4rem auto;
     padding: 0
 }
+
+
 
 .careerPathGrid * {
     margin: 0 auto;
@@ -2875,6 +2869,7 @@ canvas {
     background-color: #068806;
     transform: rotate(1deg);
     border-radius: 10px;
+    grid-area: careerPathGridImage1;
 }
 
 
@@ -2884,14 +2879,38 @@ canvas {
     transform: rotate(-1deg);
 }
 
+.careerPathGridCopy1 {
+    grid-area: careerPathGridCopy1;
+}
+
+.careerPathGridImage2 {
+    background-color: #068806;
+    transform: rotate(1deg);
+    border-radius: 10px;
+    grid-area: careerPathGridImage2;
+}
+
 .careerPathGridImage2 img {
     border-radius: 10px;
     box-shadow: #00000025 0 0 10px;
+    transform: rotate(-1deg);
+}
+
+.careerPathGridCopy2 {
+    grid-area: careerPathGridCopy2;
+}
+
+.careerPathGridImage3 {
+    background-color: #5d5ba0;
+    transform: rotate(1deg);
+    border-radius: 10px;
+    grid-area: careerPathGridImage3;
 }
 
 .careerPathGridImage3 img {
     border-radius: 10px;
     box-shadow: #00000025 0 0 10px;
+    transform: rotate(-1deg);
 }
 
 .careerPathGridCopy1, .careerPathGridCopy2, .careerPathGridCopy3 {
@@ -2994,6 +3013,64 @@ canvas {
     transform: rotate(1.3deg)
 }
 
+.beelaPersonasGridWrapper {
+    margin: 0 auto;
+    max-width: 132ch;
+}
+
+.beelaPersonasGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "biaImage biaCopy""judyCopy judyImage";
+    align-items: center;
+    justify-content: center;
+    max-width: 132ch;
+    margin: 4rem auto;
+    gap: 2rem 4rem
+}
+
+.biaImage, .judyImage {
+    max-width: 60ch;
+}
+
+.judyCopy {
+    grid-area: judyCopy;
+    max-width: 60ch;
+}
+
+.judyImage {
+    grid-area: judyImage;
+    transform: rotate(-1deg);
+    background-color: #fab348;
+    border-radius: 10px;
+}
+
+.judyImage img {
+    border-radius: 10px;
+    transform: rotate(1deg);
+    box-shadow: #00000025 0 0 10px;
+    transform: rotate(1deg);
+}
+
+.biaCopy {
+    grid-area: biaCopy;
+    max-width: 60ch;
+}
+
+.biaImage {
+    grid-area: biaImage;
+    border-radius: 10px;
+    background-color: #5d5ba0;
+    transform: rotate(1deg);
+}
+
+.biaImage img {
+    border-radius: 10px;
+    transform: rotate(-1deg);
+    box-shadow: #00000025 0 0 10px;
+}
+
 .beelaStoryboard1 {
     background-color: #fab348;
     transform: rotate(-1.3deg);
@@ -3023,6 +3100,14 @@ canvas {
     box-shadow: #00000025 0 0 10px;
     transform: rotate(-1.1deg)
 }
+
+.beelaMidFi {
+    margin: 4rem 0
+}
+
+
+
+
 
 
 
@@ -3064,6 +3149,8 @@ _________________________________MEDIA QUERIES____________________MEDIA QUERIES_
     p {
         font-size: 1em;
     }
+
+
 
     /* ___________________________***Nav Bar***_______________***Nav Bar***_________________________
 _________________________________***Nav Bar***____________________***Nav Bar***_______________________ */
@@ -3747,6 +3834,11 @@ _________________________________***KINFOLK <768***____________________***KINFOL
         gap: 0
     }
 
+    .beelaAlignSection, .beelaSynthesizeSection, .beelaIdentifySection, .beelaMapSection, .beelaDivideSection, .beelaIterateSection {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+
     .beelaProcessOverview {
 
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -3785,18 +3877,23 @@ _________________________________***KINFOLK <768***____________________***KINFOL
 
     .beelaApproachGrid {
         display: grid;
-        grid-template-rows: .2fr .2fr .2fr 1fr;
+        grid-template-rows: .2fr .1fr .2fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "approachCopy1""approachImage1""approachCopy2""approachImage2""approachCopy3""approachImage3";
-        gap: 1rem
+        /* gap: 1rem; */
+        align-items: flex-start;
     }
 
     .approachImage1, .approachImage2 {
         display: none;
     }
 
-    .beelaOSTSummary {
+    .beelaOSTSummary .beelaOSTSummaryList {
         margin: 0;
+    }
+
+    .beelaOSTWrapper2 {
+        margin: 2.5rem 0
     }
 
 
