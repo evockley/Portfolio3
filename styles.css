@@ -2509,6 +2509,7 @@ canvas {
     gap: 1rem;
     max-width: 132ch;
     margin: 4rem auto 0 auto;
+
 }
 
 
@@ -2519,6 +2520,10 @@ canvas {
     font-size: clamp(2px, 1.3rem, 1.5rem);
     color: #FCF7F2;
     border-radius: 10px 10px 0 0;
+}
+
+.beelaBackgroundSection {
+    background-color: #f1f9fc;
 }
 
 .beelaBackgroundQuestions p {
@@ -2535,6 +2540,7 @@ canvas {
     box-shadow: #98989830 0 0 20px;
     border-radius: 16px;
     border: solid .5px #192e102f;
+    background-color: #FCF7F2;
 
 
 }
@@ -2808,11 +2814,10 @@ canvas {
 .twoTeams {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
     align-items: top;
-    justify-content: space-between;
-
-
+    gap: 3.2rem;
+    margin: 2rem 0
 }
 
 .team1 {
@@ -3723,6 +3728,9 @@ _________________________________***KINFOLK <768***____________________***KINFOL
     /* BEELA MOBILE */
 
 
+    .beelaHeroine {
+        background-position: 25% 50%;
+    }
 
     .beelaQuickstats2Content {
         flex-wrap: wrap;
@@ -3744,6 +3752,8 @@ _________________________________***KINFOLK <768***____________________***KINFOL
         grid-template-areas: "beelaProcessOverviewItem1""beelaProcessOverviewItem2""beelaProcessOverviewItem3""beelaProcessOverviewItem4""ProcessOverviewItem5""beelaProcessOverviewItem6";
     }
 
+
+
     .beelaBackgroundQuestions {
 
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -3754,6 +3764,10 @@ _________________________________***KINFOLK <768***____________________***KINFOL
 
     .beelaBackgroundQuestions h4 {
         font-size: .8rem;
+    }
+
+    .bannerWrapper {
+        top: 120px
     }
 
     .approachWrapper {
@@ -3767,10 +3781,14 @@ _________________________________***KINFOLK <768***____________________***KINFOL
 
     .beelaApproachGrid {
         display: grid;
-        grid-template-rows: .1fr 1fr 1fr .1fr .1fr .1fr;
+        grid-template-rows: .2fr .2fr .2fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "approachCopy1""approachImage1""approachCopy2""approachImage2""approachCopy3""approachImage3";
         gap: 1rem
+    }
+
+    .approachImage1, .approachImage2 {
+        display: none;
     }
 
     .beelaOSTSummary {
