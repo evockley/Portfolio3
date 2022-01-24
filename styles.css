@@ -58,6 +58,7 @@ h2 {
 h3 {
     font-family: "neuzeit-grotesk", sans-serif;
     font-weight: 700;
+    font-size: 1.5em;
     font-style: normal;
     color: #192E10;
     margin: 16px 0 16px 0;
@@ -2378,8 +2379,6 @@ canvas {
 
 }
 
-
-
 .beelaQuickstats2 * {
     color: #FCF7F2;
     margin: 0;
@@ -2424,8 +2423,7 @@ canvas {
 }
 
 .beelaProcessOverviewWrapper {
-    margin: 0 auto;
-    margin: 4rem 0 0 0;
+    margin: 4rem auto;
 }
 
 .beelaProcessOverview {
@@ -2531,7 +2529,7 @@ canvas {
 }
 
 .beelaBackgroundQuestions p {
-    padding: 0 1rem;
+    padding: 2rem 1.5rem;
 }
 
 .beelaBackgroundQuestions p::before {
@@ -2586,7 +2584,7 @@ canvas {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "approachCopy1 approachImage1""approachImage2 approachCopy2""approachCopy3 approachImage3";
     max-width: 132ch;
-    margin: 0 auto
+    margin: 4rem auto
 }
 
 .approachImage {
@@ -3111,8 +3109,8 @@ _________________________________***Nav Bar***____________________***Nav Bar***_
     /* ___________________________***Footer @<768px***_______________***Footer @<768px***_________________________
 _________________________________***Footer @<768px***____________________***Footer @<768px***_______________________ */
     .footer {
-        background-image: linear-gradient(180deg, #192E10, #091503, #192E10);
-        background-repeat: no-repeat;
+
+
         width: vw;
         margin: 0;
         display: flex;
@@ -3763,12 +3761,14 @@ _________________________________***KINFOLK <768***____________________***KINFOL
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "beelaBackgroundQ1""beelaBackgroundQ2""beelaBackgroundQ3""beelaBackgroundQ4";
-        margin: 2rem auto 0 auto;
+        margin: 2rem auto;
+
     }
 
     .beelaBackgroundQuestions h4 {
         font-size: .8rem;
     }
+
 
     .bannerWrapper {
         top: 120px
