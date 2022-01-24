@@ -295,7 +295,7 @@ header {
 ------------------------------Home---------------------------
 ------------------------------Home--------------------------- */
 
-.Hero_Grid {
+.heroFlex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,11 +308,12 @@ header {
     top: 24vh;
 }
 
-.Hero_Grid h2 {
+.heroFlex h2 {
     color: #f7f7f7;
     font-size: 2.3em;
     margin-bottom: 5vh;
-    max-width: 440px;
+    max-width: 18ch;
+
 }
 
 .moreinfo {
@@ -324,16 +325,12 @@ header {
     margin: 0 0 0 0
 }
 
-.grid_item_1 {
-    max-width: 55%;
-}
-
 .grid_item_1 .primary-button {
     margin-top: 5vh;
 }
 
 .grid_item_2 img {
-    max-width: 22vw;
+    max-width: 32ch;
 }
 
 /* -----Featured Section------ */
@@ -347,12 +344,17 @@ header {
     transform: scale3d(1, 1, 1);
 }
 
+.featuredProjectsContainer {
+    max-width: 100ch;
+
+
+}
+
 .item-flex-container {
     display: flex;
-    justify-content: space-around;
-    max-width: 1000px;
+    justify-content: space-between;
+    gap: 2rem;
     margin: 0 auto;
-    /* flex-wrap: wrap; */
 }
 
 .home-item {
@@ -360,7 +362,6 @@ header {
     max-width: 30em;
     min-width: 250px;
     flex: 1 1;
-    margin: 16px 0;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -369,14 +370,13 @@ header {
     border-radius: 10px;
     border-style: solid;
     border-width: .5px;
-    /* transition: ease-in-out 300ms; */
+    transition: ease-in-out 200ms;
     box-shadow: #98989830 0 0 20px;
     /* padding: 32px;
     border-radius: 10px;
     border-style: solid;
     border-width: .5px; */
     border-color: #192E1025;
-    /* margin-bottom: 40px; */
 }
 
 .home-item:hover {
@@ -403,7 +403,6 @@ header {
 }
 
 .home-item1 {
-    margin-right: 2%;
     padding-bottom: 2em;
 }
 
@@ -426,7 +425,7 @@ header {
 }
 
 .home-item2 {
-    margin-left: 2%;
+
     padding-bottom: 2em;
 }
 
@@ -469,7 +468,7 @@ header {
 -------------------------Footer---------------------- */
 
 .footer {
-    background: transparent;
+    background: #091503;
     background-repeat: no-repeat;
     width: vw;
     display: flex;
@@ -496,6 +495,11 @@ header {
     margin: 0;
     padding: 0;
     /* padding-right: 7.5em; */
+}
+
+.footerText2:before {
+    content: "👉";
+    margin-right: .5rem;
 }
 
 .logo-grid {
@@ -3142,7 +3146,7 @@ _________________________________***Footer @<768px***____________________***Foot
 
     /* ___________________________***Home Screen <768***_______________***Home Screen <768***_________________________
 _________________________________***Home Screen <768***____________________***Home Screen <768***_______________________ */
-    .Hero_Grid {
+    .heroFlex {
         display: flex;
         align-items: flex-start;
         flex-direction: column-reverse;
@@ -3154,7 +3158,7 @@ _________________________________***Home Screen <768***____________________***Ho
         top: 10vh;
     }
 
-    .Hero_Grid h2 {
+    .heroFlex h2 {
         color: #f7f7f7;
         font-size: 2.3em;
         margin-bottom: 56px;
