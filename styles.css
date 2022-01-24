@@ -2342,10 +2342,10 @@ canvas {
     margin: 0
 }
 
-.beelaQuickstats1, .beelaQuickstats2, .beelaQuickstats3 {
-    /* background-color: red; */
-    max-width: 50vw;
-}
+/* .beelaQuickstats1, .beelaQuickstats2, .beelaQuickstats3 {
+ 
+    max-width: 100%;
+} */
 
 .beelaQuickstats1 {
     margin: 8px 0;
@@ -2358,7 +2358,9 @@ canvas {
 .beelaQuickstats2Content {
     display: flex;
     flex-wrap: nowrap;
-    gap: 2vw
+    gap: 1em;
+    margin: 0;
+    padding: 0
 }
 
 .beelaQuickstats2Content p {
@@ -2426,7 +2428,7 @@ canvas {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "beelaProcessOverviewItem1 beelaProcessOverviewItem2 beelaProcessOverviewItem3""beelaProcessOverviewItem4 beelaProcessOverviewItem1beelaProcessOverviewItem5 beelaProcessOverviewItem6";
+    grid-template-areas: "beelaProcessOverviewItem1 beelaProcessOverviewItem2 beelaProcessOverviewItem3""beelaProcessOverviewItem4 beelaProcessOverviewItem5 beelaProcessOverviewItem6";
     gap: 1rem;
     ;
 }
@@ -2581,9 +2583,7 @@ canvas {
     background-color: rgb(12, 88, 76);
     color: white;
     font-size: x-large;
-    display: flex;
-    justify-content: center;
-    align-self: center;
+    margin: auto auto;
     max-width: 45vh;
     flex-grow: 0;
     border-radius: 10px;
@@ -2593,7 +2593,7 @@ canvas {
     box-shadow: #00000025 0 0 20px;
     border-radius: 10px;
     transform: rotate(.5deg);
-    /* max-width: fit-content; */
+    max-width: 100%;
 
 }
 
@@ -2601,14 +2601,14 @@ canvas {
     box-shadow: #00000025 0 0 20px;
     border-radius: 10px;
     transform: rotate(-.5deg);
-    /* max-width: fit-content; */
+    max-width: 100%;
 }
 
 .approachImage3 img {
     box-shadow: #00000025 0 0 20px;
     border-radius: 10px;
     transform: rotate(.5deg);
-    /* max-width: fit-content; */
+    max-width: 100%;
     max-height: 85%;
 }
 
@@ -2643,7 +2643,7 @@ canvas {
     background-color: #504f83;
     border-radius: 10px;
     transform: rotate(.15deg);
-    max-width: 132ch;
+    max-width: 100%;
     margin: 4rem auto;
 }
 
@@ -2659,7 +2659,7 @@ canvas {
     background-color: #504f83;
     border-radius: 10px;
     transform: rotate(.55deg);
-    max-width: 132ch;
+    max-width: 100%;
     margin: 4rem auto;
 }
 
@@ -2672,30 +2672,19 @@ canvas {
 
 .beelaOSTSummaryWrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex: 1 0 20px;
-    max-width: 132ch;
-    margin: 0 auto
+    max-width: fit-content;
+    margin: 0 auto;
 }
 
 .beelaOSTSummary {
     margin: 2rem;
-
 }
 
 .beelaOSTSummary h4 {
     font-size: 2rem;
     margin: 0;
-}
-
-.beelaOSTSummary ul {
-    min-width: 350px;
-}
-
-.beelaOSTSummary li {
-    min-width: 350px;
-    list-style: none;
-    margin: 2rem;
 }
 
 .opportunityPrioritizationStickiesWrapper {
@@ -2709,7 +2698,7 @@ canvas {
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 
 
@@ -2795,7 +2784,8 @@ canvas {
     box-shadow: #00000035 0 0 10px;
     max-width: inherit;
     transform: rotate(-2deg);
-    padding: 0
+    padding: 0;
+    max-width: 100%;
 }
 
 
@@ -2817,6 +2807,7 @@ canvas {
 
 .twoTeams {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: top;
     justify-content: space-between;
@@ -3722,6 +3713,74 @@ _________________________________***KINFOLK <768***____________________***KINFOL
         box-shadow: black 0 0 10px;
         margin: 0 auto;
     }
+
+
+    /* BEELA MOBILE */
+    /* BEELA MOBILE */
+    /* BEELA MOBILE */
+    /* BEELA MOBILE */
+    /* BEELA MOBILE */
+    /* BEELA MOBILE */
+
+
+
+    .beelaQuickstats2Content {
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .briefGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .75fr 1fr;
+        grid-template-areas: "briefLogistics""briefConstraints";
+        gap: 0
+    }
+
+    .beelaProcessOverview {
+
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "beelaProcessOverviewItem1""beelaProcessOverviewItem2""beelaProcessOverviewItem3""beelaProcessOverviewItem4""ProcessOverviewItem5""beelaProcessOverviewItem6";
+    }
+
+    .beelaBackgroundQuestions {
+
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "beelaBackgroundQ1""beelaBackgroundQ2""beelaBackgroundQ3""beelaBackgroundQ4";
+        margin: 2rem auto 0 auto;
+    }
+
+    .beelaBackgroundQuestions h4 {
+        font-size: .8rem;
+    }
+
+    .approachWrapper {
+        margin: 0;
+
+    }
+
+    .approachCopy {
+        padding: 0
+    }
+
+    .beelaApproachGrid {
+        display: grid;
+        grid-template-rows: .1fr 1fr 1fr .1fr .1fr .1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "approachCopy1""approachImage1""approachCopy2""approachImage2""approachCopy3""approachImage3";
+        gap: 1rem
+    }
+
+    .beelaOSTSummary {
+        margin: 0;
+    }
+
+
+
+
+
 }
 
 ;
