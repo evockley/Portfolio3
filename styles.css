@@ -348,13 +348,14 @@ header {
 .featuredProjectsContainer {
     max-width: 100ch;
 
-
+    margin: 0 auto
 }
 
 .item-flex-container {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 3rem;
     margin: 0 auto;
 }
 
@@ -455,9 +456,7 @@ header {
 .more-projects {
     display: flex;
     justify-content: flex-end;
-    padding-top: 16px;
-    padding-bottom: 24px;
-    padding-right: 24px;
+    padding: 4rem 0 0 0
 }
 
 .more-projects-container a {
