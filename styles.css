@@ -2438,7 +2438,7 @@ canvas {
     justify-content: space-between;
     border-radius: 10px;
     box-shadow: #00000025 0 0 10px;
-    padding: 1rem
+    padding: 1rem;
 }
 
 .beelaProcessOverviewItem h4 {
@@ -2507,7 +2507,7 @@ canvas {
     grid-template-areas: "beelaBackgroundQ1 beelaBackgroundQ2""beelaBackgroundQ3 beelaBackgroundQ4";
     gap: 1rem;
     max-width: 132ch;
-    margin: 4rem auto 0 auto;
+    margin: 4rem auto 4rem auto;
 
 }
 
@@ -2703,15 +2703,11 @@ canvas {
     max-width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-
-
 }
 
 .opportunityPrioritizationStickies * {
     width: clamp(10rem, 12rem, 14rem)
 }
-
-
 
 .howMightWe {
     margin: 3rem 0
@@ -2851,8 +2847,6 @@ canvas {
     margin: 4rem auto;
     padding: 0
 }
-
-
 
 .careerPathGrid * {
     margin: 0 auto;
@@ -3101,6 +3095,10 @@ canvas {
 }
 
 .beelaMidFi {
+    margin: 4rem 0
+}
+
+.beelaHandoff {
     margin: 4rem 0
 }
 
