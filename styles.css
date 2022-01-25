@@ -47,26 +47,26 @@ h1 {
 }
 
 h2 {
-    font-family: "neuzeit-grotesk", sans-serif;
-    font-weight: 600;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 2em;
+    font-size: 2.5em;
     color: #192E10;
-    margin: 8px 0 16px;
+
 }
 
 h3 {
-    font-family: "neuzeit-grotesk", sans-serif;
+    font-family: "brandon-grotesque", sans-serif;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: bold;
     font-style: normal;
     color: #192E10;
-    margin: 16px 0 16px 0;
 }
 
 h4 {
-    font-family: "neuzeit-grotesk", sans-serif;
-    font-weight: 700;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 400;
     font-style: normal;
     color: #192E10;
 }
@@ -87,10 +87,10 @@ h5 {
 }
 
 h6 {
-    font-family: "neuzeit-grotesk", sans-serif;
+    font-family: "brandon-grotesque", sans-serif;
     font-weight: 700;
-    font-style: italic;
-    font-size: small;
+
+
     color: #192E10;
     margin: 0;
 }
@@ -1721,116 +1721,122 @@ canvas {
     margin: 1vh 0
 }
 
-.kinfolk-brief-section {
+.kinfolkBriefSection {
     background-image: url("images/kinfolk/brief-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: center;
+    background-position-y: bottom;
     filter: grayscale(100%);
-    color: white;
     height: 75vh;
-    z-index: -10000;
-}
-
-.kinfolk-brief-section h2 {
-    color: white;
-    text-shadow: #00000075 0 0 5px;
-    font-size: 55px;
-}
-
-.kinfolk-brief {
     display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    gap: 5vw
+    flex-direction: column;
+    justify-content: center;
+
 }
 
-.kinfolk-brief p {
+.kinfolkBriefWrapper {
+    max-width: 60ch;
+    margin: auto auto;
+    padding: 1rem;
+    background: #FFFFFF99;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #00000075 0 0 10px;
+}
+
+
+
+.kinfolkNextStepsWrapper h2 {
+    padding: 0;
+    font-weight: bold;
+    color: white;
+    text-shadow: #00000025 0 0 10px;
+}
+
+.kinfolkBrief p {
     max-width: 40ch;
-    padding: 4vh 1%;
+    padding: 0;
     margin: 0 auto;
-    font-size: 1.6em;
+    font-size: 1.5em;
+
+    color: white;
+    text-shadow: #00000025 0 0 10px;
+
+
 }
 
-.kinfolk-problem-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "kinfolk-problem kinfolk-problem-image""kinfolk-challenge-image kinfolk-challenge""kinfolk-solution kinfolk-solution-image";
-    align-items: center;
-    gap: 1vh
+.kinfolkProblemFlexAll img {
+    max-width: 40ch;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: #00000025 0 0 10px;
 }
 
-.kinfolk-problem {
-    grid-area: kinfolk-problem;
+.kinfolkProblemFlex1, .kinfolkProblemFlex2, .kinfolkProblemFlex3 {
+    display: flex;
+    max-width: 120ch;
+    margin: 2rem auto;
+    justify-content: space-between;
+
 }
 
-.kinfolk-problem-image {
-    grid-area: kinfolk-problem-image;
-    border-radius: 20px;
+.kinfolkProblemFlex2 {
+    flex-direction: row-reverse;
 }
 
-.kinfolk-challenge {
-    grid-area: kinfolk-challenge;
+.kinfolkProblemFlexContent {
+    display: flex;
+    flex-direction: column;
+    max-width: 60ch;
+    margin: 0 auto;
+    justify-content: center;
 }
 
-.kinfolk-challenge-image {
-    grid-area: kinfolk-challenge-image;
-    border-radius: 20px;
-}
-
-.kinfolk-solution {
-    grid-area: kinfolk-solution;
-}
-
-.kinfolk-solution-image {
-    grid-area: kinfolk-solution-image;
-    border-radius: 20px;
-}
-
-.kinfolk-problem-grid-item {
-    padding: 0 2vw
-}
-
-.kinfolk-research-flexbox {
+/* .kinfolk-research-flexbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 auto
+    margin: 0 auto;
+    border: 1px solid magenta
+} */
+.kinfolk-research-flexbox {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
 }
 
 .kinfolk-stakeholder-interview-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
-    border-style: solid;
-    border-width: .5px;
-    border-color: #192E1025;
     box-shadow: #98989830 0 0 20px;
     background-color: #FCF7F2;
-    margin: 2em auto;
+    margin: .5rem auto;
+    padding: 1rem;
+    gap: 4rem;
+    background-color: white;
 }
 
 .kinfolk-stakeholder-interview-container p {
     width: 28ch;
-    padding: 1em 10px;
+    padding: 0;
+
 }
 
 .kinfolk-stakeholder-interview-container img {
-    max-width: 50em;
+    max-width: 20rem;
     border-radius: 10px;
 }
 
-.name-change-image {
-    background-image: url("images/kinfolk/kinfolk-name-change-image.jpg");
-    height: 250px;
-    width: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 10px 10px 0 0;
+.kinfolkStakeholderContent {
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 .new-location-image {
     background-image: url("images/kinfolk/kinfolk-new-location-image.jpg");
@@ -1851,7 +1857,11 @@ canvas {
 }
 
 .kinfolk-survey-container {
-    margin: 3em 0;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
 }
 
 .kinfolk-usability-flexbox {
@@ -1875,11 +1885,13 @@ canvas {
     border-radius: 10px;
     gap: 2vw;
     border-style: solid;
+    background-color: white;
     border-width: .5px;
     box-shadow: #98989830 0 0 20px;
     border-color: #192E1025;
-    margin: 16px 0;
+    margin: 2rem auto;
     padding: 16px;
+    max-width: fit-content;
 }
 
 .allisonDelaurens-pic {
@@ -1889,7 +1901,7 @@ canvas {
     background-repeat: no-repeat;
     background-position: 0px 15%;
     border-radius: 10px;
-    width: 25vw;
+    max-width: 40ch;
     height: 100%;
     box-shadow: #09150350 0 0 10px;
 }
@@ -1904,10 +1916,14 @@ canvas {
 
 .allisonDelaurens-bio {
     grid-area: bio;
+    max-width: 60ch;
+
 }
 
 .allisonDelaurens-basic-info {
     grid-area: basic;
+    max-width: 80%;
+
 }
 
 .allisonDelaurens-basic-info p {
@@ -1931,11 +1947,11 @@ canvas {
 }
 
 .allisonDelaurens p {
-    font-size: .95em
+    font-size: .99rem;
 }
 
 .allisonDelaurens li {
-    font-size: .95em
+    font-size: .99rem;
 }
 
 .allisonDelaurens-user-story {
@@ -2055,7 +2071,7 @@ canvas {
     cursor: pointer;
 }
 
-.kinfolk-next-steps-wrapper {
+.kinfolkNextStepsWrapper {
     width: 46vw;
     border-radius: 20px;
     background-color: #1b1b1bd2;
@@ -2063,14 +2079,15 @@ canvas {
     padding: 3vh;
 }
 
-.kinfolk-next-steps {
+.kinfolkNextSteps {
     background-image: url(images/kinfolk/kinfolk-next-steps-img.jpg);
     background-size: cover;
     background-position-y: center;
     filter: grayscale(100%);
+    backdrop-filter: grayscale (100%);
 }
 
-.kinfolk-next-steps p {
+.kinfolkNextSteps p {
     width: 44vw;
     color: white;
     padding: 0 16px;
@@ -2078,7 +2095,7 @@ canvas {
     text-shadow: black 0 0 5px;
 }
 
-.kinfolk-next-steps h2 {
+.kinfolkNextSteps h2 {
     color: white;
     padding: 8px 16px
 }
@@ -3716,30 +3733,6 @@ _________________________________***KINFOLK <768***____________________***KINFOL
         padding: 3vh 2vw;
     }
 
-    .kinfolk-problem-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: .15fr 1fr .15fr 1fr .15fr 1fr;
-        grid-template-areas: "kinfolk-problem""kinfolk-problem-image""kinfolk-challenge""kinfolk-challenge-image""kinfolk-solution""kinfolk-solution-image";
-        align-items: center;
-    }
-
-    .kinfolk-problem-image {
-        grid-area: kinfolk-problem-image;
-        border-radius: 20px;
-        margin-bottom: 32px;
-    }
-
-    .kinfolk-challenge-image {
-        grid-area: kinfolk-challenge-image;
-        border-radius: 20px;
-        margin-bottom: 32px;
-    }
-
-    .kinfolk-solution-image {
-        grid-area: kinfolk-solution-image;
-        border-radius: 20px;
-    }
 
     .allisonDelaurens {
         grid-template-columns: 1fr 1fr 1fr;
@@ -3750,8 +3743,9 @@ _________________________________***KINFOLK <768***____________________***KINFOL
 
     .allisonDelaurens-pic {
         grid-area: pic;
-        background-size: 100%;
-        background-position: 0 15%;
+        border-radius: 10px;
+        background-size: 128%;
+        background-position: top;
         box-shadow: #09150350 0 0 10px;
     }
 
