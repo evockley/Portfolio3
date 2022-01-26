@@ -270,14 +270,20 @@ var journeyMap = new Chart("allisonsJourneyMap", {
 //________________________________ Beela________________________________
 // https://www.youtube.com/watch?v=RxnV9Xcw914 ((((((7 minutes in))))))
 
-const banner1 = document.querySelector("banner1");
-const beelaBackground = document.querySelector(".beelaBackground");
-
-const beelaBackgroundObserverOptions = {}
-
-const beelaBackgroundObserver = new IntersectionObserver(function () { }, beelaBackgroundObserverOptions);
 
 
 
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 150) {
+        $('banner1').removeClass("bannerWrapper").addClass("bannerWrapperSmall");
+    }
+});
+
+var banner1 = document.getElementById('banner1')
+var banner2 = document.getElementById('banner2')
+var banner3 = document.getElementById('banner3')
+var banner4 = document.getElementById('banner4')
+var banner5 = document.getElementById('banner5')
+var banner6 = document.getElementById('banner6')
 
 

@@ -50,23 +50,27 @@ h2 {
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #192E10;
-
+    margin: 0;
+    padding: 0
 }
 
 h3 {
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     font-style: normal;
     color: #192E10;
+    margin: 0;
+    padding: 0
 }
 
 h4 {
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 400;
+    font-size: 1.2em;
     font-style: normal;
     color: #192E10;
 }
@@ -304,7 +308,7 @@ header {
     margin-top: 8vh;
     margin-left: 100px;
     margin-right: 100px;
-    column-gap: 12vw;
+    gap: 24ch;
     position: sticky;
     top: 24vh;
 }
@@ -313,7 +317,7 @@ header {
     color: #f7f7f7;
     font-size: 2.3em;
     margin-bottom: 5vh;
-    max-width: 18ch;
+
 
 }
 
@@ -347,7 +351,7 @@ header {
 
 .featuredProjectsContainer {
     max-width: 100ch;
-
+    /* border: 1px solid red; */
     margin: 0 auto
 }
 
@@ -356,7 +360,8 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 3rem;
-    margin: 0 auto;
+    margin: 1rem auto 0 auto;
+    /* border: 1px solid green */
 }
 
 .home-item {
@@ -408,11 +413,19 @@ header {
     padding-bottom: 2em;
 }
 
-.homeItemParagraph1 {
+.homeItemCopy {
     margin-top: 1.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 15vh;
+    justify-content: space-around;
+
+}
+
+.homeItemCopy * {
+    margin: 0;
+    padding: 0
 }
 
 .homeItemParagraph1>* {
@@ -420,32 +433,13 @@ header {
     padding: 0;
 }
 
-.homeItemParagraph1 hr {
-    width: 30%;
-    opacity: 30%;
-    margin: 1.2em auto 1.2em auto;
-}
-
 .home-item2 {
-
     padding-bottom: 2em;
 }
 
-.homeItemParagraph2 {
-    margin-top: 1.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.homeItemParagraph2>* {
-    margin: 0;
-    padding: 0;
-}
-
-.homeItemParagraph2 hr {
+.homeItemCopy hr {
     width: 30%;
-    opacity: 30%;
+    opacity: 70%;
     margin: 1.2em auto 1.2em auto;
 }
 
@@ -2359,6 +2353,17 @@ canvas {
     text-shadow: #00000050 0 0 10px;
     margin: 0
 }
+
+.beelaBriefCopy {
+    margin: 2.7rem 0;
+
+}
+
+.beelaBriefCopy p {
+    margin: .5rem 0;
+    padding: 0
+}
+
 
 .beelaQuickstats1 {
     margin: 8px 0;
