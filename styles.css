@@ -2435,13 +2435,17 @@ canvas {
     margin: 4rem auto;
 }
 
+.beelaProcessOverviewWrapper p {
+    margin: 0
+}
+
 .beelaProcessOverview {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "beelaProcessOverviewItem1 beelaProcessOverviewItem2 beelaProcessOverviewItem3""beelaProcessOverviewItem4 beelaProcessOverviewItem5 beelaProcessOverviewItem6";
     gap: 1rem;
-    ;
+    margin-top: 2.5rem;
 }
 
 .beelaProcessOverviewItem {
