@@ -78,7 +78,7 @@ h3 {
     font-weight: bold;
     font-style: normal;
     color: #192E10;
-    margin: 0;
+    margin: .3em 0;
     padding: 0
 }
 
@@ -803,6 +803,27 @@ label {
     column-gap: 10%;
 }
 
+.gocreateHeroWrapper {
+    max-width: 101ch;
+    margin: 0 auto;
+}
+
+.gocreateHeroLeft {
+
+    max-width: 45ch;
+}
+
+.gocreateHeroRight {
+
+    max-width: 45ch;
+}
+
+.gocreateHeroColumns {
+    display: flex;
+    max-width: 120ch;
+    justify-content: space-between;
+}
+
 .gocreateHero p {
     margin: 1em 0;
 }
@@ -835,19 +856,10 @@ label {
     gap: 2.5em;
 }
 
-.miroContainer, .xdContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.miroContainer p {
-    font-size: .9em;
-}
 
-.xdContainer p {
-    font-size: .9em;
-}
+
+
 
 .overview-columns {
     display: grid;
@@ -2532,6 +2544,7 @@ canvas {
     margin: 0;
     padding: 0;
     color: #FCF7F2;
+
 }
 
 .bannerSubhead {
