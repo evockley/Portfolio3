@@ -32,6 +32,21 @@ hr {
     color: rgb(12, 49, 88)
 }
 
+
+
+
+
+
+/*-____________-___________-____________-_________________-ALIGNMENT____________-___________-____________-_________________-
+-____________-___________-____________-_________________-ALIGNMENT____________-___________-____________-_________________-
+-____________-___________-____________-_________________-ALIGNMENT____________-___________-____________-_________________- */
+.center {
+
+    max-width: fit-content;
+    margin: 0 auto
+}
+
+
 /* -----------------------------------------------------TYPOGRAPHY------------------------------------------------------
 --------------------------------------------------------TYPOGRAPHY------------------------------------------------------
 --------------------------------------------------------TYPOGRAPHY------------------------------------------------------ */
@@ -501,34 +516,33 @@ header {
 -----------------------------------------------------Projects--------------------------------------------------
 -----------------------------------------------------Projects--------------------------------------------------*/
 
-#projects-page-grid {
+#projectsPageGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 3vw;
-    row-gap: 3vw;
-    grid-template-areas: "go-create recycle-easy""una-mesa uscis""kinfolk kinfolk";
+    gap: 2em;
+    /* grid-template-areas: "go-create recycle-easy""una-mesa uscis""kinfolk kinfolk"; */
     margin-bottom: 2vw;
+    max-width: 120ch;
+
 }
 
 .projects-image {
-    max-width: 60%;
+    width: 18em;
 }
 
-.projects-image1 {
-    max-width: 50%;
-}
+
 
 .project-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
+    padding: 1em 2em;
     border-radius: 20px;
     height: 430px;
     min-width: 300px;
-    max-width: 38vw;
+    max-width: 40ch;
     box-shadow: #98989830 0 0 10px;
     transition: 100ms;
 }
@@ -855,95 +869,114 @@ label {
     grid-area: "right";
 }
 
-.Brief img {
-    max-width: 100%;
+
+
+
+.gocreateBriefWrapper {
+    max-width: fit-content;
+    margin: 0 auto;
+
 }
 
-.gocreateProblemContainer {
+.gocreateBrief {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 45ch 45ch;
     grid-template-rows: 1fr 1fr;
-    column-gap: 3em;
-    grid-template-areas: "gocreateProblemLeft gocreateProblemRight""gocreateSolutionLeft gocreateSolutionRight";
+    column-gap: 5em;
+    row-gap: 2rem;
+    margin: 2em auto;
+    grid-template-areas: "goCreateBrief1 goCreateBrief2""goCreateBrief3 goCreateBrief4";
 }
 
-.gocreateProblemLeft {
-    grid-area: gocreateProblemLeft;
+
+
+.gocreateBriefContent {
+    max-width: 60ch;
+    margin: auto 0
 }
 
-.gocreateProblemRight {
-    grid-area: gocreateProblemRight;
+.gocreateBrief2 img, .gocreateBrief3 img {
+    max-width: 40ch;
 }
 
-.gocreateSolutionLeft {
-    grid-area: gocreateSolutionLeft;
+.gocreateBrief2 img {
+    box-shadow: #00000025 0 0 10px;
 }
 
-.gocreateSolutionRight {
-    grid-area: gocreateSolutionRight;
+
+.gocreateDiscovery {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    max-width: 101ch;
+    margin: 0 auto
 }
 
-.discovery .col-lg-6 {
-    padding: 16px 2vw
+.gocreateDiscoveryFlex {
+    display: flex;
+
+    max-width: 101ch;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.gocreateFlexContent {
+    max-width: 45ch;
+
 }
 
 .definition .col-lg-6 {
     padding: 16px 2vw
 }
 
-.ideation .col-lg-6 {
-    padding: 5vh 2vw
-}
 
-.headshots-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 48px;
-}
 
-.interview-background {
+
+.gocreateInterviewQuotes {
+    background-color: #FCF7F2;
+    box-shadow: #98989830 0 0 20px;
     padding: 8px 16px;
     margin: 16px 0 0 0;
     border-radius: 10px;
     border-style: solid;
     border-width: .5px;
     border-color: #192E1025;
-    box-shadow: #98989830 0 0 20px;
-    background-color: #FCF7F2;
 }
 
-.user-interviews {
+.gocreateInterview1, .gocreateInterview2, .gocreateInterview3 {
+    max-width: 45ch;
+    margin: .5em 0;
     display: flex;
     align-items: center;
+    gap: 2em
 }
 
-.user-interviews div {
-    margin: 16px 0
+.gocreateInterview1 img, .gocreateInterview2 img, .gocreateInterview3 img {
+    max-width: 5em;
 }
 
-.user-interviews img {
-    max-width: 50%;
-    min-width: 6vw;
+
+
+
+.gocreateInterviewQuotes .quotable {
+    font-size: .99em;
 }
 
-.user-interviews .quotable {
-    font-size: .9em;
-    margin: 0;
-    font-style: italic;
+.gocreateDefinition {
+
+    max-width: 101ch;
+    margin: 0 auto
 }
 
-.user-interview-headshots {
-    max-width: 25vw;
-    text-align: center;
+.gocreatePersonaWrapper {
+    margin: 3rem 0 0 0
 }
 
-.headshot {
-    max-width: 120px;
-}
-
-.gocreate-mini-persona {
+.gocreatePersona {
     padding: 16px 0;
-    margin-bottom: 32px;
+    margin: 1rem auto;
     border-radius: 10px;
     border-style: solid;
     border-width: .5px;
@@ -952,7 +985,7 @@ label {
     background-color: #FCF7F2;
 }
 
-.gocreate-mini-persona .full-document-link {
+.gocreatePersona .full-document-link {
     margin: 12% 0 0 0;
 }
 
@@ -3400,7 +3433,7 @@ _________________________________***CONTACT <768***____________________***CONTAC
 
     /* ___________________________**PROJECTS <768***_______________***PROJECTS <768***_________________________
 _________________________________***PROJECTS <768***____________________***PROJECTS <768***_______________________ */
-    #projects-page-grid {
+    #projectsPageGrid {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -3579,7 +3612,7 @@ _________________________________***GoCreate Redesign <768***___________________
         height: 120px;
     }
 
-    .gocreate-mini-persona .col-lg-4 {
+    .gocreatePersona .col-lg-4 {
         margin: 16px 0;
     }
 
