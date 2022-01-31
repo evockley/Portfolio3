@@ -1107,11 +1107,12 @@ span {
     width: 45%;
 }
 
-.final-mockups {
+.goCreateGifs1 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 72px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 2em;
+    margin: 0
 }
 
 .gif-area img {
@@ -1126,8 +1127,9 @@ span {
     box-shadow: lightgray 0 0 10px;
 }
 
-.testing .col-lg-4 {
-    padding: 1.5vw
+.goCreateTestingWrapper {
+    display: flex;
+    gap: 4em
 }
 
 .testing p {
