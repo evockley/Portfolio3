@@ -2512,7 +2512,7 @@ canvas {
 
 
 .bannerWrapper {
-    background-color: #16b4ed;
+    background-color: #1085ce;
     color: #FCF7F2;
     margin: 0;
     padding: .5rem 0;
@@ -2546,6 +2546,7 @@ canvas {
     margin: 0;
     padding: 0;
     color: #FCF7F2;
+    font-weight: 700;
 
 }
 
@@ -2688,6 +2689,16 @@ canvas {
 
 }
 
+.beelaRepeatableList {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.beelaRepeatableList li {
+    margin: .5rem 0;
+    padding: 0
+}
+
 .beelaAffinityMapWrapper {
     margin: 4rem auto;
     background-color: rosybrown;
@@ -2703,6 +2714,16 @@ canvas {
     transform: rotate(-.25deg);
     box-shadow: #00000035 0 0 10px;
     margin: 2px 2px 0 2px;
+}
+
+.synthesizeUl {
+    margin: 0;
+    padding: 0;
+}
+
+.synthesizeUl li {
+    margin: .5rem 0;
+    padding: 0
 }
 
 .beelaOSTWrapper1 {
@@ -2742,7 +2763,7 @@ canvas {
     flex-wrap: wrap;
     justify-content: center;
     max-width: fit-content;
-    margin: 0 auto;
+    margin: 2rem auto 4rem;
 }
 
 .beelaOSTSummary {
@@ -2752,6 +2773,17 @@ canvas {
 .beelaOSTSummary h4 {
     font-size: 2rem;
     margin: 0;
+}
+
+.beelaOSTSummaryList {
+    margin: 0;
+    padding: 0
+}
+
+.beelaOSTSummaryList li {
+    margin: .5rem 0;
+    padding: 0;
+
 }
 
 .opportunityPrioritizationStickiesWrapper {
@@ -2987,7 +3019,8 @@ canvas {
 }
 
 .beelaInterviews1Header * {
-    margin: 0.5rem 0
+    margin: 0;
+    padding: 0
 }
 
 .beelaInterviews1Header h4 {
@@ -2997,7 +3030,7 @@ canvas {
 
 .beelaInterviews1ContentWrapper {
 
-    margin-top: 3rem
+    margin-top: 2rem
 }
 
 .beelaInterviews1Content {
