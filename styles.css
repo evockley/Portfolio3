@@ -90,6 +90,14 @@ h4 {
     color: #192E10;
 }
 
+.h4Bold {
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    font-style: normal;
+    color: #192E10;
+}
+
 h5 {
     font-family: "brandon-grotesque";
     font-weight: 600;
@@ -3202,11 +3210,259 @@ canvas {
 
 
 
+/* ______________________THE SERIOUS TYPE____________________
+_________________________THE SERIOUS TYPE____________________
+_________________________THE SERIOUS TYPE____________________
+_________________________THE SERIOUS TYPE____________________
+_________________________THE SERIOUS TYPE____________________ */
+
+
+/* TST TYPOGRAPHY */
+
+.tstSectionHeader {
+    font-family: "Inter";
+    font-weight: 800;
+    color: #FCF7F2;
+    font-size: 5em;
+}
+
+.tstHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.tstHero {
+    background-image: url(images/tst/tstHero.png);
+    height: 55vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.tstBullet {
+    background-color: #33333340;
+    height: .5em;
+    width: .5em;
+    border-radius: 1000px;
+}
+
+.tstHeroInfo {
+    background-color: #33333308;
+    padding: .5em;
+    max-width: fit-content;
+    gap: 0;
+}
+
+.tstHeroInfo * {
+    margin: 0;
+    padding: 0
+}
+
+.tstHeroInfoContent {
+    display: flex;
+    align-items: center;
+    gap: .8em
+}
+
+.tstHeroInfoContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.tstTLDR {
+    max-width: 88ch;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+    margin: 0 auto;
+    padding: 0
+}
+
+.tstBriefBanner {
+    background-image: url(images/tst/tstBriefBanner.png);
+    height: 43vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    border-top: 3px solid #E8602A;
+    border-bottom: 3px solid #E8602A;
+}
+
+.tstBannerContentWrapper {
+    background-color: red;
+    position: relative;
+    margin: auto auto;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tstBannerContent {
+    display: flex;
+    align-items: center;
+    gap: .8em;
+    background-color: #FCF7F2;
+    margin: 0;
+    padding: .1em 1em;
+    border-radius: 4px;
+}
+
+.tstBannerContent * {
+    margin: 0;
+    padding: 0;
+    font-variant-caps: all-small-caps;
+    font-weight: 700;
+    align-self: left;
+}
+
+.tstProblemWrapper {
+
+    width: 60ch;
+    padding: 2em
+}
+
+.blobWrapper1 {
+    background-image: url(images/tst/problemBlob1.png);
+    background-repeat: no-repeat;
+    background-position: 15% 50%;
+    background-size: 65%;
+    position: relative;
+}
+
+.blobWrapper2 {
+    background-image: url(images/tst/problemBlob2.png);
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+    background-size: 75%;
+    position: relative;
+
+}
+
+.blobWrapper3 {
+    background-image: url(images/tst/problemBlob3.png);
+    background-repeat: no-repeat;
+    background-position: 45% 50%;
+    background-size: 80%;
+    position: relative;
+
+}
+
+.tstProblem {
+    background-color: #85A3C5;
+    margin: 0;
+    width: 100vw;
+}
+
+.tstProblem * {
+    color: #FCF7F2;
+    margin: 0 auto
+}
+
+
+.tstChallenge {
+    background-color: #BD6CAA;
+    margin: 0;
+
+}
+
+.tstChallenge * {
+    color: #FCF7F2;
+    margin: 0 auto
+}
+
+.tstSolution {
+    background-color: #90B584;
+}
+
+.tstSolution * {
+    color: #FCF7F2;
+    margin: 0 auto
+}
+
+
+.tstInvestigateBanner {
+    background-image: url(images/tst/tstInvestigateBanner.png);
+    height: 43vh;
+    width: 100vw;
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 3px solid #E8602A;
+    border-bottom: 3px solid #E8602A;
+}
+
+.tstIdeateBanner {
+    background-image: url(images/tst/tstIdeateBanner.png);
+    height: 43vh;
+    width: 100vw;
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 3px solid #E8602A;
+    border-bottom: 3px solid #E8602A;
+}
+
+.tstIterateBanner {
+    background-image: url(images/tst/tstIterateBanner.png);
+    height: 43vh;
+    width: 100vw;
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 3px solid #E8602A;
+    border-bottom: 3px solid #E8602A;
+}
+
+
+.tstProcessNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tstTimelineRule {
+    background-color: #8A8A8A;
+    height: 3px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 4em 0
+}
+
+.investigateDotsContainer {
+    display: flex;
+    position: relative;
+    top: -1em;
+    width: 20vw;
+    justify-content: space-between;
+}
+
+.investigateDots {
+    width: 2em;
+    height: 2em;
+    border-radius: 1000px;
+    background-color: #85A3C5;
+    box-shadow: #45454540 0 0 20px;
+}
 
 
 
-/* ___________________________MEDIA QUERIES_______________MEDIA QUERIES_________________________
-_________________________________MEDIA QUERIES____________________MEDIA QUERIES_______________________ */
+
+
+
+
+
+
+
+
+
+/* ___________________________ 🔴🔴🔴🔴 MEDIA QUERIES_______________MEDIA QUERIES_________________________
+_________________________________🔴🔴🔴🔴 MEDIA QUERIES____________________MEDIA QUERIES_______________________ */
 
 @media screen and (max-width: 768px) {
     h1 {
