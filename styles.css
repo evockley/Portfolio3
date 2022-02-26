@@ -3426,15 +3426,35 @@ _________________________THE SERIOUS TYPE____________________ */
     justify-content: space-between;
 }
 
+.tstProcessNav * {
+    margin: 0
+}
+
+.tstWeekIndicator * {
+    font-variant: small-caps;
+
+    color: #8A8A8A;
+    font-size: .9em;
+    margin-bottom: .8em;
+}
+
+.tstTimelineRuleGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .1fr 6em 1fr;
+    width: 100vw
+}
+
 .tstTimelineRule {
     background-color: #8A8A8A;
     height: 3px;
     border-radius: 10px;
     width: 100%;
-    margin: 4em 0
+    margin: 4em 0;
+    position: relative;
 }
 
-.investigateDotsContainer {
+.DotsContainer {
     display: flex;
     position: relative;
     top: -1em;
@@ -3450,9 +3470,64 @@ _________________________THE SERIOUS TYPE____________________ */
     box-shadow: #45454540 0 0 20px;
 }
 
+.ideateDots {
+    width: 2em;
+    height: 2em;
+    border-radius: 1000px;
+    background-color: #BD6CAA;
+    box-shadow: #45454540 0 0 20px;
+}
 
+.iterateDots {
+    width: 2em;
+    height: 2em;
+    border-radius: 1000px;
+    background-color: #90B584;
+    box-shadow: #45454540 0 0 20px;
+}
 
+.tstSurveyResultsContainer {
 
+    max-width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.tstSurveyResults h3 {
+    font-family: "inter";
+    font-size: 3.8em;
+    color: #FCF7F2;
+    font-weight: 900;
+}
+
+.tstSurveyResultsContainer * {
+    margin: 0;
+
+    width: clamp(200px, 17vw, 300px);
+}
+
+.tstSurveyResults1 {
+    background-color: #BD6CAA;
+    padding: 2em;
+}
+
+.tstSurveyResults2 {
+    background-color: #85A3C5;
+    padding: 2em;
+}
+
+.tstSurveyResults3 {
+    background-color: #90B584;
+    padding: 2em;
+}
+
+.tstSurveyResults4 {
+    background-color: #AB4630;
+    padding: 2em;
+}
 
 
 
