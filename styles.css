@@ -250,12 +250,11 @@ header {
     border-radius: 8px;
     box-sizing: border-box;
     width: fit-content;
-
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 800;
     font-size: 1.3em;
     letter-spacing: .1em;
-    padding: .6em 1em;
+    padding: .6em 1.5em;
     transition: ease-in .2s;
     cursor: pointer;
 }
@@ -3252,8 +3251,9 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstHeroInfo {
     background-color: #33333308;
-    padding: .5em;
+    padding: .5em 2ch;
     max-width: fit-content;
+    border-radius: 5px;
     gap: 0;
 }
 
@@ -3444,9 +3444,9 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstTimelineRuleGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr .75fr 1fr;
     grid-template-rows: .1fr 6em 1fr;
-    width: 100vw
+    width: 100vw;
 }
 
 .tstTimelineRule {
@@ -3462,7 +3462,22 @@ _________________________THE SERIOUS TYPE____________________ */
     display: flex;
     position: relative;
     top: -1em;
-    width: 20vw;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.DotsContainer2 {
+    display: flex;
+    position: relative;
+    top: -1em;
+    justify-content: space-between;
+}
+
+.DotsContainer3 {
+    display: flex;
+    position: relative;
+    top: -1em;
+
     justify-content: space-between;
 }
 
