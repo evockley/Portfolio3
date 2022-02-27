@@ -116,8 +116,6 @@ h5 {
 h6 {
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 700;
-
-
     color: #192E10;
     margin: 0;
 }
@@ -172,6 +170,11 @@ a:hover {
 .bigSpan {
     font-size: 1.5em;
     font-style: normal;
+}
+
+.smallCaps {
+    font-variant: small-caps;
+    color: #8A8A8A;
 }
 
 /* -------------------------------------------------Nav Bar---------------------------
@@ -242,19 +245,19 @@ header {
     background-color: #40AAE5;
     color: #FFFFFF;
     border: none;
+    display: flex;
+    justify-content: center;
     border-radius: 8px;
     box-sizing: border-box;
-    width: 250px;
+    width: fit-content;
+
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 800;
     font-size: 1.3em;
     letter-spacing: .1em;
-    padding-right: 35px;
-    padding-left: 35px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: .6em 1em;
+    transition: ease-in .2s;
     cursor: pointer;
-    transition: 100ms
 }
 
 .primary-button:hover {
@@ -271,19 +274,17 @@ header {
     color: #3891c9;
     border: none;
     border-radius: 8px;
-    border-color: #3891c9;
-    border: 2px;
-    border-style: solid;
+    border: 2px solid #3891c9;
     box-sizing: border-box;
     max-width: 325px;
-    font-family: "neuzeit-grotesk", sans-serif;
-    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-family: "brandon grotesque", sans-serif;
+    font-weight: 600;
     font-size: 18px;
     letter-spacing: .08em;
-    padding-right: 35px;
-    padding-left: 35px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 1em;
     transition: ease-in .2s;
     cursor: pointer;
 }
@@ -3269,7 +3270,10 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstHeroInfoContainer {
     display: flex;
-    justify-content: space-between;
+    min-width: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em
 }
 
 
@@ -3285,23 +3289,20 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstBriefBanner {
     background-image: url(images/tst/tstBriefBanner.png);
-    height: 43vh;
     width: 100vw;
+    padding: 10em 0;
     background-size: cover;
-    background-position: center;
-    border-top: 3px solid #E8602A;
-    border-bottom: 3px solid #E8602A;
+    background-repeat: no-repeat;
+    border-top: 4px solid #E8602A;
+    border-bottom: 4px solid #E8602A;
 }
 
 .tstBannerContentWrapper {
-    background-color: red;
-    position: relative;
     margin: auto auto;
     max-width: fit-content;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .tstBannerContent {
@@ -3323,15 +3324,19 @@ _________________________THE SERIOUS TYPE____________________ */
 }
 
 .tstProblemWrapper {
-
     width: 60ch;
-    padding: 2em
+    padding: 6em
+}
+
+.tstProblemWrapper p {
+    font-size: 1.4em;
+    letter-spacing: .05em;
 }
 
 .blobWrapper1 {
     background-image: url(images/tst/problemBlob1.png);
     background-repeat: no-repeat;
-    background-position: 15% 50%;
+    background-position: 12% 50%;
     background-size: 65%;
     position: relative;
 }
@@ -3348,7 +3353,7 @@ _________________________THE SERIOUS TYPE____________________ */
 .blobWrapper3 {
     background-image: url(images/tst/problemBlob3.png);
     background-repeat: no-repeat;
-    background-position: 45% 50%;
+    background-position: 55% 50%;
     background-size: 80%;
     position: relative;
 
@@ -3389,35 +3394,35 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstInvestigateBanner {
     background-image: url(images/tst/tstInvestigateBanner.png);
-    height: 43vh;
     width: 100vw;
-    background-size: 130%;
+    padding: 10em 0;
+    background-size: 110vw;
     background-position: center;
     background-repeat: no-repeat;
-    border-top: 3px solid #E8602A;
-    border-bottom: 3px solid #E8602A;
+    border-top: 4px solid #E8602A;
+    border-bottom: 4px solid #E8602A;
 }
 
 .tstIdeateBanner {
     background-image: url(images/tst/tstIdeateBanner.png);
-    height: 43vh;
     width: 100vw;
-    background-size: 120%;
+    padding: 10em 0;
+    background-size: 110vw;
     background-position: center;
     background-repeat: no-repeat;
-    border-top: 3px solid #E8602A;
-    border-bottom: 3px solid #E8602A;
+    border-top: 4px solid #E8602A;
+    border-bottom: 4px solid #E8602A;
 }
 
 .tstIterateBanner {
     background-image: url(images/tst/tstIterateBanner.png);
-    height: 43vh;
     width: 100vw;
-    background-size: 110%;
+    padding: 10em 0;
+    background-size: 110vw;
     background-position: center;
     background-repeat: no-repeat;
-    border-top: 3px solid #E8602A;
-    border-bottom: 3px solid #E8602A;
+    border-top: 4px solid #E8602A;
+    border-bottom: 4px solid #E8602A;
 }
 
 
@@ -3432,7 +3437,6 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstWeekIndicator * {
     font-variant: small-caps;
-
     color: #8A8A8A;
     font-size: .9em;
     margin-bottom: .8em;
@@ -3503,11 +3507,17 @@ _________________________THE SERIOUS TYPE____________________ */
     font-weight: 900;
 }
 
+.tstSurveyResults p {
+
+    color: #FCF7F2;
+
+}
+
 .tstSurveyResultsContainer * {
     margin: 0;
-
     width: clamp(200px, 17vw, 300px);
 }
+
 
 .tstSurveyResults1 {
     background-color: #BD6CAA;
@@ -3529,9 +3539,484 @@ _________________________THE SERIOUS TYPE____________________ */
     padding: 2em;
 }
 
+.tstInterviewObservationsContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 3em;
+    box-shadow: #98989830 0 0 20px;
+    border-radius: 16px;
+    border: solid .5px #192e102f;
+    background-color: #FCF7F2;
+}
+
+.tstInterviewObservation {
+    max-width: 30ch;
+}
+
+.tstAffinityMapImageContainer {
+    display: flex;
+    margin: 1em 0;
+    gap: 1em
+}
+
+.tstAffinityMapImageContainer img {
+    box-shadow: #00000030 0 0 20px;
+}
+
+.tstStickyHighlight {
+    display: flex;
+    justify-content: space-around;
+    margin: 3em 0 6em 0
+}
+
+.tstStickyHighlightGoals {
+    display: flex;
+    max-width: fit-content;
+}
+
+.tstStickyHighlightGoals img {
+    max-width: 13ch;
+
+}
+
+.tstStickyHighlightPains {
+    display: flex;
+    max-width: fit-content;
+}
+
+.tstStickyHighlightPains img {
+    max-width: 13ch;
+}
+
+
+.goalSticky2 {
+    position: relative;
+    top: 50%;
+    left: -3%
+}
+
+.goalSticky3 {
+    position: relative;
+    left: -6%;
+    top: -5%
+}
+
+.goalSticky4 {
+    position: relative;
+    top: 53%;
+    left: -10%;
+    z-index: 2;
+}
+
+.goalSticky5 {
+    position: relative;
+    top: -14%;
+    left: -15%;
+}
+
+.painSticky1 {
+    position: relative;
+    top: 35%;
+    left: 6%;
+    z-index: 1;
+}
+
+.painSticky2 {
+    position: relative;
+    top: -5%;
+}
+
+.painSticky3 {
+    position: relative;
+    top: 30%;
+    left: -10%;
+}
+
+.tstDesignProcess {
+
+    margin: 0 auto;
+    max-width: 60ch;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.tstDesignProcessMap {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 2em;
+    border-radius: 4px;
+    box-shadow: #00000030 0 0 20px;
+}
+
+/* TO DO: FIX ME */
+.tstDesignProcessMap img {
+    max-width: 20ch;
+    margin: 0 -.8em;
+    box-shadow: #00000030 0 0 20px;
+    border: 1px solid red
+}
+
+.tstGoalsPainsReview {
+    display: flex;
+    background-color: #FFFFFF;
+    max-width: 60ch;
+    justify-content: center;
+    gap: 8em;
+    margin: 0 auto;
+    padding: 2em 0;
+    border-radius: 4px;
+    box-shadow: #00000030 0 0 20px;
+}
+
+.tstGoalsPainsReview * {
+    margin: .2em 0;
+    padding: 0
+}
+
+.tstPrioritizedHMWs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80ch;
+    margin: 0 auto
+}
+
+.HMWStickiesRows {
+    display: flex;
+    max-width: 80ch;
+}
+
+.HMWStickiesRows img {
+    max-width: 18ch;
+}
+
+
+/* TO DO: FIX ME */
+.tstSketchExamples {
+    display: flex;
+    gap: 2em;
+
+    max-width: fit-content;
+    margin: 0 auto
+}
+
+.tstSketchExamples img {
+    max-width: 11em;
+    border-radius: 10px;
+}
+
+.tstFeatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "tstFeature1 tstFeature2 tstFeature3""tstFeature4 tstFeature5 tstFeature6";
+    gap: .5em;
+    max-width: 90ch;
+    margin: 0 auto
+}
+
+.tstFeatures * h3 {
+    color: #333;
+    font-family: "inter";
+    font-size: clamp(16px, 2em, 4em);
+    font-weight: 900;
+    text-shadow: #00000055 0 0 20px;
+    max-width: 80ch;
+
+}
+
+.tstFeatures * p {
+    padding: 0 1em 0 0
+}
+
+
+.tstFeature1 {
+    background-image: url(images/tst/tstFeatures1.png);
+    background-size: cover;
+    background-position: 0 30%;
+    text-align: center;
+    padding: 5em 0;
+    border-radius: 5px;
+    grid-area: tstFeature1;
+}
+
+.tstFeature2 {
+    background-image: url(images/tst/tstFeatures2.png);
+    background-size: cover;
+    background-position: 0 30%;
+    text-align: center;
+    padding: 5em 0;
+    border-radius: 5px;
+    grid-area: tstFeature2;
+}
+
+.tstFeature3 {
+    background-image: url(images/tst/tstFeatures3.png);
+    background-size: cover;
+    background-position: 0 30%;
+    text-align: center;
+    padding: 5em 0;
+    border-radius: 5px;
+    grid-area: tstFeature3;
+}
+
+.tstFeature4 {
+    background-image: url(images/tst/tstFeatures4.png);
+    background-size: cover;
+    background-position: 0 30%;
+    text-align: center;
+    padding: 5em 0;
+    border-radius: 5px;
+    grid-area: tstFeature4;
+}
+
+.tstFeature5 {
+    background-image: url(images/tst/tstFeatures5.png);
+    background-size: cover;
+    background-position: 0 30%;
+    text-align: center;
+    padding: 5em 0;
+    border-radius: 5px;
+    grid-area: tstFeature5;
+}
+
+.tstFeature6 {
+    background-image: url(images/tst/tstFeatures6.png);
+    background-size: cover;
+    background-position: 0 30%;
+    text-align: center;
+    padding: 5em 0;
+    border-radius: 5px;
+    grid-area: tstFeature6;
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* _____------______------______------LOW FIDELITY_____------______------______------ */
+
+
+.tstLowFiSection {
+    background-image: url(images/tst/LowFibackground.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 6.5%;
+
+
+}
+
+.tstLowFiScreens {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-size: 100%;
+    max-width: 80ch;
+    margin: 0 auto;
+
+}
+
+.tstLowFiScreensRow1, .tstLowFiScreensRow2 {
+    display: flex;
+    gap: 2em;
+    margin: 0 auto;
+}
+
+.tstLowFiScreensRow1 img {
+    max-width: 10em;
+    border-radius: 24px;
+    box-shadow: #00000025 0 0 10px;
+
+}
+
+.tstLowFiScreensRow2 img {
+    max-width: 10em;
+    border-radius: 24px;
+    box-shadow: #00000055 0 0 10px;
+}
+
+.tstMidfiGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "tstMidfiGrid1 tstMidfiGrid2""tstMidfiGrid3 tstMidfiGrid4""tstMidfiGrid5 tstMidfiGrid6";
+    gap: 2em;
+    max-width: 80ch;
+    margin: 0 auto
+}
+
+.tstMidfiGrid * {
+    margin: 0;
+    padding: 0
+}
+
+.tstMidfiGridCopy {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0
+}
+
+.tstMidfiGrid img {
+    max-width: 10em;
+    border-radius: 16px;
+    box-shadow: #00000050 0 0 20px;
+}
+
+.tstMidfiGrid1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: tstMidfiGrid1;
+    padding: 1em 0
+}
+
+.tstMidfiGrid2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    grid-area: tstMidfiGrid2;
+    padding: 1em 0
+}
+
+.tstMidfiGrid3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    grid-area: tstMidfiGrid3;
+
+    padding: 1em 0
+}
+
+.tstMidfiGrid4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: tstMidfiGrid4;
+    padding: 1em 0
+}
+
+.tstMidfiGrid5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: tstMidfiGrid5;
+    padding: 1em 0
+}
+
+.tstMidfiGrid6 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    grid-area: tstMidfiGrid6;
+    padding: 1em 0
+}
+
+
+/*______----______----____ New Features Grid_______------________---- */
+
+.tstNewFeaturesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr .5fr;
+    grid-template-areas: "tstUserProfile tstPrivateSharing tstDiscover""tstMentor tstMentor tstMentor";
+    gap: 1em
+}
+
+.tstNewFeaturesGrid * {
+    margin: 0
+}
+
+.tstNewFeaturesGrid img {
+    max-width: 10em;
+    border-radius: 16px;
+    box-shadow: #00000030 0 0 20px;
+    margin: 1em 0
+}
+
+.tstNewFeaturesGrid p {
+    font-size: 1em;
+    margin: .7em 0
+}
+
+.tstUserProfile {
+    grid-area: tstUserProfile;
+
+}
+
+.tstPrivateSharing {
+    grid-area: tstPrivateSharing;
+}
+
+.tstDiscover {
+    grid-area: tstDiscover;
+}
+
+.tstMentor {
+    grid-area: tstMentor;
+}
+
+.tstMentorImages {
+
+    gap: 1em;
+    margin: 1em;
+    display: flex;
+
+}
+
+.tstMentorImages img {
+    width: clamp(15vw, 250px, 4em)
+}
+
+
+
+.tstNewFeaturesGridItem {
+    background-color: #33333310;
+    border-radius: 5px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+
+/* ____----___--_----_____--__--High Fidelity____----___--_----_____--__-- */
+
+.tstHiFi {
+    background-color: #333333;
+}
+
+.tstHiFiScreens {
+    max-width: 100ch;
+}
+
+.tstHiFiFlex {
+    display: flex;
+    background-color: #026c02;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0
+}
+
+.tstHiFiFlex img {
+    width: 10ch;
+    padding: 0;
+    margin: 0
+}
 
 
 
