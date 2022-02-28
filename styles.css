@@ -3279,10 +3279,10 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstTLDR {
     max-width: 88ch;
-    height: 85vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
-    gap: 6em;
+    gap: 4em;
     margin: 0 auto;
     padding: 0
 }
@@ -3325,7 +3325,7 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstProblemWrapper {
     width: 60ch;
-    padding: 6em
+    padding: 5em
 }
 
 .tstProblemWrapper p {
@@ -3425,10 +3425,15 @@ _________________________THE SERIOUS TYPE____________________ */
     border-bottom: 4px solid #E8602A;
 }
 
+.tstProcessOverviewContainer {
+    height: 50vh;
+    padding: 5em
+}
 
 .tstProcessNav {
     display: flex;
     justify-content: space-between;
+    padding: 2em 0
 }
 
 .tstProcessNav * {
@@ -3440,13 +3445,15 @@ _________________________THE SERIOUS TYPE____________________ */
     color: #8A8A8A;
     font-size: .9em;
     margin-bottom: .8em;
+
 }
 
 .tstTimelineRuleGrid {
     display: grid;
     grid-template-columns: 1fr .75fr 1fr;
-    grid-template-rows: .1fr 6em 1fr;
+    grid-template-rows: .1fr .6fr 1fr;
     width: 100vw;
+
 }
 
 .tstTimelineRule {
@@ -3455,7 +3462,6 @@ _________________________THE SERIOUS TYPE____________________ */
     border-radius: 10px;
     width: 100%;
     margin: 4em 0;
-    position: relative;
 }
 
 .DotsContainer {
@@ -3505,14 +3511,19 @@ _________________________THE SERIOUS TYPE____________________ */
     box-shadow: #45454540 0 0 20px;
 }
 
-.tstSurveyResultsContainer {
 
-    max-width: 50vw;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+
+.tstSurveyResultsGrid {
+    margin: 4em auto;
+    display: grid;
+    max-width: 60ch;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    grid-template-rows: .15fr 1fr 1fr .15fr;
+    grid-template-areas: "surveyCaption1 surveyCaption1""survey1 survey2""survey3 survey4""surveyCaption2 surveyCaption2";
+
     justify-content: center;
-
 }
 
 .tstSurveyResults h3 {
@@ -3523,41 +3534,62 @@ _________________________THE SERIOUS TYPE____________________ */
 }
 
 .tstSurveyResults p {
-
     color: #FCF7F2;
 
 }
 
-.tstSurveyResultsContainer * {
+.tstSurveyResults {
+    max-width: 30ch;
     margin: 0;
-    width: clamp(200px, 17vw, 300px);
+    padding: 1em;
+
 }
 
+.surveyCaption1 {
+    height: fit-content;
+    grid-area: surveyCaption1;
+    padding: 0;
+    margin: 0
+}
+
+.surveyCaption2 {
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    grid-area: surveyCaption2;
+    margin: 0;
+    padding: 1em 0 0 0
+}
 
 .tstSurveyResults1 {
     background-color: #BD6CAA;
-    padding: 2em;
+    grid-area: survey1;
+    border-radius: 5px 0 0 0;
 }
 
 .tstSurveyResults2 {
     background-color: #85A3C5;
-    padding: 2em;
+    grid-area: survey2;
+    border-radius: 0 5px 0 0;
 }
 
 .tstSurveyResults3 {
     background-color: #90B584;
-    padding: 2em;
+    grid-area: survey3;
+    border-radius: 0 0 0 5px;
 }
 
 .tstSurveyResults4 {
     background-color: #AB4630;
-    padding: 2em;
+    grid-area: survey4;
+    border-radius: 0 0 5px 0;
 }
 
 .tstInterviewObservationsContainer {
     display: flex;
     justify-content: space-between;
     padding: 1em 3em;
+    margin: 4em 0 0 0;
     box-shadow: #98989830 0 0 20px;
     border-radius: 16px;
     border: solid .5px #192e102f;
@@ -3575,13 +3607,15 @@ _________________________THE SERIOUS TYPE____________________ */
 }
 
 .tstAffinityMapImageContainer img {
-    box-shadow: #00000030 0 0 20px;
+    box-shadow: #98989830 0 0 20px;
+    border-radius: 5px;
+    border: solid .5px #192e102f;
 }
 
 .tstStickyHighlight {
     display: flex;
     justify-content: space-around;
-    margin: 3em 0 6em 0
+    margin: 4em 0 10em 0
 }
 
 .tstStickyHighlightGoals {
@@ -3649,7 +3683,7 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstDesignProcess {
 
-    margin: 0 auto;
+    margin: 2em auto 4em auto;
     max-width: 60ch;
     display: flex;
     flex-direction: column;
@@ -3665,14 +3699,6 @@ _________________________THE SERIOUS TYPE____________________ */
     box-shadow: #00000030 0 0 20px;
 }
 
-/* TO DO: FIX ME */
-.tstDesignProcessMap img {
-    max-width: 20ch;
-    margin: 0 -.8em;
-    box-shadow: #00000030 0 0 20px;
-    border: 1px solid red
-}
-
 .tstGoalsPainsReview {
     display: flex;
     background-color: #FFFFFF;
@@ -3685,16 +3711,27 @@ _________________________THE SERIOUS TYPE____________________ */
     box-shadow: #00000030 0 0 20px;
 }
 
+.tstGoalsPainsReview {
+    margin: 4em auto
+}
+
+
 .tstGoalsPainsReview * {
     margin: .2em 0;
     padding: 0
+}
+
+.tstPrioritizedHMWsContainer {
+    margin: 4rem auto;
+
+    max-width: 60ch;
 }
 
 .tstPrioritizedHMWs {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 80ch;
+    max-width: 60ch;
     margin: 0 auto
 }
 
@@ -3708,13 +3745,11 @@ _________________________THE SERIOUS TYPE____________________ */
 }
 
 
-/* TO DO: FIX ME */
 .tstSketchExamples {
     display: flex;
     gap: 2em;
-
     max-width: fit-content;
-    margin: 0 auto
+    margin: 4rem auto
 }
 
 .tstSketchExamples img {
@@ -3722,12 +3757,18 @@ _________________________THE SERIOUS TYPE____________________ */
     border-radius: 10px;
 }
 
+.tstFeaturesContainer {
+    margin: 6rem auto 4rem auto;
+    padding: 2em 0;
+
+}
+
 .tstFeatures {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "tstFeature1 tstFeature2 tstFeature3""tstFeature4 tstFeature5 tstFeature6";
-    gap: .5em;
+    gap: 1em;
     max-width: 90ch;
     margin: 0 auto
 }
@@ -3743,7 +3784,9 @@ _________________________THE SERIOUS TYPE____________________ */
 }
 
 .tstFeatures * p {
-    padding: 0 1em 0 0
+    padding: 0 1em 0 0;
+    font-size: 1.1em;
+    margin: .6em 0 1em 0
 }
 
 
@@ -3822,13 +3865,24 @@ _________________________THE SERIOUS TYPE____________________ */
 /* _____------______------______------LOW FIDELITY_____------______------______------ */
 
 
+
+
 .tstLowFiSection {
     background-image: url(images/tst/LowFibackground.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 0 6.5%;
+}
 
+.tstFidelityHeader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.tstFidelityHeader * {
+    margin: 0;
+    padding: 0
 }
 
 .tstLowFiScreens {
@@ -3837,7 +3891,7 @@ _________________________THE SERIOUS TYPE____________________ */
     gap: 2em;
     background-size: 100%;
     max-width: 80ch;
-    margin: 0 auto;
+    margin: 4rem auto;
 
 }
 
@@ -3851,13 +3905,18 @@ _________________________THE SERIOUS TYPE____________________ */
     max-width: 10em;
     border-radius: 24px;
     box-shadow: #00000025 0 0 10px;
-
 }
 
 .tstLowFiScreensRow2 img {
     max-width: 10em;
     border-radius: 24px;
     box-shadow: #00000055 0 0 10px;
+}
+
+
+/* _____------______------_______-----MidFi____-----___----____----_____ */
+.tstMidFidelityHeader {
+    margin-bottom: 2rem;
 }
 
 .tstMidfiGrid {
@@ -3867,7 +3926,7 @@ _________________________THE SERIOUS TYPE____________________ */
     grid-template-areas: "tstMidfiGrid1 tstMidfiGrid2""tstMidfiGrid3 tstMidfiGrid4""tstMidfiGrid5 tstMidfiGrid6";
     gap: 2em;
     max-width: 80ch;
-    margin: 0 auto
+    margin: 4rem auto
 }
 
 .tstMidfiGrid * {
@@ -3947,7 +4006,8 @@ _________________________THE SERIOUS TYPE____________________ */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr .5fr;
     grid-template-areas: "tstUserProfile tstPrivateSharing tstDiscover""tstMentor tstMentor tstMentor";
-    gap: 1em
+    gap: 1em;
+    margin: 4rem 0
 }
 
 .tstNewFeaturesGrid * {
@@ -4015,23 +4075,33 @@ _________________________THE SERIOUS TYPE____________________ */
     background-color: #333333;
 }
 
-.tstHiFiScreens {
-    max-width: 100ch;
+.tstFlexWrapper {
+    border: 1px solid white;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto
 }
 
 .tstHiFiFlex {
     display: flex;
-    background-color: #026c02;
-    justify-content: flex-start;
     margin: 0;
-    padding: 0
+    padding: 0;
+    border: 1px solid red;
 }
 
 .tstHiFiFlex img {
-    width: 10ch;
+    max-width: 15vw;
     padding: 0;
-    margin: 0
+    margin: 0;
 }
+
+.bookTime * {
+    max-width: calc(15vw - 100px);
+    margin: 1em;
+    padding: 100px
+}
+
 
 
 
