@@ -34,7 +34,9 @@ hr {
 
 
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 
 /*-____________-___________-____________-_________________-ALIGNMENT____________-___________-____________-_________________-
@@ -3461,7 +3463,7 @@ _________________________THE SERIOUS TYPE____________________ */
 }
 
 
-.tstInvestigateBanner {
+#tstInvestigateBanner {
     background-image: url(images/tst/tstInvestigateBanner.png);
     width: 100vw;
     padding: 10vw 0;
@@ -3472,7 +3474,7 @@ _________________________THE SERIOUS TYPE____________________ */
     border-bottom: 4px solid #E8602A;
 }
 
-.tstIdeateBanner {
+#tstIdeateBanner {
     background-image: url(images/tst/tstIdeateBanner.png);
     width: 100vw;
     padding: 10vw 0;
@@ -3483,7 +3485,7 @@ _________________________THE SERIOUS TYPE____________________ */
     border-bottom: 4px solid #E8602A;
 }
 
-.tstIterateBanner {
+#tstIterateBanner {
     background-image: url(images/tst/tstIterateBanner.png);
     width: 100vw;
     padding: 10vw 0;
