@@ -179,6 +179,11 @@ a:hover {
     color: #8A8A8A;
 }
 
+.bold {
+    font-weight: 600;
+    font-style: normal;
+}
+
 /* -------------------------------------------------Nav Bar---------------------------
 ----------------------------------------------Nav Bar------------------------------------------
 ---------------------------------Nav Bar------------------------------------------------------- */
@@ -3304,7 +3309,7 @@ _________________________THE SERIOUS TYPE____________________ */
 
 
 .tstHero {
-    background-image: url(images/tst/tstHero.png);
+    background-image: url(images/tst/tstHeroImage.jpg);
     height: 55vh;
     width: 100vw;
     background-size: cover;
@@ -3496,10 +3501,6 @@ _________________________THE SERIOUS TYPE____________________ */
     border-bottom: 4px solid #E8602A;
 }
 
-.tstProcessOverviewContainer {
-    height: 50vh;
-    padding: 5em
-}
 
 .tstProcessNav {
     display: flex;
@@ -3524,6 +3525,24 @@ _________________________THE SERIOUS TYPE____________________ */
     grid-template-columns: 1fr .75fr 1fr;
     grid-template-rows: .1fr .6fr 1fr;
     width: 100vw;
+}
+
+.tstTimelineRuleGridHeader {
+    display: flex;
+    flex-direction: column;
+    gap: .3em
+}
+
+.tstTimelineRuleGridHeader h5 {
+    text-decoration: none;
+    max-width: fit-content;
+    text-decoration: underline;
+    transition: 100ms;
+}
+
+.tstTimelineRuleGridHeader h5:hover {
+    color: #fab348;
+
 
 }
 
@@ -3773,11 +3792,11 @@ _________________________THE SERIOUS TYPE____________________ */
 .tstGoalsPainsReview {
     display: flex;
     background-color: #FFFFFF;
-    max-width: 60ch;
-    justify-content: center;
-    gap: 8em;
+    width: 50ch;
+    justify-content: space-between;
+
     margin: 0 auto;
-    padding: 2em 0;
+    padding: 2em;
     border-radius: 4px;
     box-shadow: #00000030 0 0 20px;
 }
@@ -3962,7 +3981,6 @@ _________________________THE SERIOUS TYPE____________________ */
     background-size: 100%;
     max-width: 80ch;
     margin: 4rem auto;
-
 }
 
 .tstLowFiScreensRow1, .tstLowFiScreensRow2 {
@@ -3994,20 +4012,27 @@ _________________________THE SERIOUS TYPE____________________ */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "tstMidfiGrid1 tstMidfiGrid2""tstMidfiGrid3 tstMidfiGrid4""tstMidfiGrid5 tstMidfiGrid6";
-    gap: 2em;
     max-width: 80ch;
     margin: 4rem auto
 }
 
 .tstMidfiGrid * {
     margin: 0;
-    padding: 0
+    padding: 0;
+}
+
+.tstMidfiGrid h4 {
+    font-size: 1.4em;
 }
 
 .tstMidfiGridCopy {
     display: flex;
     flex-direction: column;
-    margin: 1em 0
+    margin: .4em 0
+}
+
+.tstMidfiGridCopy p {
+    color: #33333390
 }
 
 .tstMidfiGrid img {
