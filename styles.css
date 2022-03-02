@@ -3329,7 +3329,8 @@ _________________________THE SERIOUS TYPE____________________ */
     padding: .5em 2ch;
     max-width: fit-content;
     border-radius: 5px;
-    gap: 0;
+
+
 }
 
 .tstHeroInfo * {
@@ -3348,7 +3349,8 @@ _________________________THE SERIOUS TYPE____________________ */
     min-width: fit-content;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1em
+    gap: 1vw;
+
 }
 
 
@@ -3680,6 +3682,7 @@ _________________________THE SERIOUS TYPE____________________ */
     justify-content: space-between;
     padding: 1em 3em;
     margin: 4em 0 0 0;
+    gap: 1.5em;
     box-shadow: #98989830 0 0 20px;
     border-radius: 16px;
     border: solid .5px #192e102f;
