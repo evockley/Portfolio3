@@ -3364,7 +3364,7 @@ _________________________THE SERIOUS TYPE____________________ */
 }
 
 .tstBriefBanner {
-    background-image: url(images/tst/tstBriefBanner.jpg);
+    background-image: url(images/tst/tstBriefHero.jpg);
     width: 100vw;
     padding: 10em 0;
     background-size: cover;
@@ -3469,7 +3469,7 @@ _________________________THE SERIOUS TYPE____________________ */
 
 
 #tstInvestigateBanner {
-    background-image: url(images/tst/tstInvestigateBanner.png);
+    background-image: url(images/tst/tstInvestigateBanner.jpg);
     width: 100vw;
     padding: 10vw 0;
     background-size: 200vw;
