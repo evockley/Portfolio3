@@ -381,13 +381,22 @@ header {
 
 .featuredProjectsContainer {
     max-width: 100ch;
-    /* border: 1px solid red; */
-    margin: 0 auto
+
+    margin: 0 auto;
+
+}
+
+.featuredProjectsHeader {
+    display: flex;
+    justify-content: start;
 }
 
 .featuredProjects {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4em;
+    margin: 2em auto;
 }
 
 .project * {
@@ -395,19 +404,20 @@ header {
 }
 
 .project {
-    max-width: 30vw;
-    margin: 2em 0;
+    max-width: 50vw;
+    min-width: 30ch;
     border-radius: 8px 0 8px 8px;
-
+    border: .5px solid #00000025;
+    transition: ease 200ms;
 }
 
 .project:hover {
     box-shadow: #00000030 0 0 30px;
-    background-color: #f9f4ee;
+    background-color: #FFFFFF;
 }
 
 .project img {
-    height: 24ch;
+    height: 25ch;
     object-fit: cover;
     border-radius: 8px 0 8px 0;
 }
