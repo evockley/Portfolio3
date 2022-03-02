@@ -385,16 +385,52 @@ header {
     margin: 0 auto
 }
 
-.item-flex-container {
+.featuredProjects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project * {
+    margin: 0
+}
+
+.project {
+    max-width: 30vw;
+    margin: 2em 0;
+    border-radius: 8px 0 8px 8px;
+
+}
+
+.project:hover {
+    box-shadow: #00000030 0 0 30px;
+    background-color: #f9f4ee;
+}
+
+.project img {
+    height: 24ch;
+    object-fit: cover;
+    border-radius: 8px 0 8px 0;
+}
+
+.featuredProjectCopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 1em;
+    margin: 1em;
+    gap: 1em
+}
+
+/* .item-flex-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 3rem;
     margin: 1rem auto 0 auto;
-    /* border: 1px solid green */
-}
+    /* border: 1px solid green }*/
 
-.home-item {
+
+/* .home-item {
     box-sizing: border-box;
     max-width: 30em;
     min-width: 250px;
@@ -420,8 +456,6 @@ header {
 
 .home-item img {
     max-width: 100%;
-    border-style: solid;
-    border: transparent;
     border-radius: 8px;
     border-width: .5px;
     box-shadow: #09150325 0 4px 16px;
@@ -433,6 +467,14 @@ header {
     color: #091503;
     font-family: "neuzeit-grotesk", sans-serif;
     font-weight: 400;
+}
+
+.itemImage1 img {}
+
+
+.itemImage1, .itemImage2 {
+    border: 1px solid red;
+    height: 100px
 }
 
 .homeItemCopy {
@@ -475,7 +517,7 @@ header {
 
 .more-projects-container a {
     text-decoration: none;
-}
+}  */
 
 /* ----------------------Footer----------------------
 -------------------------Footer----------------------
@@ -540,7 +582,7 @@ header {
 
 }
 
-.projects-image {
+.projectsImage {
     width: 18em;
 }
 
@@ -582,7 +624,8 @@ header {
 }
 
 .newProjectContainer {
-    margin: 1.5em 0
+    margin: .5em 0;
+    background-color: #FCF7F2;
 }
 
 #newProject {
@@ -603,29 +646,23 @@ header {
 
 .newProjectRight {
     background-image: url("images/tst/TSTSquareHero.jpg");
-    background-size: cover;
     height: 25em;
     width: 48vw;
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 0 16px 16px 0;
-    box-shadow: #00000025 0 0 10px;
     display: flex;
     justify-content: flex-end;
+    background-size: cover;
 
 }
 
 
 
-/* #newProject img {
-    max-width: 30ch;
-    height: 100%;
-    border-radius: 16px;
-    box-shadow: #00000015 0 0 10px;
-} */
 
 .newHeading * {
-    margin: 0 0 .5em 1.5em;
-    padding: 0
+    margin: 0;
+    padding: 0 0 .5em 1.5em;
 }
 
 .newProjectLeftHeader * {
@@ -635,15 +672,15 @@ header {
 
 .newProjectLeftContent p {
     font-size: 1.3em;
-
 }
 
 .newProjectLeft {
-
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 1.5em 0
+    justify-content: center;
+    gap: 2em;
+    padding: 0;
+
 }
 
 .newProjectButton {
@@ -4502,7 +4539,7 @@ _________________________________***PROJECTS <768***____________________***PROJE
         align-items: center;
     }
 
-    .projects-image {
+    .projectsImage {
         width: 85%;
     }
 
