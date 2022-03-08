@@ -1515,8 +1515,8 @@ span {
     margin-top: 16px;
     padding: 20px 32px;
     border: 1.5px solid #068806;
-    max-width: 80ch;
-    margin: 2em auto
+    max-width: 100ch;
+    margin: 1em auto
 }
 
 .callout-container p {
