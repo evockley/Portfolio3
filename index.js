@@ -1,6 +1,38 @@
 // DISAPPEARING HOME PAGE ELEMENTS ON SCROLL
 
 
+
+// window.addEventListener('scroll', () => {
+//     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+//     const scrolled = window.scrollY;
+//     console.log(scrollable);
+
+//     if (scrolled === scrollable) {
+//         alert('Youve reached the bottom')
+//     }
+
+// });
+
+
+
+
+
+// function myFunction() { document.getElementById("navbar").style.backgroundColor = "red"; }
+
+
+
+
+// function scrollFunction() {
+//     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+//         document.getElementById("navbar").style.padding = "30px 10px";
+
+//     } else {
+//         document.getElementById("navbar").style.padding = "80px 10px";
+
+//     }
+// }
+
+
 $(window).scroll(function () {
     if ($(this).scrollTop() > 150) {
         $('.homeHeroButton').css("visibility", "hidden");

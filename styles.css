@@ -194,7 +194,7 @@ header {
     z-index: 10000;
 }
 
-.navbar {
+.navbarRegular {
     background-color: #FCF7F2;
     display: flex;
     justify-content: space-between;
@@ -242,6 +242,15 @@ header {
     top: 1.6em;
     padding-right: 100px;
     display: none;
+}
+
+.navbarSkinny {
+    background-color: #FCF7F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    box-shadow: #c5c5c550 0 0 20px;
 }
 
 /* ------------------------------Buttons---------------------------------
@@ -392,10 +401,12 @@ header {
 
 .featuredProjects {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 2em;
     margin: 2em auto;
+    padding: 0 auto;
+
 }
 
 .project * {
@@ -404,10 +415,11 @@ header {
 
 .project {
     display: flex;
-    max-width: 50vw;
+    max-width: fit-content;
     border-radius: 8px 0 8px 8px;
     border: .5px solid #00000025;
     transition: ease 200ms;
+    margin: 0 auto
 }
 
 .project:hover {
@@ -1336,7 +1348,7 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4px;
+    padding: 1em;
     transition: ease-in 200ms;
 }
 
@@ -1350,7 +1362,10 @@ span {
 }
 
 .more-work-item img {
-    max-width: 200px;
+
+    max-width: fit-content;
+    object-fit: cover;
+    height: 200px;
 }
 
 .more-work-1 {
@@ -1387,83 +1402,102 @@ span {
     padding: 0;
 }
 
-.recycle-easy-hero-section hr {
-    width: 45%;
-    margin: 1.5em auto;
-    color: #192E10;
+
+
+.reHeroSection {
+    background-image: url(images/recycle-easy/reHeroBackground.jpg);
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding: 0;
 }
 
-.recycle-easy-hero-highlight {
-    max-width: 100%;
+.reHeroSection h1 {
+    font-family: 'inter';
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
     display: flex;
-    flex-direction: column;
-    gap: 20%;
-    margin-top: 10px;
-    padding: 8px;
+    color: white;
+    font-size: 5em;
+    text-shadow: #333333 0 4px 2px;
+    padding: 0 .5em
 }
 
-.recycle-easy-hero-highlight-items {
+.reHeroWrapper {
     display: flex;
     justify-content: space-between;
-    margin: 8px 0 5px 0;
+    width: 100vw;
 }
 
-.recycle-easy-hero-highlight-items>* {
-    font-size: .9em;
-}
 
-.recycle-easy-hero-image {
-    width: 25vw;
-    border-radius: 60px 0 60px 60px;
-    box-shadow: lightgray 0 0 10px;
-    border: solid white;
-    border-width: 10px;
-    border-bottom: none;
-    margin-left: 10%;
-}
-
-.tools-logos {
+.reHeroStatContainer {
+    background-color: white;
     display: flex;
-    margin: 0
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100ch;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 1em
 }
 
-.tools-logos img {
-    margin: 0 8px 0 0;
-    max-height: 18px;
+.reHeroLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.reHeroRight {
+    background-image: url(images/recycle-easy/Recycle\ Easy\ Showcase\ mockup.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: clamp(4vw, 75%, 30ch);
+    height: 80vh;
+    width: 43vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+    margin: 0 0 0 5vw;
+}
+
+
+
+.reHeroStats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reHeroStats * {
+    margin: 0 .2em;
+    padding: 0
 }
 
 .research-stats {
-    margin-top: 64px;
+    box-shadow: #00000025 0 0 20px;
+    border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
-    border: solid green 1px;
-    border-radius: 20px;
-    background-color: #33333310;
+    margin: 0 auto;
+    border: 1px solid #068806;
+    max-width: 120ch;
 }
 
 .recyle-easy-research-card {
-    border-radius: 20px;
-    background-image: linear-gradient(#068806, #026c02);
-    margin: 24px 10px;
-    padding: 8px;
-    box-shadow: grey 0 0 10px;
-    min-width: 25%;
+    margin: 1em;
+    min-width: 25vw;
     flex: 1 0 50px
 }
 
-.recyle-easy-research-card p {
-    margin-top: 4px;
-}
-
-.recyle-easy-research-card * {
-    color: white;
-}
 
 .card-title {
-    display: inline;
-    color: #FFFFFF;
     font-weight: 900;
-    font-size: larger;
     border-radius: 8px;
     margin: 0;
 }
@@ -1471,58 +1505,89 @@ span {
 .callout-container {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(#068806, #026c02);
-    border-radius: 20px;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 16px;
     margin-top: 16px;
-    padding: 20px 32px
+    padding: 20px 32px;
+    border: 1.5px solid #068806;
+    max-width: 80ch;
+    margin: 2em auto
 }
 
 .callout-container p {
-    color: white;
+    color: #068806;
     margin: 0;
 }
 
 .callout {
-    font-size: 5vw;
+    font-size: 3em;
     font-family: 'neuzeit-grotesk';
     font-weight: 900;
+
 }
 
-.persona-area {
-    margin-top: 16px;
+.rePersona {
+    max-width: fit-content;
+    background-color: white;
     border: 1px solid #068806;
+    display: grid;
+    margin-top: 16px;
     border-radius: 20px;
+    column-gap: 4em;
+    justify-content: center;
+    grid-template-columns: .8fr auto;
+    grid-template-rows: auto auto;
+
+    margin: 0 auto;
+    padding: 2em 1em;
+
+    grid-template-areas: "Persona Scenario""Persona JourneyMap";
+
 }
 
-.mini-persona {
+.reScenario {
+    grid-area: Scenario;
+    max-width: 60ch;
+    /* border: 1px solid red */
+}
+
+.reJourneyMap {
+    grid-area: JourneyMap;
+    display: flex;
+    flex-direction: column;
+    max-width: 60ch;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid blue */
+}
+
+.rePersonaLeft {
+    grid-area: Persona;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1em
+        /* border: 1px solid yellow */
+}
+
+.rePersonaLeft p {
+    margin: 0;
+    max-width: 60ch;
+
+}
+
+.rePersonaLeft li {
+    margin-bottom: 16px;
+    font-family: "Brandon-Grotesque";
+
+}
+
+.rePersonaImageContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px 2%;
-    border-radius: 20px 0 0 20px;
-    justify-content: space-between;
-    background-color: #33333310;
-    box-shadow: lightgray 1px 0 2px;
-}
-
-.mini-persona hr {
-    width: 64px;
-    height: 2px;
-}
-
-.mini-persona img {
-    margin-bottom: 16px;
-}
-
-.mini-persona p {
-    margin: 0;
-    font-size: .9em;
-}
-
-.mini-persona li {
-    margin-bottom: 16px;
-    font-size: 1em;
-    font-family: "Brandon-Grotesque";
 }
 
 .full-document-link {
@@ -1538,7 +1603,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: .9em;
+
     margin-bottom: 8px;
 }
 
@@ -1551,9 +1616,7 @@ span {
     color: #192E10
 }
 
-.ux-scenario {
-    margin-bottom: 24px;
-}
+
 
 canvas {
     margin-bottom: 3vh;
@@ -1563,24 +1626,33 @@ canvas {
     margin-bottom: 4vh;
 }
 
-.journey-map-area {
+.reIdeationAssetsContainer {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 24px 2%
+    align-items: center;
+    justify-content: center;
+    max-width: 100ch;
+    margin: 0 auto;
+    gap: 2em;
+
+
 }
 
-.journey-map-area p {
-    font-size: 1em;
+.reIdeationAssets {
+    border-radius: 8px;
+    max-width: 45ch;
 }
 
-.ideation-assets {
-    margin: 48px 0 24px 0;
+.reIdeationAssetsSmall {
+    border-radius: 8px;
+    max-width: 23ch;
 }
 
-.ideation-assets img {
+.reIdeationAssets img {
     box-shadow: lightgray 0 0 10px;
     border-radius: 8px;
+    display: flex;
+    max-width: 40ch;
+
 }
 
 .ideation-assets2 img {
@@ -1588,41 +1660,48 @@ canvas {
     border-radius: 8px;
 }
 
-.sketch-artifacts {
-    justify-content: center;
+.lowFiAssetsContainer {
+    display: flex;
+    max-width: 100ch;
+    margin: 0 auto
 }
 
-.sketch-artifacts img {
-    max-height: 450px;
-}
-
-.low-fi-assets {
+.lowFiAssets {
     display: flex;
     flex-wrap: wrap;
-    margin: auto auto;
-    padding: 24px 0;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 100ch;
+
+
 }
 
-.low-fi-assets img {
-    border-radius: 10px;
-    box-shadow: lightgrey 0 0 10px;
+.lowFiAssets img {
+    border-radius: 8px;
+    box-shadow: #00000030 0 0 10px;
+    max-width: 15ch;
+    margin: 0 2em
 }
 
-.wireframe {
-    margin-top: 10vh;
-}
+
+
 
 .usability-test-photo {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100ch;
+    overflow-x: scroll;
+    margin: 0 auto;
+
 }
 
 .usability-test-photo img {
     margin: 4px;
     border-radius: 4px;
     box-shadow: lightgray 0 0 10px;
+    max-width: 30vw;
+
 }
 
 .changes {
@@ -2266,226 +2345,93 @@ canvas {
 
 /* --------------------------------------About------------------------------------- */
 
-.about-hero {
-    display: grid;
-    grid-template-columns: 54vw 25vw;
-    grid-template-rows: 60px .75fr .75fr;
-    grid-template-areas: "heading heading""p1 photo""p2 photo";
-    column-gap: 72px;
-    row-gap: 0px;
-    margin-top: 32px;
-    max-width: 1600px;
+
+
+
+
+.aboutMyExperience {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100ch;
+    gap: 2em;
+    margin: 0 auto
 }
 
-#bio-heading {
-    grid-area: heading;
+.aboutMyExperience img {
+    max-width: 30ch;
+
+
 }
 
-.bio-p1 {
-    grid-area: p1;
+.myExperienceLeft p {
+    font-size: 1.4em;
+    max-width: 40ch;
+
 }
 
-.bio-p2 {
-    grid-area: p2;
-}
-
-#bioPhoto {
-    grid-area: photo;
-    width: 100%;
-    justify-content: right;
-    align-self: center;
-    max-width: 90%;
-}
-
-.skills-section {
-    background-image: linear-gradient(180deg, #192E10, #091503);
-    background-repeat: no-repeat;
-    width: vw;
-    padding: 6vh 100px
-}
-
-.skills-section h2 {
-    padding-bottom: 24px;
-}
-
-.skills-container {
+.skillsContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-    justify-content: space-evenly;
-    background-repeat: no-repeat;
+    justify-content: space-between;
+    max-width: 100ch;
+    gap: 3em;
+    margin: 0 auto;
 }
 
-.individual-skill {
+.mySkill {
+    width: 20ch;
+    margin: 2em 0;
+
+
+}
+
+.mySkill ul {
+    padding-left: 0;
+    min-width: fit-content;
+}
+
+.mySkill li {
+    list-style-type: none;
+    list-style-position: inside;
+    text-align: left;
+    margin: 0;
+    padding: 0.35em 0;
+}
+
+
+.aboutWrapper, .skillsWrapper, .myToolsWrapper {
+    max-width: 100ch;
+    margin: 0 auto
+}
+
+.myTools {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 8px;
-    max-width: 35ch;
-    justify-content: top;
-    border: 1px solid #FCF7F2;
-    border-radius: 20px;
-    transition: ease-in 200ms;
-}
-
-.skills-section h2 {
-    padding-top: 0;
-    margin-top: 0;
-    color: #f4f4f4
-}
-
-.skills-section h3 {
-    padding-top: 8px;
-    margin-top: 0;
-    color: #f4f4f4
-}
-
-.skills-section p {
-    padding-top: 0;
-    margin: 0;
-    color: #f4f4f4;
-}
-
-/* _______________________________Tools Section_______________________________ */
-
-.tools {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px 15vh 15vh;
-    grid-template-areas: "tools-heading tools-heading""p1 logos""p2 logos";
-    column-gap: 12%;
-}
-
-.tools p {
-    margin-top: 0;
-}
-
-#tools-photo {
-    grid-area: photo;
-    width: 100%;
-}
-
-#tools-heading {
-    grid-area: tools-heading;
-}
-
-.tools-p1 {
-    grid-area: p1;
-}
-
-.tools-p2 {
-    grid-area: p2;
-}
-
-.tool-logos {
-    grid-area: logos;
-    display: grid;
+    flex-wrap: wrap;
+    max-width: 100ch;
+    justify-content: space-between;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "figma xd""invision miro""ps github";
-    margin: 0 2vw;
-    padding: 2vw 2vw;
-    border-radius: 20px;
-    border-style: solid;
-    border-width: .5px;
-    box-shadow: #98989830 0 0 20px;
-    border-color: #192E1025;
+    margin: 2em 0;
+
 }
 
-.tool-logo-child1 {
-    grid-area: figma;
-    justify-self: center;
-}
-
-.tool-logo-child2 {
-    grid-area: miro;
-    justify-self: center;
-}
-
-.tool-logo-child3 {
-    grid-area: invision;
-    justify-self: center;
-}
-
-.tool-logo-child4 {
-    grid-area: github;
-    justify-self: center;
-}
-
-.tool-logo-child5 {
-    grid-area: ps;
-    justify-self: center;
-}
-
-.tool-logo-child6 {
-    grid-area: xd;
-    justify-self: center;
-}
-
-.tool-logo-child {
-    max-width: 40px;
-    padding: 3%
-}
-
-/* ______________________________Learning Now section_______________________________ */
-
-.learning-now {
-    padding-top: 0;
-}
-
-.learning-now-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px 1fr 1fr;
-    column-gap: 12%;
-    grid-template-areas: "learning-header learning-header""p1 right-side""p2 right-side";
-    display: none;
-}
-
-#learning-now-header {
-    grid-area: learning-header;
-}
-
-.learning-now-p1 {
-    grid-area: p1;
-}
-
-.learning-now-p2 {
-    grid-area: p2;
-}
-
-#learning-now-right {
-    grid-area: right-side;
+.myTools div {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 2vw;
-    margin: 0 2vw;
-    border-radius: 20px;
-    border-style: solid;
-    border-width: .5px;
-    box-shadow: #98989830 0 0 20px;
-    border-color: #192E1025;
+    align-items: center;
+
 }
 
-#learning-now-right div {
-    margin: 12px 0;
+.myTools img {
+    border: 1.5px solid #091503;
+    border-radius: 8px;
+    max-width: 10ch;
 }
 
-#learning-now-right h5 {
-    margin: 0;
-}
-
-#learning-now-right h4 {
-    margin: 0 0 24px 0;
-}
-
-#learning-now-right p {
-    font-size: .95em;
-    margin: 2px 0;
+.mySkill * {
+    margin: 0 0 .5em 0;
+    padding: 0
 }
 
 
@@ -2631,12 +2577,23 @@ canvas {
     border-radius: 10px;
     box-shadow: #00000025 0 0 10px;
     padding: 1rem;
+    transition: ease 100ms
 }
+
+.beelaProcessOverviewItem:hover {
+    background-color: #fab348;
+    box-shadow: #1a1a1b45 0 0 20px;
+    cursor: pointer;
+
+}
+
 
 .beelaProcessOverviewItem h4 {
     padding: 0 0 3rem 0;
     margin: 0;
 }
+
+
 
 
 
@@ -2652,7 +2609,7 @@ canvas {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .bannerWrapperSmall {
@@ -2669,6 +2626,42 @@ canvas {
     align-items: center;
     justify-content: center;
     font-size: smaller;
+}
+
+.beelaBannerContent {
+    display: flex;
+
+    justify-content: space-evenly;
+    width: 100vw
+}
+
+.beelaBannerCenter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    margin: 0 auto
+}
+
+.beelaBannerNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10vw
+}
+
+.beelaBannerNav h5 {
+    color: #FCF7F290;
+    font-size: 1em;
+    transition: ease 200ms;
+    cursor: pointer
+}
+
+.beelaBannerNav h5:hover {
+    color: #FCF7F2;
+    opacity: 100%;
+
 }
 
 .bannerHeading {
@@ -2773,7 +2766,7 @@ canvas {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "approachCopy1 approachImage1""approachImage2 approachCopy2""approachCopy3 approachImage3";
     max-width: 132ch;
-    margin: 4rem auto
+    margin: 4rem auto;
 }
 
 .approachImage {
@@ -3031,7 +3024,7 @@ canvas {
     flex-wrap: wrap;
     justify-content: center;
     align-items: top;
-    gap: 3.2rem;
+    gap: 2em;
     margin: 2rem 0 4rem 0
 }
 
@@ -4306,7 +4299,7 @@ _________________________________🔴🔴🔴🔴 MEDIA QUERIES_________________
 
     /* ___________________________***Nav Bar***_______________***Nav Bar***_________________________
 _________________________________***Nav Bar***____________________***Nav Bar***_______________________ */
-    .navbar {
+    #navbar {
         padding: 16px 8px;
         flex-direction: column;
         align-items: flex-start;
