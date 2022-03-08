@@ -1479,12 +1479,16 @@ span {
     padding: 0
 }
 
+.reContentSpacer {
+    margin: 2em 0
+}
+
 .research-stats {
     box-shadow: #00000025 0 0 20px;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 4em auto 0 auto;
     border: 1px solid #068806;
     max-width: 120ch;
 }
@@ -1538,10 +1542,8 @@ span {
     justify-content: center;
     grid-template-columns: .8fr auto;
     grid-template-rows: auto auto;
-
     margin: 0 auto;
     padding: 2em 1em;
-
     grid-template-areas: "Persona Scenario""Persona JourneyMap";
 
 }
@@ -1566,10 +1568,10 @@ span {
     grid-area: Persona;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: left;
-    gap: 1em
-        /* border: 1px solid yellow */
+
+    /* border: 1px solid yellow */
 }
 
 .rePersonaLeft p {
@@ -1631,7 +1633,7 @@ canvas {
     align-items: center;
     justify-content: center;
     max-width: 100ch;
-    margin: 0 auto;
+    margin: 4em auto;
     gap: 2em;
 
 
@@ -1663,13 +1665,14 @@ canvas {
 .lowFiAssetsContainer {
     display: flex;
     max-width: 100ch;
-    margin: 0 auto
+    margin: 0 auto;
+    border: 1px solid red
 }
 
 .lowFiAssets {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 4em auto;
     justify-content: center;
     max-width: 100ch;
 
@@ -1688,11 +1691,11 @@ canvas {
 
 .usability-test-photo {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     max-width: 100ch;
     overflow-x: scroll;
-    margin: 0 auto;
+    margin: 4em auto;
 
 }
 
