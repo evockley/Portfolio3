@@ -27,7 +27,7 @@
 
 <body>
     <header>
-        <div id="navbar" class="navbarRegular">
+        <nav class="navbarRegular">
             <div class="nav-logo">
                 <a href="index.html"><img src="images/Logo.3.png" alt="Logo" width="150px"></a>
             </div>
@@ -52,7 +52,7 @@
                     <img src="images/close-icon.png" alt="Close Menu" width="28px"></a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
 
     <section class="individual-section">
@@ -64,20 +64,18 @@
 
             <a href="the-serious-type.html">
                 <div class="newProjectContainer">
-                    <div class="newHeading">
-                        <h5 class="smallCaps">NEW</h5>
-                    </div>
 
                     <div id="newProject">
 
-                        <div class="newProjectLeft">
-                            <div class="newProjectLeftHeader">
-                                <h2>
-                                    The Serious Type
-                                </h2>
-                                <h4>Tech Fleet Design Lead</h4>
-                            </div>
+                        <header class="newProjectLeft">
                             <div class="newProjectLeftContent">
+                                <div class="newProjectLeftHeader">
+
+                                    <h2>
+                                        The Serious Type
+                                    </h2>
+                                    <p><span class="bold">My role:</span> UX Design Lead</p>
+                                </div>
                                 <p>The Serious Type wanted to boost engagement on the platform for teens. </p>
                                 <p>We created the foundation for a healthier social media platform.</p>
 
@@ -88,7 +86,7 @@
                                 </div>
                             </div>
 
-                        </div>
+                        </header>
 
 
                         <a href="the-serious-type.html" class="newProjectRight"></a>
@@ -188,20 +186,20 @@
     </section>
 
 
-    <footer class=" footer">
-        <div class="footer-name-grid">
-            <p class="footerText1">
-                Evan Vockley • 2022
-            </p>
-            <p class="footerText2">evockley@gmail.com</p>
+    <footer class="footer">
+        <div class="footerContact footerContent">
+            <p class="caption">Evan Vockley • 2022</p>
+            <a href="contact.html">
+                <a href="contact.html">evockley@gmail.com</p>
+                </a>
         </div>
-        <div><a href="contact.html"><button class="primary-button">Say Hi!</button></a>
+        <div class="footerContent"><a href="contact.html"><button class="primary-button">Say Hi!</button></a>
         </div>
-        <div class="logo-grid">
+        <div class="socialLinks footerContent">
             <a href="https://www.linkedin.com/in/evanvockley/"> <img class="logo-grid-item"
                     src="images/LinkedIn-logo.png" alt="LinkedIn Logo" width=32px></a>
-
         </div>
+
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"

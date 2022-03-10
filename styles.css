@@ -27,13 +27,6 @@ hr {
 
 }
 
-.inlineLink {
-    text-decoration: underline;
-    color: rgb(12, 49, 88)
-}
-
-
-
 html {
     scroll-behavior: smooth;
 }
@@ -54,21 +47,21 @@ html {
 --------------------------------------------------------TYPOGRAPHY------------------------------------------------------ */
 
 h1 {
-    font-family: "brandon-grotesque", sans-serif;
-    font-weight: 900;
+    font-family: "neuzit-grotesque", sans-serif;
+    font-weight: 700;
     font-style: normal;
     font-size: 3em;
     font-kerning: 7px;
-    color: #192E10;
-    margin: 8px 0;
+    color: #333;
+    margin: 0;
 }
 
 h2 {
-    font-family: "brandon-grotesque", sans-serif;
-    font-weight: 400;
+    font-family: "neuzit-grotesque", sans-serif;
+    font-weight: 700;
     font-style: normal;
-    font-size: 2em;
-    color: #192E10;
+    font-size: 1.8em;
+    color: #333;
     margin: 0;
     padding: 0
 }
@@ -78,15 +71,15 @@ h3 {
     font-weight: 700;
     font-size: 1.5em;
     font-weight: bold;
-    font-style: normal;
-    color: #192E10;
-    margin: .3em 0;
+
+    color: #333;
+    margin: 0;
     padding: 0
 }
 
 h4 {
     font-family: "brandon-grotesque", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.2em;
     font-style: normal;
     color: #192E10;
@@ -107,12 +100,10 @@ h5 {
 }
 
 .subhead {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'brandon-grotesque', sans-serif;
     font-weight: 400;
-    font-size: 18px;
     color: #192E10;
-    margin: 10px 0px;
-    margin-bottom: 24px;
+
 }
 
 h6 {
@@ -129,7 +120,22 @@ p {
     font-size: 22px;
     font-kerning: 7px;
     line-height: 1.7em;
-    color: #192E10;
+    color: #333;
+}
+
+.pBold {
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22px;
+    font-kerning: 7px;
+    color: #333;
+    margin: 0
+}
+
+.heroP {
+    font-size: 3em;
+    margin: 0
 }
 
 li {
@@ -151,6 +157,11 @@ a {
 
 a:hover {
     color: #fab348;
+}
+
+.inlineLink {
+    text-decoration: underline;
+    color: rgb(12, 49, 88)
 }
 
 .caption {
@@ -183,6 +194,52 @@ a:hover {
     font-weight: 600;
     font-style: normal;
 }
+
+
+.tstTLDRContent {
+    font-size: 2.5em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0
+}
+
+
+
+
+
+/* Spacing
+Spacing
+Spacing
+Spacing */
+
+
+.marginBottomXS {
+    padding: 0;
+    margin: 0 0 .5em 0;
+}
+
+.marginBottomS {
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+.marginBottomM {
+    margin: 0 0 1.5em 0;
+}
+
+.marginBottomL {
+    margin: 0 0 2em 0;
+}
+
+.marginBottomXL {
+    margin: 0 0 2.5em 0;
+}
+
+
+
+
+
+
 
 /* -------------------------------------------------Nav Bar---------------------------
 ----------------------------------------------Nav Bar------------------------------------------
@@ -251,6 +308,44 @@ header {
     align-items: center;
     padding: 0 100px;
     box-shadow: #c5c5c550 0 0 20px;
+}
+
+/* ----------------------Footer----------------------
+-------------------------Footer----------------------
+-------------------------Footer---------------------- */
+
+.footer {
+    background: #091503;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: 0;
+    padding: 80px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20vw
+}
+
+.footer .caption {
+    color: #FCF7F2;
+    font-family: 'brandon-grotesque';
+    font-size: 1em;
+}
+
+.logo-grid img {
+    width: 32px;
+}
+
+footer * a {
+    color: #FCF7F2;
+    text-decoration: underline;
 }
 
 /* ------------------------------Buttons---------------------------------
@@ -341,32 +436,23 @@ header {
 
 .heroFlex {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 150px;
     margin-top: 8vh;
-    margin-left: 100px;
-    margin-right: 100px;
-    gap: 24ch;
+    max-width: 100ch;
     position: sticky;
-    top: 24vh;
+    top: 10em;
+}
+
+.heroFlex p {
+    color: #FCF7F2
 }
 
 .heroFlex h2 {
     color: #f7f7f7;
     font-size: 2.3em;
     margin-bottom: 5vh;
-
-
-}
-
-.moreinfo {
-    font-family: "brandon-grotesque", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    letter-spacing: .02em;
-    color: #f7f7f7;
-    margin: 0 0 0 0
 }
 
 .grid_item_1 .primary-button {
@@ -374,7 +460,9 @@ header {
 }
 
 .grid_item_2 img {
+    display: flex;
     max-width: 32ch;
+    min-width: 16ch;
 }
 
 /* -----Featured Section------ */
@@ -442,151 +530,7 @@ header {
     gap: 1em
 }
 
-/* .item-flex-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin: 1rem auto 0 auto;
-    /* border: 1px solid green }*/
 
-
-/* .home-item {
-    box-sizing: border-box;
-    max-width: 30em;
-    min-width: 250px;
-    flex: 1 1;
-    padding: 1rem 1rem 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: .5px;
-    transition: ease-in-out 200ms;
-    box-shadow: #98989830 0 0 20px;
-    border-color: #192E1025;
-}
-
-.home-item:hover {
-    background-color: rgba(145, 137, 137, 0.05);
-    box-shadow: #09150345 0 0 12px;
-    cursor: pointer;
-}
-
-.home-item img {
-    max-width: 100%;
-    border-radius: 8px;
-    border-width: .5px;
-    box-shadow: #09150325 0 4px 16px;
-}
-
-.home-item a {
-    margin-top: 0;
-    text-decoration: none;
-    color: #091503;
-    font-family: "neuzeit-grotesk", sans-serif;
-    font-weight: 400;
-}
-
-.itemImage1 img {}
-
-
-.itemImage1, .itemImage2 {
-    border: 1px solid red;
-    height: 100px
-}
-
-.homeItemCopy {
-    margin-top: 1.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-
-}
-
-.homeItemCopy * {
-    margin: 0;
-    padding: 0;
-
-}
-
-.homeItemCopyContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.homeItemCopy hr {
-    width: 30%;
-    opacity: 70%;
-    margin: 2em auto;
-}
-
-.home-item button {
-    display: none;
-}
-
-.more-projects {
-    display: flex;
-    justify-content: flex-end;
-    padding: 4rem 0 2rem 0
-}
-
-.more-projects-container a {
-    text-decoration: none;
-}  */
-
-/* ----------------------Footer----------------------
--------------------------Footer----------------------
--------------------------Footer---------------------- */
-
-.footer {
-    background: #091503;
-    background-repeat: no-repeat;
-    width: vw;
-    display: flex;
-    margin: 0;
-    transform: scale(1);
-    padding: 80px 100px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-name-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "footerText1""footerText2";
-    gap: 8px
-}
-
-.footerText1, .footerText2 {
-    font-family: "brandon-grotesque";
-    font-size: 16px;
-    color: #f6f6f6;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    /* padding-right: 7.5em; */
-}
-
-.footerText2:before {
-    content: "👉";
-    margin-right: .5rem;
-}
-
-.logo-grid {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.logo-grid img {
-    width: 32px;
-}
 
 /* --------------------------------------------------Projects--------------------------------------------------
 -----------------------------------------------------Projects--------------------------------------------------
@@ -679,27 +623,39 @@ header {
 }
 
 
-
-
-.newHeading * {
-    margin: 0;
-    padding: 0 0 .5em 1.5em;
+.newProjectLeftHeader {
+    margin: 0 0 1.5em 0
 }
 
-.newProjectLeftHeader * {
-    margin: 0;
-    font-weight: 600;
+.newProjectLeftHeader p {
+    margin: 0
 }
 
 .newProjectLeftContent p {
     font-size: 1.3em;
+    padding: 0;
+    margin: 0;
+}
+
+.newProjectLeftContent :nth-child(3) {
+
+    margin: .5em 0 0 0
+}
+
+.newProjectLeftContent {
+
+    margin: auto;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .newProjectLeft {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 2em;
+    margin: 0;
     padding: 0;
 
 }
@@ -2352,26 +2308,23 @@ canvas {
 
 
 
-.aboutMyExperience {
+.MyExperience {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     max-width: 100ch;
     gap: 2em;
-    margin: 0 auto
+    margin: 2em auto 0 auto;
 }
 
-.aboutMyExperience img {
-    max-width: 30ch;
-
-
+.MyExperience img {
+    max-width: 24ch;
 }
 
 .myExperienceLeft p {
     font-size: 1.4em;
     max-width: 40ch;
-
+    margin: .5em 0 1em 0
 }
 
 .skillsContainer {
@@ -3448,6 +3401,10 @@ _________________________THE SERIOUS TYPE____________________ */
     padding: 5em
 }
 
+.tstProblemWrapper h3 {
+    margin: .25em 0;
+}
+
 .tstProblemWrapper p {
     font-size: 1.4em;
     letter-spacing: .05em;
@@ -3654,11 +3611,11 @@ _________________________THE SERIOUS TYPE____________________ */
     height: fit-content;
     grid-template-columns: 1fr 1fr;
     padding: 0;
-    grid-template-rows: .15fr 1fr 1fr .15fr;
+    grid-template-rows: .12fr 1fr 1fr .15fr;
     grid-template-areas: "surveyCaption1 surveyCaption1""survey1 survey2""survey3 survey4""surveyCaption2 surveyCaption2";
-
     justify-content: center;
 }
+
 
 .tstSurveyResults h3 {
     font-family: "inter";
@@ -3733,6 +3690,7 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstInterviewObservation {
     max-width: 30ch;
+
 }
 
 .tstAffinityMapImageContainer {
@@ -3749,6 +3707,7 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstStickyHighlight {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 4em 0 10em 0
 }
@@ -3858,7 +3817,6 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstPrioritizedHMWsContainer {
     margin: 4rem auto;
-
     max-width: 60ch;
 }
 
@@ -3875,7 +3833,7 @@ _________________________THE SERIOUS TYPE____________________ */
     max-width: 80ch;
 }
 
-.HMWStickiesRows img {
+.tstPrioritizedHMWs img {
     max-width: 18ch;
 }
 
@@ -3898,7 +3856,7 @@ _________________________THE SERIOUS TYPE____________________ */
 
 }
 
-.tstFeatures {
+/* .tstFeatures {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -3906,6 +3864,20 @@ _________________________THE SERIOUS TYPE____________________ */
     gap: 1em;
     max-width: 90ch;
     margin: 0 auto
+} */
+
+
+.tstFeatures {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100ch;
+    justify-content: center;
+    column-gap: 1em;
+}
+
+.tstFeatures * {
+    max-width: 28ch;
+
 }
 
 .tstFeatures * h3 {
@@ -4008,11 +3980,6 @@ _________________________THE SERIOUS TYPE____________________ */
     background-position: 0 6.5%;
 }
 
-.tstFidelityHeader {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
 .tstFidelityHeader * {
     margin: 0;
@@ -4049,7 +4016,7 @@ _________________________THE SERIOUS TYPE____________________ */
 
 /* _____------______------_______-----MidFi____-----___----____----_____ */
 .tstMidFidelityHeader {
-    margin-bottom: 2rem;
+    margin: 4em 0;
 }
 
 .tstMidfiGrid {
@@ -4058,7 +4025,7 @@ _________________________THE SERIOUS TYPE____________________ */
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "tstMidfiGrid1 tstMidfiGrid2""tstMidfiGrid3 tstMidfiGrid4""tstMidfiGrid5 tstMidfiGrid6";
     max-width: 80ch;
-    margin: 4rem auto
+    margin: 4rem auto 5rem auto
 }
 
 .tstMidfiGrid * {
@@ -4066,9 +4033,6 @@ _________________________THE SERIOUS TYPE____________________ */
     padding: 0;
 }
 
-.tstMidfiGrid h4 {
-    font-size: 1.4em;
-}
 
 .tstMidfiGridCopy {
     display: flex;
@@ -4076,9 +4040,9 @@ _________________________THE SERIOUS TYPE____________________ */
     margin: .4em 0
 }
 
-.tstMidfiGridCopy p {
-    color: #33333390
-}
+/* .tstMidfiGridCopy p {
+    font-size: 1.1em;
+} */
 
 .tstMidfiGrid img {
     max-width: 10em;
@@ -4147,7 +4111,8 @@ _________________________THE SERIOUS TYPE____________________ */
     grid-template-rows: 1fr .5fr;
     grid-template-areas: "tstUserProfile tstPrivateSharing tstDiscover""tstMentor tstMentor tstMentor";
     gap: 1em;
-    margin: 4rem 0
+    max-width: 120ch;
+    margin: 2rem auto 6rem auto
 }
 
 .tstNewFeaturesGrid * {
@@ -4188,10 +4153,11 @@ _________________________THE SERIOUS TYPE____________________ */
 .tstMentorImages {
     display: flex;
     gap: 1em;
+    flex-wrap: wrap;
 }
 
 .tstMentorImages img {
-    max-width: 11vw;
+    max-width: 15%;
 }
 
 
@@ -4249,7 +4215,8 @@ _________________________THE SERIOUS TYPE____________________ */
 .tstNextSteps li {
     font-size: 1.4em;
     font-weight: bold;
-    margin: 0
+    margin: 0;
+
 }
 
 
@@ -4302,7 +4269,7 @@ _________________________________🔴🔴🔴🔴 MEDIA QUERIES_________________
 
     /* ___________________________***Nav Bar***_______________***Nav Bar***_________________________
 _________________________________***Nav Bar***____________________***Nav Bar***_______________________ */
-    #navbar {
+    .navbarRegular {
         padding: 16px 8px;
         flex-direction: column;
         align-items: flex-start;
@@ -5021,6 +4988,218 @@ _________________________________***KINFOLK <768***____________________***KINFOL
 
 
 
+    /* 
+THE SERIOUS TYPE (mobile)
+THE SERIOUS TYPE (mobile)
+THE SERIOUS TYPE (mobile)
+THE SERIOUS TYPE (mobile) */
+
+    .individual-section {
+        padding: 4em 16px
+    }
+
+    .tstHeading {
+
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        margin: 0;
+        gap: 1.5em
+    }
+
+    .tstHeroInfoContainer {
+        justify-content: start
+    }
+
+    .tstHeroInfo {
+        background-color: transparent
+    }
+
+
+    .tstTLDR {
+        display: none
+    }
+
+    .tstBannerContent {
+        flex-direction: column;
+        width: 50vw
+    }
+
+    .blobWrapper1 {
+        max-width: 100vw;
+    }
+
+    .tstProblemWrapper {
+        width: 100vw;
+        padding: 16px
+    }
+
+    .tstProblemWrapper * {
+        display: flex;
+        flex-direction: column;
+        max-width: 90vw;
+    }
+
+    .tstProblemWrapper h3 {
+        display: none;
+    }
+
+    .tstSectionHeader {
+        font-size: 2.5em
+    }
+
+    .tstInterviewObservationsContainer {
+        flex-direction: column
+    }
+
+    .tstAffinityMapImageContainer {
+        display: none
+    }
+
+    .tstStickyHighlight {
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .tstGoalsPainsReview {
+        flex-direction: column;
+        max-width: fit-content
+    }
+
+
+    /* TO DO: FIX ME IN MOBILE AND DESKTOP VIEWS */
+
+
+    .tstPrioritizedHMWs img {
+        max-width: 45vw;
+    }
+
+    .tstSketchExamples {
+        overflow: scroll
+    }
+
+    .tstFeatures {
+        background-color: red
+    }
+
+    #tstInvestigateBanner {
+        background-position: center center;
+        background-size: cover
+    }
+
+    #tstIdeateBanner {
+        background-size: cover
+    }
+
+    #tstIterateBanner {
+        background-size: cover
+    }
+
+    .tstTimelineRule {
+        display: none;
+    }
+
+    .tstProcessNav {
+        padding: 0
+    }
+
+    .tstTimelineRuleGrid {
+        max-height: fit-content;
+        grid-template-rows: 1fr .5fr .75fr;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1.5em;
+        padding: 1em 0;
+        max-width: 100%;
+        grid-template-areas: "investigateHeader week1""ideateHeader week5""iterateHeader week6"
+    }
+
+
+    .tstTimelineInvestigateHeader {
+        grid-area: investigateHeader;
+        padding-left: 1em;
+        border-left: solid 3px #85A3C5;
+        background-color: #85A3C520;
+
+
+    }
+
+    .tstTimelineIdeateHeader {
+        grid-area: ideateHeader;
+        padding-left: 1em;
+        border-left: solid 3px #BD6CAA;
+        background-color: #BD6CAA20;
+
+    }
+
+    .tstTimelineIterateHeader {
+        grid-area: iterateHeader;
+        padding-left: 1em;
+        border-left: solid 3px #90B584;
+        background-color: #90B58420;
+
+    }
+
+    .tstWeek1 {
+        grid-area: week1;
+        background-color: #85A3C520;
+
+    }
+
+    .tstWeek5 {
+        grid-area: week5;
+        background-color: #BD6CAA20;
+
+    }
+
+    .tstWeek6 {
+        grid-area: week6;
+        background-color: #90B58420;
+    }
+
+
+    .tstSurveyResultsGrid {
+        grid-template-rows: .15fr 1fr 1fr 1fr 1fr .15fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "surveyCaption1""survey1""survey2""survey3""survey4""surveyCaption2"
+    }
+
+
+    .tstSurveyResults1 {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .tstSurveyResults2 {
+        border-radius: 0;
+    }
+
+    .tstSurveyResults3 {
+        border-radius: 0;
+    }
+
+    .tstSurveyResults4 {
+        border-radius: 0 0 8px 8px;
+    }
+
+    .tstSurveyResults h3 {
+        font-size: 2em;
+
+    }
+
+
+    .goalSticky4, .goalSticky5 {
+        display: none
+    }
+
+    .tstStickyHighlight {
+        align-items: center;
+        margin-bottom: 2em
+    }
+
+    .tstGoalsPainsReview {
+        margin: 2em auto;
+        min-width: 60%;
+        gap: 1em
+    }
 
 
 }
