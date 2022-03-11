@@ -541,7 +541,6 @@ footer * a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2em;
-    /* grid-template-areas: "go-create recycle-easy""una-mesa uscis""kinfolk kinfolk"; */
     margin-bottom: 2vw;
     max-width: 100ch;
 
@@ -556,13 +555,14 @@ footer * a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 2em;
+    padding: 1em 1.8em;
     border-radius: 20px;
     height: 430px;
     min-width: 300px;
     max-width: 40ch;
     box-shadow: #98989830 0 0 10px;
     transition: 100ms;
+
 }
 
 .project-container:hover {
@@ -572,7 +572,7 @@ footer * a {
 
 .project-container p {
     margin: 8px auto;
-    max-width: 45ch;
+    max-width: 60ch;
 }
 
 .project-container h3 {
@@ -585,7 +585,7 @@ footer * a {
 
 .project-container a {
     text-decoration: none;
-    color: inherit;
+
 }
 
 .newProjectContainer {
@@ -597,7 +597,7 @@ footer * a {
     display: flex;
     border-radius: 20px;
     box-shadow: #00000030 0 0 20px;
-    gap: 1.5em;
+    gap: 2em;
     max-width: 100ch;
     transition: ease-out 400ms;
     margin: 0 0 2em 0;
@@ -611,14 +611,14 @@ footer * a {
 
 .newProjectRight {
     background-image: url("images/tst/TSTSquareHero.jpg");
-    height: 25em;
-    width: 48vw;
+    height: 50ch;
+    width: 62ch;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
+    background-size: cover;
     border-radius: 0 16px 16px 0;
     display: flex;
     justify-content: flex-end;
-    background-size: cover;
 
 }
 
@@ -628,22 +628,21 @@ footer * a {
 }
 
 .newProjectLeftHeader p {
-    margin: 0
+    margin: 0;
+    font-size: 1em;
 }
 
 .newProjectLeftContent p {
     font-size: 1.3em;
     padding: 0;
     margin: 0;
+    max-width: 38ch
 }
 
-.newProjectLeftContent :nth-child(3) {
 
-    margin: .5em 0 0 0
-}
 
 .newProjectLeftContent {
-
+    padding: 0 0 0 2em;
     margin: auto;
     gap: 2em;
     display: flex;
@@ -655,8 +654,6 @@ footer * a {
 .newProjectLeft {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
 
 }
 
@@ -4229,6 +4226,15 @@ _________________________THE SERIOUS TYPE____________________ */
 _________________________________🔴🔴🔴🔴 MEDIA QUERIES____________________MEDIA QUERIES_______________________ */
 
 @media screen and (max-width: 768px) {
+
+
+
+    /* MOBILE TYPOGRAPHY
+    MOBILE TYPOGRAPHY
+    MOBILE TYPOGRAPHY
+    MOBILE TYPOGRAPHY */
+
+
     h1 {
         font-family: "brandon-grotesque", sans-serif;
         font-weight: 900;
@@ -4265,6 +4271,18 @@ _________________________________🔴🔴🔴🔴 MEDIA QUERIES_________________
     }
 
 
+    /* MOBILE SECTIONS
+    MOBILE SECTIONS
+    MOBILE SECTIONS
+    MOBILE SECTIONS */
+
+
+    .individual-section {
+
+        padding: 2em 20px;
+
+        /* one of them */
+    }
 
     /* ___________________________***Nav Bar***_______________***Nav Bar***_________________________
 _________________________________***Nav Bar***____________________***Nav Bar***_______________________ */
@@ -4272,6 +4290,7 @@ _________________________________***Nav Bar***____________________***Nav Bar***_
         padding: 16px 8px;
         flex-direction: column;
         align-items: flex-start;
+        z-index: 1000;
     }
 
     .toggle {
@@ -4506,19 +4525,35 @@ _________________________________***PROJECTS <768***____________________***PROJE
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         row-gap: 24px;
-        grid-template-areas: "go-create""recycle-easy""una-mesa""uscis""kinfolk";
         align-items: center;
+        max-width: 100vw;
     }
 
     .projectsImage {
-        width: 85%;
+        width: 75%;
+    }
+
+    #newProject {
+        flex-direction: column-reverse;
+    }
+
+    .newProjectLeftContent {
+        padding: 0 0 2em 0
     }
 
     .project-container {
-        align-items: center;
-        padding: 24px auto;
-        max-width: 100vw;
+        max-width: 100vw
     }
+
+    .newProjectRight {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .newProjectLeft {
+        padding: 0 1em
+    }
+
 
     /* ___________________________***  ABOUT  <768***_______________***  ABOUT  <768***_________________________
 _________________________________***  ABOUT  <768***____________________***  ABOUT  <768***_______________________ */
@@ -4543,65 +4578,30 @@ _________________________________***  ABOUT  <768***____________________***  ABO
         margin-bottom: 16px;
     }
 
-    .about-hero p {
-        margin: 0;
+    .MyExperience {
+        flex-direction: column;
     }
 
-    .skills-section {
-        background-image: linear-gradient(180deg, #192E10, #091503);
-        background-repeat: no-repeat;
-        width: vw;
-        padding: 10px 3vw;
+    .myTools {
+        gap: 1em;
+        justify-content: center;
     }
 
-    .skills-section h2 {
-        padding: 10px;
+
+    .skillsContainer {
+        gap: 1.5em;
+        justify-content: start;
     }
 
-    .skills-container {
-        gap: 3vw;
+    .mySkill {
+        padding: 0;
+        margin: 0
     }
 
-    .individual-skill {
-        display: flex;
-        gap: 0px;
-        padding: 8px;
-        justify-content: top;
-    }
-
-    .tools {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 60px .75fr .75fr .75fr;
-        grid-template-areas: "tools-heading""logos""p1""p2";
-    }
-
-    .learning-now-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 60px .5fr .5fr 1fr;
-        column-gap: 15%;
-        grid-template-areas: "learning-header""p1""p2""right-side";
-    }
-
-    #learning-now-right div {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #learning-now-right p {
-        margin: 6px 0 4px 0;
-    }
-
-    #learning-now-right h5 {
-        margin: 6px 0 4px 0;
-    }
 
     /* ___________________________***GoCreate Redesign <768***_______________***GoCreate Redesign <768***_________________________
 _________________________________***GoCreate Redesign <768***____________________***GoCreate Redesign <768***_______________________ */
-    .individual-section {
-        padding: 10px 3vw;
-    }
+
 
     .gocreate-grid1 {
         margin: 32px 0 0 0;
@@ -4993,9 +4993,7 @@ THE SERIOUS TYPE (mobile)
 THE SERIOUS TYPE (mobile)
 THE SERIOUS TYPE (mobile) */
 
-    .individual-section {
-        padding: 4em 16px
-    }
+
 
     .tstHeading {
 
