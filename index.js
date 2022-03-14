@@ -35,8 +35,8 @@
 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-        $('.homeHeroButton').css("display", "none");
-        $('.gridItem1').css("display", "none");
+        $('.homeHeroButton').css("visibility", "hidden");
+        $('.gridItem1').css("visibility", "hidden");
     } else {
         $('.homeHeroButton').css("display", "inline");
     }
