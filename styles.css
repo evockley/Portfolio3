@@ -330,7 +330,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 20vw
+    width: 20ch
 }
 
 .footer .caption {
@@ -343,7 +343,7 @@ header {
     width: 32px;
 }
 
-footer * a {
+.footerContact a {
     color: #FCF7F2;
     text-decoration: underline;
 }
@@ -4401,8 +4401,6 @@ _________________________________***Nav Bar***____________________***Nav Bar***_
 _________________________________***Footer @<768px***____________________***Footer @<768px***_______________________ */
     .footer {
 
-
-        width: vw;
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -4414,24 +4412,24 @@ _________________________________***Footer @<768px***____________________***Foot
         height: fit-content;
     }
 
-    .footertext {
-        margin: 10px 8px;
-        font-family: "brandon-grotesque";
-        font-size: 16px;
-        color: #f6f6f6;
-        font-weight: 400;
-        justify-content: center;
-        width: 100%;
-        padding: 0;
+
+
+    .heroFlex {
+        gap: 3em;
+
     }
 
-    .logo-grid {
-        justify-content: space-evenly;
+    .heroP {
+        font-size: 2.1em;
+        margin: 10vh 0;
     }
 
-    .logo-grid img {
-        margin: 16px
+
+
+    .myLogo img {
+        display: none;
     }
+
 
     /* ___________________________***Home Screen <768***_______________***Home Screen <768***_________________________
 _________________________________***Home Screen <768***____________________***Home Screen <768***_______________________ */

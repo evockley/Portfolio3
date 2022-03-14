@@ -34,11 +34,12 @@
 
 
 $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 700) {
         $('.homeHeroButton').css("visibility", "hidden");
-        $('.gridItem1').css("visibility", "hidden");
+        $('.heroFlex').css("visibility", "hidden");
     } else {
-        $('.homeHeroButton').css("display", "inline");
+        $('.homeHeroButton').css("visibility", "visible");
+        $('.heroFlex').css("visibility", "visible");
     }
 });
 
