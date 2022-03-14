@@ -541,7 +541,7 @@ footer * a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2em;
-    margin-bottom: 2vw;
+    margin: 2em 0 4em 0;
     max-width: 100ch;
 
 }
@@ -595,6 +595,7 @@ footer * a {
 
 #newProject {
     display: flex;
+    flex-direction: row;
     border-radius: 20px;
     box-shadow: #00000030 0 0 20px;
     gap: 2em;
@@ -612,7 +613,7 @@ footer * a {
 .newProjectRight {
     background-image: url("images/tst/TSTSquareHero.jpg");
     height: 50ch;
-    width: 62ch;
+    width: 44vw;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -636,7 +637,8 @@ footer * a {
     font-size: 1.3em;
     padding: 0;
     margin: 0;
-    max-width: 38ch
+    max-width: 38ch;
+    min-width: 28ch;
 }
 
 
@@ -647,7 +649,7 @@ footer * a {
     gap: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
@@ -4225,6 +4227,75 @@ _________________________THE SERIOUS TYPE____________________ */
 /* ___________________________ 🔴🔴🔴🔴 MEDIA QUERIES_______________MEDIA QUERIES_________________________
 _________________________________🔴🔴🔴🔴 MEDIA QUERIES____________________MEDIA QUERIES_______________________ */
 
+@media screen and (max-width: 940px) {
+
+    #projectsPageGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 2em;
+        align-items: center;
+        max-width: 100vw;
+        margin-top: 2em;
+
+    }
+
+    .project-container {
+        max-width: 100%;
+    }
+
+
+
+    .newProjectContainer {
+        margin: 2em auto;
+        padding: 0
+    }
+
+    .projectsImage {
+        width: 75%;
+    }
+
+    #newProject {
+        flex-direction: column-reverse;
+        margin: 2em auto 0 auto;
+        padding: 0;
+    }
+
+    .newProjectLeftContent {
+        padding: 2em 0 2em 0
+    }
+
+    .newProjectRight {
+
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        background-position: top;
+        border-radius: 20px 20px 0 0;
+        border: 1px solid red;
+    }
+
+    .newProjectLeft {
+        padding: 0
+    }
+
+    .newProjectLeftContent p {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
 
 
@@ -4524,9 +4595,20 @@ _________________________________***PROJECTS <768***____________________***PROJE
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        row-gap: 24px;
+        row-gap: 2em;
         align-items: center;
         max-width: 100vw;
+        margin-top: 2em;
+    }
+
+    .project-container {
+        max-width: 100%;
+    }
+
+
+
+    .newProjectContainer {
+        margin: 2em auto
     }
 
     .projectsImage {
@@ -4535,23 +4617,25 @@ _________________________________***PROJECTS <768***____________________***PROJE
 
     #newProject {
         flex-direction: column-reverse;
+        margin: 0 auto
     }
 
     .newProjectLeftContent {
         padding: 0 0 2em 0
     }
 
-    .project-container {
-        max-width: 100vw
-    }
-
     .newProjectRight {
+
         width: 100%;
         border-radius: 20px 20px 0 0;
     }
 
     .newProjectLeft {
         padding: 0 1em
+    }
+
+    .newProjectLeftContent p {
+        font-size: 1em;
     }
 
 
@@ -4580,6 +4664,11 @@ _________________________________***  ABOUT  <768***____________________***  ABO
 
     .MyExperience {
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .MyExperience img {
+        margin: 0 auto
     }
 
     .myTools {
@@ -4589,14 +4678,20 @@ _________________________________***  ABOUT  <768***____________________***  ABO
 
 
     .skillsContainer {
-        gap: 1.5em;
+        gap: 3em;
         justify-content: start;
+    }
+
+    .skillsContainer {
+        width: 100vw;
     }
 
     .mySkill {
         padding: 0;
         margin: 0
     }
+
+
 
 
     /* ___________________________***GoCreate Redesign <768***_______________***GoCreate Redesign <768***_________________________
