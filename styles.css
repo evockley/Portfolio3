@@ -5088,8 +5088,11 @@ THE SERIOUS TYPE (mobile) */
 
 
 
-    .tstHeading {
+    .tstBullet {
+        display: none;
+    }
 
+    .tstHeading {
         flex-direction: column;
         justify-content: start;
         align-items: flex-start;
@@ -5098,7 +5101,8 @@ THE SERIOUS TYPE (mobile) */
     }
 
     .tstHeroInfoContainer {
-        justify-content: start
+        justify-content: start;
+        flex-direction: column;
     }
 
     .tstHeroInfo {
@@ -5120,7 +5124,7 @@ THE SERIOUS TYPE (mobile) */
     }
 
     .tstProblemWrapper {
-        width: 100vw;
+        width: 70vw;
         padding: 16px
     }
 
@@ -5167,7 +5171,7 @@ THE SERIOUS TYPE (mobile) */
 
 
     .tstPrioritizedHMWs img {
-        max-width: 45vw;
+        max-width: 25vw;
     }
 
     .tstSketchExamples {
@@ -5265,9 +5269,14 @@ THE SERIOUS TYPE (mobile) */
     .tstSurveyResultsGrid {
         grid-template-rows: .15fr 1fr 1fr 1fr 1fr .15fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "surveyCaption1""survey1""survey2""survey3""survey4""surveyCaption2"
+        grid-template-areas: "surveyCaption1""survey1""survey2""survey3""survey4""surveyCaption2";
+        max-width: 48ch;
     }
 
+    .tstSurveyResults {
+        max-width: 46ch;
+
+    }
 
     .tstSurveyResults1 {
         border-radius: 8px 8px 0 0;
@@ -5322,11 +5331,11 @@ THE SERIOUS TYPE (mobile) */
     }
 
     .tstLowFiScreensRow1 img {
-        max-width: 36vw
+        max-width: 22vw
     }
 
     .tstLowFiScreensRow2 img {
-        max-width: 36vw
+        max-width: 22vw
     }
 
     .tstLowFiScreensRow1 :nth-child(2),
@@ -5345,7 +5354,7 @@ THE SERIOUS TYPE (mobile) */
     .tstNewFeaturesGrid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .5fr .5fr .75fr 1fr;
         grid-template-areas: "tstUserProfile""tstPrivateSharing""tstDiscover""tstMentor";
         gap: 1em;
         max-width: 100vw;
@@ -5353,9 +5362,19 @@ THE SERIOUS TYPE (mobile) */
         margin: 2rem auto 6rem auto
     }
 
+    .tstNewFeaturesGridItem {
+        height: fit-content;
+
+    }
+
+    .tstNewFeaturesGridItem p {
+        max-width: 40ch;
+        text-decoration: ;
+    }
+
     .tstMentorImages img {
         max-width: 10em;
-        margin: 0;
+        margin: 0 auto;
         max-height: fit-content;
     }
 
@@ -5366,12 +5385,15 @@ THE SERIOUS TYPE (mobile) */
     .tstMentorImages :nth-child(6) {
 
         display: none;
-
-
-
-
-
     }
+
+
+
+
+
+
+
+
 }
 
 ;
