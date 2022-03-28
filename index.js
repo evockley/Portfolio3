@@ -41,7 +41,7 @@ function scrollFunction() {
         document.getElementById("navbarRegular").style.padding = "0px 100px";
 
     } else {
-        document.getElementById("navbarRegular").style.padding = "24px 100px";
+        document.getElementById("navbarRegular").style.padding = "16px 100px";
 
     }
 }
