@@ -251,10 +251,11 @@ header {
     z-index: 10000;
 }
 
-.navbarRegular {
+#navbarRegular {
     background-color: #FCF7F2;
     display: flex;
     justify-content: space-between;
+    transition: cubic-bezier(1, 0, 0, 1) .2s;
     align-items: center;
     padding: 16px 100px;
     box-shadow: #c5c5c550 0 0 20px;
@@ -265,6 +266,10 @@ header {
     padding: 0;
     display: flex;
     justify-content: space-between;
+}
+
+#navLogo {
+    max-width: 100px;
 }
 
 .nav-item {
@@ -437,32 +442,42 @@ header {
 .heroFlex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: space-between;
     margin-bottom: 150px;
     margin-top: 8vh;
     max-width: 100ch;
     position: sticky;
-    top: 10em;
+    top: 11em;
+
 }
 
 .heroFlex p {
     color: #FCF7F2
 }
 
-.heroFlex h2 {
-    color: #f7f7f7;
-    font-size: 2.3em;
-    margin-bottom: 5vh;
+
+
+.heroFlexLeft {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.grid_item_1 .primary-button {
+.heroFlexLeft .primary-button {
     margin-top: 5vh;
 }
 
-.grid_item_2 img {
-    display: flex;
-    max-width: 32ch;
-    min-width: 16ch;
+.heroFlexRight {
+    width: 40ch;
+
+}
+
+.siteHomeImage {
+    border-radius: 4px;
+
 }
 
 /* -----Featured Section------ */
@@ -1295,7 +1310,8 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "more-work-1 more-work-2 more-work-3";
-    gap: 2vw
+    gap: 2vw;
+    margin: 2em 0
 }
 
 .more-work-item {
@@ -1317,10 +1333,9 @@ span {
 }
 
 .more-work-item img {
-
-    max-width: fit-content;
+    max-width: 24ch;
     object-fit: cover;
-    height: 200px;
+
 }
 
 .more-work-1 {
@@ -2549,6 +2564,17 @@ canvas {
 }
 
 
+.beelaProcessOverviewItemContent p {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.beelaProcessOverviewItemContent h5 {
+    font-weight: 400;
+    font-size: 1.1em;
+    padding-right: .5em;
+}
+
 
 
 
@@ -2559,7 +2585,7 @@ canvas {
     padding: .5rem 0;
     position: sticky;
     position: -webkit-sticky;
-    top: 109px;
+    top: 72px;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -2574,7 +2600,7 @@ canvas {
     padding: .1rem 0;
     position: sticky;
     position: -webkit-sticky;
-    top: 10.9%;
+    top: 4%;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -3839,6 +3865,7 @@ _________________________THE SERIOUS TYPE____________________ */
 .tstSketchExamples {
     display: flex;
     gap: 2em;
+    align-items: center;
     max-width: fit-content;
     margin: 4rem auto
 }
@@ -3875,6 +3902,7 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstFeatures * {
     max-width: 28ch;
+
 }
 
 .tstFeatures * h3 {
@@ -3882,7 +3910,8 @@ _________________________THE SERIOUS TYPE____________________ */
     font-family: "inter";
     font-size: 2.2em;
     font-weight: 900;
-    max-width: 80ch;
+
+
 }
 
 .tstFeatures * p {
@@ -3897,6 +3926,9 @@ _________________________THE SERIOUS TYPE____________________ */
     background-size: cover;
     background-position: 0 30%;
     text-align: center;
+    width: 32ch;
+    border: 1px solid #00000025;
+
     padding: 5em 0;
     border-radius: 5px;
     grid-area: tstFeature1;
@@ -3907,6 +3939,8 @@ _________________________THE SERIOUS TYPE____________________ */
     background-size: cover;
     background-position: 0 30%;
     text-align: center;
+    width: 32ch;
+    border: 1px solid #00000025;
     padding: 5em 0;
     border-radius: 5px;
     grid-area: tstFeature2;
@@ -3917,6 +3951,8 @@ _________________________THE SERIOUS TYPE____________________ */
     background-size: cover;
     background-position: 0 30%;
     text-align: center;
+    width: 32ch;
+    border: 1px solid #00000025;
     padding: 5em 0;
     border-radius: 5px;
     grid-area: tstFeature3;
@@ -3927,6 +3963,8 @@ _________________________THE SERIOUS TYPE____________________ */
     background-size: cover;
     background-position: 0 30%;
     text-align: center;
+    width: 32ch;
+    border: 1px solid #00000025;
     padding: 5em 0;
     border-radius: 5px;
     grid-area: tstFeature4;
@@ -3937,6 +3975,8 @@ _________________________THE SERIOUS TYPE____________________ */
     background-size: cover;
     background-position: 0 30%;
     text-align: center;
+    width: 32ch;
+    border: 1px solid #00000025;
     padding: 5em 0;
     border-radius: 5px;
     grid-area: tstFeature5;
@@ -3947,6 +3987,8 @@ _________________________THE SERIOUS TYPE____________________ */
     background-size: cover;
     background-position: 0 30%;
     text-align: center;
+    width: 32ch;
+    border: 1px solid #00000025;
     padding: 5em 0;
     border-radius: 5px;
     grid-area: tstFeature6;
@@ -4437,34 +4479,39 @@ _________________________________***Home Screen <768***____________________***Ho
         display: flex;
         align-items: flex-start;
         flex-direction: column-reverse;
-        margin-bottom: 8vh;
-        margin-top: 8vh;
-        margin-left: 40px;
-        margin-right: 40px;
+        margin: 1em;
         position: sticky;
         top: 10vh;
     }
 
-    .heroFlex h2 {
-        color: #f7f7f7;
-        font-size: 2.3em;
-        margin-bottom: 56px;
-    }
-
-    .grid_item_1 {
+    .heroFlexLeft {
         width: 100%;
+        position: relative;
+        top: -23em;
+        justify-content: center;
+        margin-bottom: -22em;
+        z-index: 1000;
+        background-color: #00000030;
+        backdrop-filter: blur(4px);
+        padding-bottom: .75em;
+        border-radius: 0 0 4px 4px;
+
     }
 
-    .moreinfo {
-        display: none;
+    .heroFlexLeft p {
+        margin: 1em 0;
+
     }
 
-    .grid_item_1 .primary-button {
-        margin-top: 24px;
+
+
+    .heroFlexLeft .primary-button {
+        margin-top: 0;
     }
 
-    .grid_item_2 img {
-        width: 10vw;
+    .heroFlexRight {
+        width: fit-content;
+
     }
 
     /* ___________________________***Featured Section <768***_______________***Featured Section <768***_________________________
@@ -5045,7 +5092,7 @@ _________________________________***KINFOLK <768***____________________***KINFOL
 
 
     .bannerWrapper {
-        top: 120px
+        top: 76px
     }
 
     .approachWrapper {
@@ -5166,8 +5213,6 @@ THE SERIOUS TYPE (mobile) */
         max-width: fit-content
     }
 
-
-    /* TO DO: FIX ME IN MOBILE AND DESKTOP VIEWS */
 
 
     .tstPrioritizedHMWs img {
@@ -5331,11 +5376,13 @@ THE SERIOUS TYPE (mobile) */
     }
 
     .tstLowFiScreensRow1 img {
-        max-width: 22vw
+        max-width: 22vw;
+        border-radius: 16px;
     }
 
     .tstLowFiScreensRow2 img {
-        max-width: 22vw
+        max-width: 22vw;
+        border-radius: 16px;
     }
 
     .tstLowFiScreensRow1 :nth-child(2),
@@ -5369,7 +5416,7 @@ THE SERIOUS TYPE (mobile) */
 
     .tstNewFeaturesGridItem p {
         max-width: 40ch;
-        text-decoration: ;
+
     }
 
     .tstMentorImages img {
@@ -5386,6 +5433,56 @@ THE SERIOUS TYPE (mobile) */
 
         display: none;
     }
+
+    .tstHiFi {
+        padding: 2em 0
+    }
+
+    .hifiIndent {
+        margin: 0 0 1em 20px;
+    }
+
+    .tstFlexWrapper h5 {
+        margin: 0 0 1em 20px
+    }
+
+    .tstHiFiFlex {
+
+        overflow-x: scroll;
+        margin-right: 0;
+        padding: 0 20px;
+    }
+
+
+    .tstHiFiFlex img {
+        max-width: 33vw
+    }
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+    .heroP {
+        font-size: 1.5em;
+
+    }
+
+    .homeHeroButton {
+        width: calc(100% - 1em);
+        margin: 0 auto
+    }
+
+    .heroFlexLeft {
+        top: -19.5em;
+        margin-bottom: -18em;
+
+    }
+
+
+
 
 
 
