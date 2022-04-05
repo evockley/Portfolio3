@@ -38,10 +38,10 @@ window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbarRegular").style.padding = "0px 100px";
+        document.getElementById("navbarRegular").style.padding = "0px 24px";
 
     } else {
-        document.getElementById("navbarRegular").style.padding = "16px 100px";
+        document.getElementById("navbarRegular").style.padding = "16px 24px";
 
     }
 }

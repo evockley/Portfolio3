@@ -47,17 +47,18 @@ html {
 --------------------------------------------------------TYPOGRAPHY------------------------------------------------------ */
 
 h1 {
-    font-family: "neuzit-grotesque", sans-serif;
+    font-family: "brandon-grotesque", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 3em;
     font-kerning: 7px;
     color: #333;
     margin: 0;
+    padding-bottom: .5em;
 }
 
 h2 {
-    font-family: "neuzit-grotesque", sans-serif;
+    font-family: "brandon-grotesque", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 1.8em;
@@ -257,7 +258,7 @@ header {
     justify-content: space-between;
     transition: cubic-bezier(1, 0, 0, 1) .2s;
     align-items: center;
-    padding: 16px 100px;
+    padding: 16px 24px;
     box-shadow: #c5c5c550 0 0 20px;
 }
 
@@ -458,13 +459,13 @@ header {
 
 
 .heroFlexLeft {
-
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
+
 
 .heroFlexLeft .primary-button {
     margin-top: 5vh;
@@ -472,6 +473,7 @@ header {
 
 .heroFlexRight {
     width: 40ch;
+
 
 }
 
@@ -2582,7 +2584,7 @@ canvas {
     background-color: #1085ce;
     color: #FCF7F2;
     margin: 0;
-    padding: .5rem 0;
+    padding: .1rem 0;
     position: sticky;
     position: -webkit-sticky;
     top: 72px;
@@ -2590,29 +2592,13 @@ canvas {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
-.bannerWrapperSmall {
-    background-color: #18b3ec;
-    color: #FCF7F2;
-    margin: 0;
-    padding: .1rem 0;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 4%;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: smaller;
-}
+
 
 .beelaBannerContent {
     display: flex;
-
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100vw
 }
 
@@ -2620,7 +2606,7 @@ canvas {
     display: flex;
     flex-direction: column;
     text-align: center;
-
+    justify-content: center;
     margin: 0 auto
 }
 
@@ -2628,8 +2614,8 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width: 10vw
+    width: fit-content;
+    padding: 0 1rem
 }
 
 .beelaBannerNav h5 {
@@ -4314,7 +4300,6 @@ _________________________________🔴🔴🔴🔴 MEDIA QUERIES_________________
         width: 100%;
         background-position: top;
         border-radius: 20px 20px 0 0;
-        border: 1px solid red;
     }
 
     .newProjectLeft {
@@ -4490,20 +4475,17 @@ _________________________________***Home Screen <768***____________________***Ho
         top: -23em;
         justify-content: center;
         margin-bottom: -22em;
-        z-index: 1000;
-        background-color: #00000030;
-        backdrop-filter: blur(4px);
+        background-color: #00000060;
+        /* backdrop-filter: blur(4px); */
         padding-bottom: .75em;
         border-radius: 0 0 4px 4px;
 
     }
 
     .heroFlexLeft p {
-        margin: 1em 0;
+        margin: .3em 0;
 
     }
-
-
 
     .heroFlexLeft .primary-button {
         margin-top: 0;
@@ -5472,19 +5454,42 @@ THE SERIOUS TYPE (mobile) */
 
     .homeHeroButton {
         width: calc(100% - 1em);
-        margin: 0 auto
+        margin: 0 auto;
+        font-size: 1.1rem;
     }
 
     .heroFlexLeft {
-        top: -19.5em;
-        margin-bottom: -18em;
+        top: -15.9rem;
+        margin: 0 0 -19rem 0
+    }
 
+    .featured {
+        margin-top: 5rem;
+        padding: 2rem .75rem 2rem .75rem;
+        border-radius: 0;
     }
 
 
+    .featuredProjects {
 
+        margin-top: .5rem
+    }
 
+    .featuredProjectCopy {
+        margin: .2rem .6rem 0 .6rem;
+        justify-content: center;
+        gap: .6rem;
+        padding-right: 0;
+    }
 
+    .featuredProjectCopy h4 {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    .featuredProjectCopy .bigSpan {
+        font-size: 1rem
+    }
 
 
 
