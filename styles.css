@@ -553,15 +553,19 @@ header {
 -----------------------------------------------------Projects--------------------------------------------------
 -----------------------------------------------------Projects--------------------------------------------------*/
 
+.projectPageContentWrapper {
+    max-width: 120ch;
+}
+
 #projectsPageGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2em;
     margin: 2em 0 4em 0;
-    max-width: 100ch;
-
+    max-width: 100%;
 }
+
 
 .projectsImage {
     width: 18em;
@@ -576,7 +580,7 @@ header {
     border-radius: 20px;
     height: 430px;
     min-width: 300px;
-    max-width: 40ch;
+    /* max-width: 40ch; */
     box-shadow: #98989830 0 0 10px;
     transition: 100ms;
 
@@ -606,7 +610,7 @@ header {
 }
 
 .newProjectContainer {
-    margin: .5em 0;
+    margin: 0;
     background-color: #FCF7F2;
 }
 
@@ -615,21 +619,18 @@ header {
     flex-direction: row;
     border-radius: 20px;
     box-shadow: #00000030 0 0 20px;
-    gap: 2em;
-    max-width: 100ch;
     transition: ease-out 400ms;
-    margin: 0 0 2em 0;
+    margin: 0;
+    max-width: 120ch;
 
 }
 
-#newProject:hover {
-    box-shadow: #00000040 0 10px 20px;
-}
+
 
 
 .newProjectRight {
     background-image: url("images/tst/TSTSquareHero.jpg");
-    height: 50ch;
+    height: 26em;
     width: 44vw;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -640,47 +641,41 @@ header {
 
 }
 
+.newProjectLeft {
+    display: flex;
+    flex-direction: column;
+}
 
 .newProjectLeftHeader {
-    margin: 0 0 1.5em 0
+    margin: 0;
+
 }
 
 .newProjectLeftHeader p {
     margin: 0;
-    font-size: 1em;
+    line-height: 1.1em;
+    color: #333
 }
 
 .newProjectLeftContent p {
-    font-size: 1.3em;
-    padding: 0;
-    margin: 0;
+
     max-width: 38ch;
     min-width: 28ch;
+    padding: .3em 0;
+    margin: 0;
 }
-
-
 
 .newProjectLeftContent {
-    padding: 0 0 0 2em;
-    margin: auto;
-    gap: 2em;
+    padding: 0;
+    margin: auto 2em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
 }
 
-.newProjectLeft {
-    display: flex;
-    flex-direction: column;
-
+.newProjectLeftBody {
+    margin: 1.2em 0 2.8em 0
 }
 
-.newProjectButton {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
 
 
 .projects-item1 {
@@ -934,6 +929,7 @@ label {
 .gocreateHeroColumns {
     display: flex;
     max-width: 120ch;
+    gap: 2em;
     justify-content: space-between;
 }
 
@@ -953,6 +949,7 @@ label {
     display: flex;
     align-items: baseline;
     gap: 16px;
+    line-height: 0;
 }
 
 .gocreate-hero-highlight-items img {
@@ -961,12 +958,13 @@ label {
 
 .gocreate-hero-highlight {
     font-size: .9em;
+    line-height: 0;
 }
 
 .cocreate-tools-container {
     display: flex;
     flex-direction: row;
-    gap: 2.5em;
+    /* gap: 2.5em; */
 }
 
 
