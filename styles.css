@@ -938,18 +938,21 @@ label {
 }
 
 .gocreate-hero-highlight-items-wrapper {
-    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+
+    margin: 1em 0
 }
 
-.gocreate-hero-highlight-items-wrapper h5 {
-    margin-top: .7em;
-}
+
 
 .gocreate-hero-highlight-items {
     display: flex;
     align-items: baseline;
     gap: 16px;
-    line-height: 0;
+    margin: -.3em 0
 }
 
 .gocreate-hero-highlight-items img {
@@ -958,14 +961,9 @@ label {
 
 .gocreate-hero-highlight {
     font-size: .9em;
-    line-height: 0;
 }
 
-.cocreate-tools-container {
-    display: flex;
-    flex-direction: row;
-    /* gap: 2.5em; */
-}
+
 
 
 
