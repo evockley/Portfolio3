@@ -1,0 +1,194 @@
+/* Document Layout */
+
+
+.center {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: flex-start;
+    background-color: rgb(246, 246, 246);
+    max-width: 120ch;
+
+}
+
+.basicPadding {
+    padding: 2em
+}
+
+.buttonContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 2em;
+    align-items: center;
+}
+
+.sectionHeading::before {
+    content: "👉 ";
+}
+
+/* ______________________________________________________________________________ */
+/* ______________________________________________________________________________ */
+/* ______________________________________________________________________________ */
+
+
+h1 {
+    font-size: 3.052rem;
+    font-family: brandon-grotesque;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+
+h2 {
+    font-size: 2.441rem;
+    font-family: "brandon-grotesque", sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+
+h3 {
+    font-size: 1.953rem;
+    font-family: "brandon-grotesque", sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 140%;
+}
+
+h4 {
+    font-size: 1.563rem;
+    font-family: "brandon-grotesque", sans-serif;
+    font-style: normal;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 160%;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-family: "brandon-grotesque";
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 180%;
+}
+
+h6 {
+    font-size: 1rem;
+    font-family: "brandon-grotesque", sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 200%;
+}
+
+.subhead {
+    font-family: 'brandon-grotesque', sans-serif;
+    color: #333;
+}
+
+
+.singleColumnText {
+    max-width: 60ch;
+}
+
+.bodyCopyNormal {
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.35em;
+    letter-spacing: .5px;
+    color: #333;
+    margin: 0 auto;
+    padding: .5em 0;
+
+}
+
+.listContainer {
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: lightgray; */
+    width: 100%;
+}
+
+li {
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+    letter-spacing: .5px;
+    color: #333;
+    margin: 0 auto;
+    padding: .1em 0;
+    list-style: circle;
+}
+
+
+.pBold {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.1em;
+}
+
+.callout {
+    font-size: 2em;
+    font-weight: 400;
+    color: #333;
+}
+
+
+
+
+/* 
+BUTTONS
+BUTTONS
+BUTTONS */
+
+/* PRIMARY BUTTON */
+.primaryButton {
+    background-image: linear-gradient(#1992d3, #1992d3);
+    color: #f7f7f7;
+    border: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: .5px;
+    padding: .6em 2em;
+    transition: ease .2s;
+    cursor: pointer;
+}
+
+.primaryButton:hover {
+    background-image: linear-gradient(to bottom right, #50aee1, #0d3ea7);
+    color: #f7f7f750;
+}
+
+
+
+
+
+.secondaryButton {
+    background-color: #FAF2EB;
+    color: #3891c9;
+    border: none;
+    border-radius: 8px;
+    border: 2px solid #3891c9;
+    box-sizing: border-box;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: .5px;
+    padding: .6em 2em;
+
+    transition: ease-in .2s;
+    cursor: pointer;
+}

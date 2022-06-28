@@ -4,7 +4,7 @@
 
 ::selection {
     background-color: #f97171;
-    color: white;
+    color: #f7f7f7;
 }
 
 body {
@@ -357,56 +357,51 @@ header {
 /* ------------------------------Buttons---------------------------------
 ------------------------------------Buttons---------------------------------
 ----------------------------------------Buttons--------------------------------- */
-
-.primary-button {
-    background-color: #40AAE5;
-    color: #FFFFFF;
+.primaryButton {
+    background-image: linear-gradient(#1992d3, #1992d3);
+    color: #f7f7f7;
     border: none;
     display: flex;
     justify-content: center;
     border-radius: 8px;
     box-sizing: border-box;
-    width: fit-content;
     font-family: "brandon-grotesque", sans-serif;
-    font-weight: 800;
-    font-size: 1.3em;
-    letter-spacing: .1em;
-    padding: .6em 1.5em;
-    transition: ease-in .2s;
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: .5px;
+    padding: .6em 2em;
+    transition: ease .2s;
     cursor: pointer;
 }
 
-.primary-button:hover {
-    background-color: #0392eb;
-    color: #f4f4f470;
+.primaryButton:hover {
+    background-image: linear-gradient(to bottom right, #50aee1, #0d3ea7);
+    color: #f7f7f790;
 }
 
 .contact-primary-button {
     display: none;
 }
 
-.secondary-button {
+.secondaryButton {
     background-color: #FAF2EB;
     color: #3891c9;
     border: none;
     border-radius: 8px;
     border: 2px solid #3891c9;
     box-sizing: border-box;
-    max-width: 325px;
-    display: flex;
-    align-items: center;
-    gap: .5em;
-    font-family: "brandon grotesque", sans-serif;
+    font-family: "brandon-grotesque", sans-serif;
     font-weight: 600;
-    font-size: 18px;
-    letter-spacing: .08em;
-    padding: 1em;
-    transition: ease-in .2s;
+    font-size: 1.25rem;
+    letter-spacing: .5px;
+    padding: .6em 2em;
+
+    transition: ease .2s;
     cursor: pointer;
 }
 
-.secondary-button:hover {
-    background-color: #5eade330;
+.secondaryButton:hover {
+    background-color: #f6eee8;
     color: #16b4ed;
     border-color: #16b4ed;
 }
@@ -467,7 +462,7 @@ header {
 }
 
 
-.heroFlexLeft .primary-button {
+.heroFlexLeft .primaryButton {
     margin-top: 5vh;
 }
 
@@ -907,7 +902,7 @@ label {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "left right""left right";
+    grid-template-areas: "left right", "left right";
     column-gap: 10%;
 }
 
@@ -1006,7 +1001,7 @@ label {
     column-gap: 5em;
     row-gap: 2rem;
     margin: 2em auto;
-    grid-template-areas: "goCreateBrief1 goCreateBrief2""goCreateBrief3 goCreateBrief4";
+    grid-template-areas: "goCreateBrief1 goCreateBrief2", "goCreateBrief3 goCreateBrief4";
 }
 
 
@@ -1189,7 +1184,7 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "sketch-1 sketch-2""sketch-1 sketch-3";
+    grid-template-areas: "sketch-1 sketch-2", "sketch-1 sketch-3";
     column-gap: 20px;
     row-gap: 16px;
 }
@@ -1512,7 +1507,7 @@ span {
     grid-template-rows: auto auto;
     margin: 0 auto;
     padding: 2em 1em;
-    grid-template-areas: "Persona Scenario""Persona JourneyMap";
+    grid-template-areas: "Persona Scenario", "Persona JourneyMap";
 
 }
 
@@ -1838,7 +1833,7 @@ canvas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .5fr 2fr;
-    grid-template-areas: "projects-tab projects1-tab""projects-page projects1-page";
+    grid-template-areas: "projects-tab projects1-tab", "projects-page projects1-page";
     gap: 5%
 }
 
@@ -2091,7 +2086,7 @@ canvas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: .2fr 1fr .6fr;
-    grid-template-areas: "pic basic basic""pic bio bio""lists lists lists";
+    grid-template-areas: "pic basic basic", "pic bio bio", "lists lists lists";
     border-radius: 10px;
     gap: 2vw;
     border-style: solid;
@@ -2533,7 +2528,7 @@ canvas {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "beelaProcessOverviewItem1 beelaProcessOverviewItem2 beelaProcessOverviewItem3""beelaProcessOverviewItem4 beelaProcessOverviewItem5 beelaProcessOverviewItem6";
+    grid-template-areas: "beelaProcessOverviewItem1 beelaProcessOverviewItem2 beelaProcessOverviewItem3", "beelaProcessOverviewItem4 beelaProcessOverviewItem5 beelaProcessOverviewItem6";
     gap: 1rem;
     margin-top: 2.5rem;
 }
@@ -2654,7 +2649,7 @@ canvas {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "beelaBackgroundQ1 beelaBackgroundQ2""beelaBackgroundQ3 beelaBackgroundQ4";
+    grid-template-areas: "beelaBackgroundQ1 beelaBackgroundQ2", "beelaBackgroundQ3 beelaBackgroundQ4";
     gap: 1rem;
     max-width: 132ch;
     margin: 4rem auto 4rem auto;
@@ -2727,7 +2722,7 @@ canvas {
     display: grid;
     grid-template-rows: .7fr .7fr .7fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "approachCopy1 approachImage1""approachImage2 approachCopy2""approachCopy3 approachImage3";
+    grid-template-areas: "approachCopy1 approachImage1", "approachImage2 approachCopy2", "approachCopy3 approachImage3";
     max-width: 132ch;
     margin: 4rem auto;
 }
@@ -3021,7 +3016,7 @@ canvas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .15fr .7fr 1fr;
-    grid-template-areas: "careerPathGridImage1 careerPathGridCopy1""careerPathGridCopy2 careerPathGridImage2""careerPathGridImage3 careerPathGridCopy3";
+    grid-template-areas: "careerPathGridImage1 careerPathGridCopy1", "careerPathGridCopy2 careerPathGridImage2", "careerPathGridImage3 careerPathGridCopy3";
     max-width: 110ch;
     justify-content: center;
     align-items: center;
@@ -3197,7 +3192,7 @@ canvas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "biaImage biaCopy""judyCopy judyImage";
+    grid-template-areas: "biaImage biaCopy", "judyCopy judyImage";
     align-items: center;
     justify-content: center;
     max-width: 132ch;
@@ -3307,6 +3302,17 @@ _________________________THE SERIOUS TYPE____________________ */
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.tstHeadingCopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.tstHeadingCopy * {
+    line-height: 50%;
 }
 
 
@@ -3619,7 +3625,7 @@ _________________________THE SERIOUS TYPE____________________ */
     grid-template-columns: 1fr 1fr;
     padding: 0;
     grid-template-rows: .12fr 1fr 1fr .15fr;
-    grid-template-areas: "surveyCaption1 surveyCaption1""survey1 survey2""survey3 survey4""surveyCaption2 surveyCaption2";
+    grid-template-areas: "surveyCaption1 surveyCaption1", "survey1 survey2", "survey3 survey4", "surveyCaption2 surveyCaption2";
     justify-content: center;
 }
 
@@ -4044,7 +4050,7 @@ _________________________THE SERIOUS TYPE____________________ */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "tstMidfiGrid1 tstMidfiGrid2""tstMidfiGrid3 tstMidfiGrid4""tstMidfiGrid5 tstMidfiGrid6";
+    grid-template-areas: "tstMidfiGrid1 tstMidfiGrid2", "tstMidfiGrid3 tstMidfiGrid4", "tstMidfiGrid5 tstMidfiGrid6";
     max-width: 80ch;
     margin: 4rem auto 5rem auto
 }
@@ -4130,7 +4136,7 @@ _________________________THE SERIOUS TYPE____________________ */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr .5fr;
-    grid-template-areas: "tstUserProfile tstPrivateSharing tstDiscover""tstMentor tstMentor tstMentor";
+    grid-template-areas: "tstUserProfile tstPrivateSharing tstDiscover", "tstMentor tstMentor tstMentor";
     gap: 1em;
     max-width: 120ch;
     margin: 2rem auto 6rem auto
@@ -4535,7 +4541,7 @@ ____________________________________________________MORE WORK___________________
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         gap: 2em;
-        grid-template-areas: "more-work-1""more-work-2""more-work-3";
+        grid-template-areas: "more-work-1", "more-work-2", "more-work-3";
         justify-content: center;
         text-align: center;
     }
@@ -4673,7 +4679,7 @@ _________________________________***  ABOUT  <768***____________________***  ABO
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 60px 274px 1fr .7fr;
-        grid-template-areas: "heading""photo""p1""p2";
+        grid-template-areas: "heading", "photo", "p1", "p2";
         margin-top: 0;
         row-gap: 32px;
     }
@@ -4726,7 +4732,7 @@ _________________________________***GoCreate Redesign <768***___________________
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 200px 1fr;
-        grid-template-areas: "left""right";
+        grid-template-areas: "left", "right";
     }
 
     .grid1-left-side {
@@ -4746,7 +4752,7 @@ _________________________________***GoCreate Redesign <768***___________________
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr .25fr;
-        grid-template-areas: "left""right";
+        grid-template-areas: "left", "right";
         align-items: center;
         row-gap: 6vh;
         margin-top: 72px;
@@ -4955,7 +4961,7 @@ _________________________________***KINFOLK <768***____________________***KINFOL
     .allisonDelaurens {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 25% 1fr 1.6fr;
-        grid-template-areas: "pic basic basic""bio bio bio""lists lists lists";
+        grid-template-areas: "pic basic basic", "bio bio bio", "lists lists lists";
         padding: 8px
     }
 
@@ -5039,7 +5045,7 @@ _________________________________***KINFOLK <768***____________________***KINFOL
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: .75fr 1fr;
-        grid-template-areas: "briefLogistics""briefConstraints";
+        grid-template-areas: "briefLogistics", "briefConstraints";
         gap: 0
     }
 
@@ -5052,7 +5058,7 @@ _________________________________***KINFOLK <768***____________________***KINFOL
 
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "beelaProcessOverviewItem1""beelaProcessOverviewItem2""beelaProcessOverviewItem3""beelaProcessOverviewItem4""ProcessOverviewItem5""beelaProcessOverviewItem6";
+        grid-template-areas: "beelaProcessOverviewItem1", "beelaProcessOverviewItem2", "beelaProcessOverviewItem3", "ProcessOverviewItem5", "beelaProcessOverviewItem6";
     }
 
 
@@ -5061,7 +5067,7 @@ _________________________________***KINFOLK <768***____________________***KINFOL
 
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "beelaBackgroundQ1""beelaBackgroundQ2""beelaBackgroundQ3""beelaBackgroundQ4";
+        grid-template-areas: "beelaBackgroundQ1", "beelaBackgroundQ2", "beelaBackgroundQ3", "beelaBackgroundQ4";
         margin: 2rem auto;
 
     }
@@ -5086,7 +5092,7 @@ _________________________________***KINFOLK <768***____________________***KINFOL
         display: grid;
         grid-template-rows: .2fr .1fr .2fr 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "approachCopy1""approachImage1""approachCopy2""approachImage2""approachCopy3""approachImage3";
+        grid-template-areas: "approachCopy1", "approachImage1", "approachCopy2", "approachImage2", "approachCopy3", "approachImage3";
         /* gap: 1rem; */
         align-items: flex-start;
     }
@@ -5242,7 +5248,7 @@ THE SERIOUS TYPE (mobile) */
         row-gap: 1.5em;
         padding: 1em 0;
         max-width: 100%;
-        grid-template-areas: "investigateHeader week1""ideateHeader week5""iterateHeader week6"
+        grid-template-areas: "investigateHeader week1", "ideateHeader week5", "iterateHeader week6"
     }
 
 
@@ -5292,7 +5298,7 @@ THE SERIOUS TYPE (mobile) */
     .tstSurveyResultsGrid {
         grid-template-rows: .15fr 1fr 1fr 1fr 1fr .15fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "surveyCaption1""survey1""survey2""survey3""survey4""surveyCaption2";
+        grid-template-areas: "surveyCaption1", "survey1", "survey2", "survey3", "survey4", "surveyCaption2";
         max-width: 48ch;
     }
 
@@ -5371,7 +5377,7 @@ THE SERIOUS TYPE (mobile) */
     .tstMidfiGrid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr .6fr 1fr .6fr 1fr .6fr;
-        grid-template-areas: "tstMidfiGrid1""tstMidfiGrid2""tstMidfiGrid4""tstMidfiGrid3""tstMidfiGrid5""tstMidfiGrid6";
+        grid-template-areas: "tstMidfiGrid1", "tstMidfiGrid2", "tstMidfiGrid4", "tstMidfiGrid3", "tstMidfiGrid5", "tstMidfiGrid6";
         max-width: 100vw;
         margin: 0 auto 3em auto
     }
@@ -5380,7 +5386,7 @@ THE SERIOUS TYPE (mobile) */
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: .5fr .5fr .75fr 1fr;
-        grid-template-areas: "tstUserProfile""tstPrivateSharing""tstDiscover""tstMentor";
+        grid-template-areas: "tstUserProfile", "tstPrivateSharing", "tstDiscover", "tstMentor";
         gap: 1em;
         max-width: 100vw;
         max-height: fit-content;
