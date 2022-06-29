@@ -385,25 +385,24 @@ header {
 
 .secondaryButton {
     background-color: #FAF2EB;
-    color: #3891c9;
+    color: #1992d3;
     border: none;
     border-radius: 8px;
-    border: 2px solid #3891c9;
+    border: 2px solid #1992d3;
     box-sizing: border-box;
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 600;
     font-size: 1.25rem;
     letter-spacing: .5px;
     padding: .6em 2em;
-
     transition: ease .2s;
     cursor: pointer;
 }
 
 .secondaryButton:hover {
-    background-color: #f6eee8;
-    color: #16b4ed;
-    border-color: #16b4ed;
+    background-color: #d1d9de;
+    color: #1992d3;
+    border-color: #1992d3;
 }
 
 .disabled {
@@ -3300,15 +3299,15 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstHeading {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .tstHeadingCopy {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    margin: 2rem 0
 }
 
 .tstHeadingCopy * {
@@ -3619,13 +3618,13 @@ _________________________THE SERIOUS TYPE____________________ */
 
 .tstSurveyResultsGrid {
     margin: 4em auto;
+    padding: 0;
     display: grid;
     max-width: 60ch;
     height: fit-content;
     grid-template-columns: 1fr 1fr;
-    padding: 0;
     grid-template-rows: .12fr 1fr 1fr .15fr;
-    grid-template-areas: "surveyCaption1 surveyCaption1", "survey1 survey2", "survey3 survey4", "surveyCaption2 surveyCaption2";
+    grid-template-areas: "surveyCaption1 surveyCaption1""survey1 survey2""survey3 survey4""surveyCaption2 surveyCaption2";
     justify-content: center;
 }
 
@@ -3869,15 +3868,6 @@ _________________________THE SERIOUS TYPE____________________ */
 
 }
 
-/* .tstFeatures {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "tstFeature1 tstFeature2 tstFeature3""tstFeature4 tstFeature5 tstFeature6";
-    gap: 1em;
-    max-width: 90ch;
-    margin: 0 auto
-} */
 
 
 .tstFeatures {
@@ -3999,12 +3989,13 @@ _________________________THE SERIOUS TYPE____________________ */
 
 
 
-.tstLowFiSection {
+/* .tstLowFiSection {
     background-image: url(images/tst/LowFibackground.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 6.5%;
-}
+
+} */
 
 
 .tstFidelityHeader * {
@@ -4050,7 +4041,7 @@ _________________________THE SERIOUS TYPE____________________ */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "tstMidfiGrid1 tstMidfiGrid2", "tstMidfiGrid3 tstMidfiGrid4", "tstMidfiGrid5 tstMidfiGrid6";
+    grid-template-areas: "tstMidfiGrid1 tstMidfiGrid2""tstMidfiGrid3 tstMidfiGrid4""tstMidfiGrid5 tstMidfiGrid6";
     max-width: 80ch;
     margin: 4rem auto 5rem auto
 }
@@ -4136,7 +4127,7 @@ _________________________THE SERIOUS TYPE____________________ */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr .5fr;
-    grid-template-areas: "tstUserProfile tstPrivateSharing tstDiscover", "tstMentor tstMentor tstMentor";
+    grid-template-areas: "tstUserProfile tstPrivateSharing tstDiscover""tstMentor tstMentor tstMentor";
     gap: 1em;
     max-width: 120ch;
     margin: 2rem auto 6rem auto
@@ -4203,7 +4194,7 @@ _________________________THE SERIOUS TYPE____________________ */
 /* ____----___--_----_____--__--High Fidelity____----___--_----_____--__-- */
 
 .tstHiFi {
-    background-color: #333333;
+    background-color: #333;
 }
 
 .tstHiFiFlexContainer {
