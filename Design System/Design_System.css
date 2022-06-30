@@ -23,9 +23,62 @@
     align-items: center;
 }
 
+.sectionHeading {
+    margin: 1em 1em .5em 1em
+}
+
 .sectionHeading::before {
     content: "👉 ";
 }
+
+.exampleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto
+}
+
+.imagePlaceholder1 {
+    background-color: gainsboro;
+    width: 60ch;
+    padding-top: 66.66%;
+    display: flex;
+    border-radius: 8px;
+}
+
+.imagePlaceholder2 {
+    background-color: gainsboro;
+    width: 60ch;
+    padding-top: 66.66%;
+    display: flex;
+    border-radius: 20px 20px 0 0;
+}
+
+.imagePlaceholder3 {
+    background-color: gainsboro;
+    width: 60ch;
+    padding-top: 20%;
+    display: flex;
+    border-radius: 0 20px 20px 0;
+}
+
+.imagePlaceholder4 {
+    background-color: gainsboro;
+    width: 30ch;
+    padding-top: 90%;
+    display: flex;
+
+}
+
+.footerCardContainer {
+    display: flex;
+    width: 120ch;
+    justify-content: space-around;
+
+}
+
+
 
 /* ______________________________________________________________________________ */
 /* ______________________________________________________________________________ */
@@ -136,11 +189,25 @@ li {
 }
 
 .callout {
-    font-size: 2em;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 500;
     color: #333;
+    max-width: 30ch;
 }
 
+
+.caption {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #7d7c7c;
+    margin-top: 8px;
+}
+
+.wideCardP {
+    max-width: 35ch;
+    margin: 1rem 0;
+}
 
 
 
@@ -174,21 +241,146 @@ BUTTONS */
 
 
 
-
-
 .secondaryButton {
     background-color: #FAF2EB;
-    color: #3891c9;
+    color: #1992d3;
     border: none;
     border-radius: 8px;
-    border: 2px solid #3891c9;
+    border: 2px solid #1992d3;
     box-sizing: border-box;
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 600;
     font-size: 1.25rem;
     letter-spacing: .5px;
     padding: .6em 2em;
-
-    transition: ease-in .2s;
+    transition: ease .2s;
     cursor: pointer;
+}
+
+.secondaryButton:hover {
+    background-color: #e2e7ea;
+    color: #0d3ea7;
+    border-color: #0d3ea7;
+}
+
+.tertiaryLink {
+    font-size: 1.3rem;
+    color: #1992d3;
+    text-decoration: none;
+    transition: ease .2s
+}
+
+.tertiaryLink:hover {
+    color: #0d3ea7;
+    text-decoration: underline;
+}
+
+.inlineTextLink {
+    color: #1992d3;
+    font-style: italic;
+}
+
+.inlineTextLink:hover {
+    color: #0d3ea7;
+    text-decoration: underline;
+}
+
+
+
+
+/* CARD STYLES */
+
+
+/* CARD 1 */
+.cardStyle1 {
+    background-color: #FCF7F2;
+    border: .25px solid #12182425;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .5rem;
+    box-shadow: #12182425 0 0 30px;
+    transition: ease .2s;
+}
+
+.cardStyle1 h3, p {
+    padding: .25rem 0;
+    margin: 0;
+
+}
+
+.card1Content {
+    padding: 1rem;
+}
+
+.cardStyle1:hover {
+    box-shadow: #12182425 0 10px 30px, #03060c35 0 0px 20px;
+
+}
+
+
+/* Card 2 */
+.cardStyle2 {
+    background-color: #FCF7F2;
+    border: .25px solid #12182425;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: #12182425 0 0 30px;
+    transition: ease.2s;
+}
+
+.card2Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    padding: 2rem 1rem
+}
+
+.card2Copy {
+    padding: 1rem 0;
+}
+
+
+
+
+/* FOOTER CARD */
+
+.footerCardLink {
+    text-decoration: none;
+    color: #333
+}
+
+.footerCard p {
+    padding: 0 0 .5rem 0;
+    margin: 0
+}
+
+.footerCard h5 {
+    padding: 0;
+    margin: 0
+}
+
+.footerCard {
+    padding: 1rem;
+    border-radius: 8px;
+    transition: ease .2s;
+}
+
+.footerCard:hover {
+    box-shadow: #12182425 0 10px 30px, #03060c35 0 5px 20px;
+
+}
+
+.footerCard p {
+    padding: 0 0 .5rem 0;
+    margin: 0
+}
+
+
+
+.footerCard h5 {
+    padding: 0;
+    margin: 0
 }

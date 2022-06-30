@@ -37,7 +37,7 @@
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop >= 80) {
         document.getElementById("navbarRegular").style.padding = "0px 24px";
 
     } else {
