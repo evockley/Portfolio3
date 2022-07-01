@@ -24,23 +24,28 @@
 }
 
 .sectionHeading {
-    margin: 1em 1em .5em 1em
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: flex-start;
+    padding: 1rem;
+
 }
 
-.sectionHeading::before {
-    content: "👉 ";
-}
+
 
 .exampleContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 auto
+    margin: 0 auto;
+    width: 60ch;
 }
 
 .imagePlaceholder1 {
-    background-color: gainsboro;
+    background-image: radial-gradient(#f2f2f2, #cbcaca);
     width: 60ch;
     padding-top: 66.66%;
     display: flex;
@@ -48,7 +53,7 @@
 }
 
 .imagePlaceholder2 {
-    background-color: gainsboro;
+
     width: 60ch;
     padding-top: 66.66%;
     display: flex;
@@ -56,7 +61,7 @@
 }
 
 .imagePlaceholder3 {
-    background-color: gainsboro;
+    background-image: radial-gradient(#f2f2f2, #cbcaca);
     width: 60ch;
     padding-top: 20%;
     display: flex;
@@ -64,10 +69,13 @@
 }
 
 .imagePlaceholder4 {
-    background-color: gainsboro;
     width: 30ch;
-    padding-top: 90%;
-    display: flex;
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+
 
 }
 
@@ -78,6 +86,12 @@
 
 }
 
+hr {
+    border-radius: 8px;
+    border: .25px solid #afafaf;
+    width: 100%;
+    margin: 2em 0
+}
 
 
 /* ______________________________________________________________________________ */
@@ -87,7 +101,8 @@
 
 h1 {
     font-size: 3.052rem;
-    font-family: brandon-grotesque;
+    font-family: 'brandon-grotesque';
+    font-weight: 600;
     color: #333;
     margin: 0;
     padding: 0;
@@ -96,7 +111,8 @@ h1 {
 
 h2 {
     font-size: 2.441rem;
-    font-family: "brandon-grotesque", sans-serif;
+    font-family: 'brandon-grotesque', sans-serif;
+    font-weight: 600;
     color: #333;
     margin: 0;
     padding: 0;
@@ -106,6 +122,7 @@ h2 {
 h3 {
     font-size: 1.953rem;
     font-family: "brandon-grotesque", sans-serif;
+    font-weight: 600;
     color: #333;
     margin: 0;
     padding: 0;
@@ -115,7 +132,7 @@ h3 {
 h4 {
     font-size: 1.563rem;
     font-family: "brandon-grotesque", sans-serif;
-    font-style: normal;
+    font-weight: 600;
     color: #333;
     margin: 0;
     padding: 0;
@@ -123,7 +140,7 @@ h4 {
 }
 
 h5 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-family: "brandon-grotesque";
     color: #333;
     margin: 0;
@@ -134,6 +151,7 @@ h5 {
 h6 {
     font-size: 1rem;
     font-family: "brandon-grotesque", sans-serif;
+    font-weight: 600;
     color: #333;
     margin: 0;
     padding: 0;
@@ -151,21 +169,21 @@ h6 {
 }
 
 .bodyCopyNormal {
-    font-family: "brandon-grotesque", sans-serif;
-    font-weight: 400;
+    font-family: "gantari", sans-serif;
+    font-weight: 200;
     font-style: normal;
     font-size: 1.35em;
-    letter-spacing: .5px;
+    letter-spacing: .6px;
+    line-height: 125%;
     color: #333;
     margin: 0 auto;
-    padding: .5em 0;
+    padding: .9rem 0;
 
 }
 
 .listContainer {
     display: flex;
     justify-content: flex-start;
-    /* background-color: lightgray; */
     width: 100%;
 }
 
@@ -176,14 +194,18 @@ li {
     font-size: 1.4em;
     letter-spacing: .5px;
     color: #333;
-    margin: 0 auto;
+    margin: 0;
     padding: .1em 0;
-    list-style: circle;
+    list-style: none;
+}
+
+li::before {
+    content: "👉    ";
 }
 
 
 .pBold {
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     font-size: 1.1em;
 }
@@ -195,10 +217,9 @@ li {
     max-width: 30ch;
 }
 
-
 .caption {
-    font-family: "neuzeit-grotesk", sans-serif;
-    font-weight: 400;
+    font-family: "gantari", sans-serif;
+    font-weight: 500;
     font-style: normal;
     color: #7d7c7c;
     margin-top: 8px;
@@ -207,6 +228,12 @@ li {
 .wideCardP {
     max-width: 35ch;
     margin: 1rem 0;
+}
+
+::selection {
+    /* background-color: #f97171; */
+    background-color: #ef8181;
+    color: #f7f7f7;
 }
 
 
@@ -225,7 +252,7 @@ BUTTONS */
     justify-content: center;
     border-radius: 8px;
     box-sizing: border-box;
-    font-family: "brandon-grotesque", sans-serif;
+    font-family: "gantari", sans-serif;
     font-weight: 600;
     font-size: 1.25rem;
     letter-spacing: .5px;
@@ -248,7 +275,7 @@ BUTTONS */
     border-radius: 8px;
     border: 2px solid #1992d3;
     box-sizing: border-box;
-    font-family: "brandon-grotesque", sans-serif;
+    font-family: "gantari", sans-serif;
     font-weight: 600;
     font-size: 1.25rem;
     letter-spacing: .5px;
@@ -264,6 +291,7 @@ BUTTONS */
 }
 
 .tertiaryLink {
+    font-family: 'gantari';
     font-size: 1.3rem;
     color: #1992d3;
     text-decoration: none;
@@ -271,11 +299,13 @@ BUTTONS */
 }
 
 .tertiaryLink:hover {
+
     color: #0d3ea7;
     text-decoration: underline;
 }
 
 .inlineTextLink {
+    font-family: 'gantari';
     color: #1992d3;
     font-style: italic;
 }
@@ -328,6 +358,7 @@ BUTTONS */
     flex-direction: row-reverse;
     box-shadow: #12182425 0 0 30px;
     transition: ease.2s;
+    width: 100%;
 }
 
 .card2Content {
@@ -335,7 +366,7 @@ BUTTONS */
     flex-direction: column;
     justify-content: space-between;
     width: auto;
-    padding: 2rem 1rem
+    padding: 2rem
 }
 
 .card2Copy {

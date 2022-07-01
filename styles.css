@@ -988,7 +988,7 @@ label {
 
 
 .gocreateBriefWrapper {
-    max-width: fit-content;
+    max-width: 101ch;
     margin: 0 auto;
 
 }
@@ -997,16 +997,15 @@ label {
     display: grid;
     grid-template-columns: 45ch 45ch;
     grid-template-rows: 1fr 1fr;
-    column-gap: 5em;
-    row-gap: 2rem;
-    margin: 2em auto;
+    justify-content: space-between;
+    row-gap: 1.2rem;
+    margin: 0 auto;
     grid-template-areas: "goCreateBrief1 goCreateBrief2", "goCreateBrief3 goCreateBrief4";
 }
 
 
 
 .gocreateBriefContent {
-    max-width: 60ch;
     margin: auto 0
 }
 
@@ -1022,15 +1021,14 @@ label {
 .gocreateDiscovery {
     display: flex;
     flex-direction: column;
-    gap: 3em;
-
+    gap: 1.3rem;
     max-width: 101ch;
-    margin: 0 auto
+    margin: 0 auto;
+
 }
 
 .gocreateDiscoveryFlex {
     display: flex;
-
     max-width: 101ch;
     align-items: center;
     justify-content: space-between;
@@ -1039,7 +1037,6 @@ label {
 
 .gocreateFlexContent {
     max-width: 45ch;
-
 }
 
 .definition .col-lg-6 {
@@ -1080,13 +1077,11 @@ label {
 }
 
 .gocreateDefinition {
-
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
     max-width: 101ch;
     margin: 0 auto
-}
-
-.gocreatePersonaWrapper {
-    margin: 3rem 0 0 0
 }
 
 .gocreatePersona {
@@ -1105,7 +1100,7 @@ label {
 }
 
 .QuentinMorrison {
-    border-radius: 10px 0 10px 10px;
+    border-radius: 10px;
     box-shadow: lightgrey 0 0 10px;
 }
 
@@ -1132,19 +1127,14 @@ label {
     margin-top: 24px;
 }
 
-.GoCreate-Empathy-Map {
-    border: #192E10;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 1px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 24px;
-    width: 100%;
-    column-gap: 5%;
-    row-gap: 24px;
-    margin: 8px 0 56px 0;
+.goCreateIdeation {
+    max-width: 101ch;
+    margin: 0 auto;
+
+}
+
+.goCreateOrderFlowImage {
+    margin: 2rem 0
 }
 
 span {
@@ -1306,6 +1296,7 @@ span {
     margin: 2em 0
 }
 
+
 .more-work-item {
     display: flex;
     flex-direction: column;
@@ -1352,6 +1343,25 @@ span {
 .more-work-grid a {
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --------------------------------------Recycle Easy------------------------------------- */
 
